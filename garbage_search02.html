@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="●●●●">
+<meta property="og:title" content="ページタイトル">
+<meta property="og:type" content="website">
+<meta property="og:image" content="design_img/ogp_img.png">
+<meta property="og:url" content="http://www.xxx.jp/xxx.html">
+<meta property="og:description" content="●●●●">
+<meta property="og:site_name" content="サイトタイトル">
+<title>ごみ分別検索 あ行 | サイトタイトル</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="css/other.css" media="screen,print">
+<link id="changecss" rel="stylesheet" type="text/css" href="css/color01.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="css/molecule_view.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+<link rel="icon" href="design_img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="design_img/apple-touch-icon.png">
+<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body id="body" class="inbody" onload="getCookie();">
+<p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
+<div class="all">
+  <div class="design"> 
+<!-- ▼▼▼▼▼ヘッダ▼▼▼▼▼ -->
+<header class="main_header">
+<p class="skip"><a href="#HONBUN" class="f_v_button">共通メニューなどをスキップして本文へ</a></p>
+<div class="head">
+<div class="h_top_wrap">
+<div class="h_top">
+ 
+<ul class="h_toplist">
+<li>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</li>
+<li>
+<div class="language">
+<div class="ac_box_wrap ac_box_lang">
+<div class="ac_box" id="language">
+<p class="lang_btn ac_title" lang="en">Language</p><button type="button" class="ac_display_lang ac_display">open</button></div>
+<div class="ac_box_in">
+<ul class="lang_list">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+<li>
+<div class="font_size">
+<p class="font_tit">文字サイズ</p>
+<ul class="font_list">
+<li><a href="javascript:textSizeReset();">標準</a></li>
+<li><a href="javascript:textSizeUp();"><strong>拡大</strong></a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="head_in">
+<p class="h1"><img src="design_img/head_logo.png" alt="サイトタイトル"></p>
+<div class="h_main">
+
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+<noscript>
+<p class="noscript"><strong>文字サイズ変更機能を利用するにはJavaScript（アクティブスクリプト）を有効にしてください。JavaScript（アクティブスクリプト） を無効のまま文字サイズを変更する場合には，ご利用のブラウザの表示メニューから文字サイズを変更してください。文字サイズ変更以外にも，操作性向上の目的でJavaScript（アクティブスクリプト）を用いた機能を提供しています。可能であればJavaScript（アクティブスクリプト）を有効にしてください。</strong></p>
+</noscript>
+</div>
+
+<!-- ▼格納メニュー▼ -->
+<p id="menu_button" class="d_btn"><button class="menu" type="button" data-target="#drawer"><span class="icon_ham"></span><b class="menu_text">メニュー</b></button></p>
+
+<div id="drawer" class="drawer-nav" style="display:none;">
+<div class="drawer_in">
+<p id="menu_button2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p>
+<div class="drawer_menu">
+<div class="side_sitenavi">
+	<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+	<div class="g_nav_open">
+		<ul class="sidr_navi">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+	<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+	<!--
+	<ul class="sidr_navi">
+		<li><a href="#"><b>ホーム</b></a></li>
+		<li><a href="#"><b>暮らしの情報</b></a></li>
+		<li><a href="#"><b>観光・文化・産業</b></a></li>
+		<li><a href="#"><b>健康・福祉・教育</b></a></li>
+		<li><a href="#"><b>まちづくり</b></a></li>
+	</ul>
+	-->
+	<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+<ul class="sidr_navi_sub">
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+</div>
+<div class="side_shien">
+<ul class="sidr_navi02">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+<ul class="sidr_navi03">
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+</ul>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</div>
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box-sp" name="cse-search-box-sp"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button_sp" name="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box-sp&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+</div>
+<!-- ▲格納メニュー▲ -->
+
+
+<div class="clone_header">
+<div class="inner">
+<p class="clone_id"><img src="design_img/head_logo.png" alt="サイトタイトル"></p>
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+	<!-- ▼▼グローバルメニュー▼▼ -->
+	<nav class="g_navi">
+		<ul class="g_navi_in">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</buton>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- ▲▲グローバルメニュー▲▲ -->
+</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!-- ▼▼グローバルメニュー▼▼ -->
+<!--
+<nav class="g_navi">
+<ul class="g_navi_in">
+<li><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+</nav>
+-->
+<!-- ▲▲グローバルメニュー▲▲ -->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+</div>
+</div>
+
+</header>
+
+<!-- ▲▲▲▲▲ヘッダ▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼メイン▼▼▼▼▼ -->
+<main>
+<p id="HONBUN" class="anchor focus_visible">ここから本文です</p>
+<div class="pankuzu">
+<div class="pankuzu_lower">
+<p class="pankuzu_tit">現在位置</p>
+<ul>
+<li><a href="#">ホーム</a></li>
+<li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div class="footstep">
+<div class="footstep_lower">
+<p class="footstep_tit">あしあと</p>
+<ul>
+<li><a href="#">ホーム</a></li>
+<li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div id="main_outline">
+
+<div class="main_naka_h1">
+<h1>ごみ分別検索 あ行</h1>
+</div>
+
+<div class="main_naka">
+<p><a href="#">ごみの地区別収集日程表についてはこちら</a></p>
+<form name="frm_main" id="frm_main" method="get" action="#search" class="search_form">
+<div class="frm_wrap sec_and_kw">
+<fieldset class="element_option_field">
+	<legend>区分・キーワードから探す</legend>
+	<div class="event_search_box_wrap">
+	<label for="kubun">分別区分：</label>
+	<select name="cate" id="kubun">
+		<option value="">指定なし</option>
+		<option value="1">家庭ごみ(もえる物)</option>
+		<option value="2">あきかん・あきびん</option>
+		<option value="3">不燃の小物（もえない小物）</option>
+		<option value="4">ペットボトル</option>
+		<option value="5">プラスチック製容器包装</option>
+		<option value="6">大型ごみ</option>
+		<option value="7">犬・猫などの死体</option>
+		<option value="8">地域の集団回収</option>
+		<option value="9">小型家電</option>
+		<option value="10">水銀使用製品</option>
+		<option value="11">小型充電式電池</option>
+		<option value="12">在宅医療廃棄物収集</option>
+		<option value="13">不可</option>
+	</select>
+	</div>
+	<div class="event_search_box_wrap">
+		<label for="keyword">キーワード：</label>
+		<input type="text" name="keyword" value="" id="keyword">
+	</div>
+	<div class="event_search_button">
+		<button type="submit" id="btn_garbage_search" value="検索">検索</button>
+	</div>
+</fieldset>
+</div>
+<div class="frm_wrap j_alphabet">
+<fieldset class="element_option_field">
+	<legend>50音から探す</legend>
+	<p class="note">検索したいごみの頭文字を選択してください。</p>
+	<div class="event_search_box_wrap2">
+	<p>
+		<button type="submit" class="btn_garbage_tab" data-kana_index_num="0" data-kana_index="">すべて</button>
+		<button type="button" class="btn_garbage_tab selected" data-kana_index_num="1" data-kana_index="あ">あ</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="2" data-kana_index="か">か</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="3" data-kana_index="さ">さ</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="4" data-kana_index="た">た</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="5" data-kana_index="な">な</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="6" data-kana_index="は">は</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="7" data-kana_index="ま">ま</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="8" data-kana_index="や">や</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="9" data-kana_index="ら">ら</button>
+		<button type="button" class="btn_garbage_tab" data-kana_index_num="10" data-kana_index="わ">わ</button>
+	</p>
+	<p id="garbage_tab_1" class="garbage_tab" style="display: flex;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="あ">あ行 - あ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="い">あ行 - い</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="う">あ行 - う</button> 
+		<button type="submit" class="btn_garbage_val" data-kana_val="え">あ行 - え</button> 
+		<button type="submit" class="btn_garbage_val" data-kana_val="お">あ行 - お</button>
+	</p>
+	<p id="garbage_tab_2" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="か">か行 - か</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="き">か行 - き</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="く">か行 - く</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="け">か行 - け</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="こ">か行 - こ</button>
+	</p>
+	<p id="garbage_tab_3" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="さ">さ行 - さ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="し">さ行 - し</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="す">さ行 - す</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="せ">さ行 - せ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="そ">さ行 - そ</button>
+	</p>
+	<p id="garbage_tab_4" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="た">た行 - た</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ち">た行 - ち</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="つ">た行 - つ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="て">た行 - て</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="と">た行 - と</button>
+	</p>
+	<p id="garbage_tab_5" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="な">な行 - な</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="に">な行 - に</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ぬ">な行 - ぬ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ね">な行 - ね</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="の">な行 - の</button>
+	</p>
+	<p id="garbage_tab_6" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="は">は行 - は</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ひ">は行 - ひ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ふ">は行 - ふ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="へ">は行 - へ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ほ">は行 - ほ</button>
+	</p>
+	<p id="garbage_tab_7" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="ま">ま行 - ま</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="み">ま行 - み</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="む">ま行 - む</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="め">ま行 - め</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="も">ま行 - も</button>
+	</p>
+	<p id="garbage_tab_8" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="や">や行 - や</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ゆ">や行 - ゆ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="よ">や行 - よ</button>
+	</p>
+	<p id="garbage_tab_9" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="ら">ら行 - ら</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="り">ら行 - り</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="る">ら行 - る</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="れ">ら行 - れ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ろ">ら行 - ろ</button>
+	</p>
+	<p id="garbage_tab_10" class="garbage_tab" style="display: none;">
+		<button type="submit" class="btn_garbage_val" data-kana_val="わ">わ行 - わ</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="を">わ行 - を</button>
+		<button type="submit" class="btn_garbage_val" data-kana_val="ん">わ行 - ん</button>
+	</p>
+	</div>
+</fieldset>
+</div>
+<input type="hidden" id="hid_kana" name="kana" value="">
+</form>
+
+<div class="mol_contents garbage_src">
+<div class="mol_tableblock">
+<table class="per100">
+<caption>ごみ一覧</caption>
+<tbody>
+	<tr><th>ごみ名</th><th>分別区分</th><th>注意事項</th></tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=26&amp;page=1">あんま機(椅子型マッサージ機)</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=3&amp;page=1">アイスまくら</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=1&amp;page=1">アイスクリーム・バターメーカー</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td>業務用は収集できません。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=2&amp;page=1">アイスピック</a></td>
+	<td>不燃の小物（もえない小物）</td><td>危険につき、紙等に包んで、「危険」と記載してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=4&amp;page=1">アイロン</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=5&amp;page=1">アイロン台</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td>一辺が30センチメートル以上のものは大型ごみで排出してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=6&amp;page=1">アクセサリー</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td>プラスチック製のものは家庭ごみ（もえる物）で出してください。</td>
+	</tr><tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=7&amp;page=1">アコーディオンカーテン</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=8&amp;page=1">アタッシュケース</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td>一辺が30センチメートル以上のものは大型ごみで排出してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=9&amp;page=1">アダプター</a></td>
+	<td>小型家電</td>
+	<td>不燃の小物（もえない小物）でも排出可能です。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=18&amp;page=1">アルバム</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=19&amp;page=1">アルミサッシ</a></td>
+	<td>不可</td>
+	<td>業者に引取りを依頼してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=21&amp;page=1">アルミホイル(食品用)</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=20&amp;page=1">アルミホイール</a></td>
+	<td>不可</td>
+	<td>販売店等に相談してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=24&amp;page=1">アンテナ</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=25&amp;page=1">アンプ</a></td>
+	<td>小型家電</td>
+	<td>不燃の小物（もえない小物）で排出可能です。30センチメートル以上のものは大型ごみで出すことができます。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=10&amp;page=1">圧力鍋</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=23&amp;page=1">安全ピン</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td>危険につき、紙等に包んで、「危険」と記載してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=22&amp;page=1">安全靴</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=11&amp;page=1">油の容器(プラスチック)</a></td>
+	<td>プラスチック製容器包装</td>
+	<td>汚れが落ちなければ家庭ごみ（もえる物）で排出してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=12&amp;page=1">油類(食用油)</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td>布に染み込ませて出すか、市販の凝固剤で固めて出してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=13&amp;page=1">油類(食用油以外)</a></td>
+	<td>不可</td>
+	<td>販売店等に相談してください。</td>
+	</tr>
+	<tr><td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=15&amp;page=1">網戸</a></td><td>大型ごみ</td><td></td></tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=16&amp;page=1">編み針(木・プラスチック製)</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr><td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=17&amp;page=1">編み針(金属製)</a></td><td>不燃の小物（もえない小物）</td><td>危険につき、紙等に包んで、「危険」と記載してください。</td></tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=14&amp;page=1">雨具(カッパ)</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=41&amp;page=1">イヤホン</a></td>
+	<td>小型家電</td>
+	<td>不燃の小物（もえない小物）でも排出することができます。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=50&amp;page=1">インターホン</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=51&amp;page=1">インテリアライト</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=52&amp;page=1">インラインスケート</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=36&amp;page=1">一升瓶</a></td>
+	<td>あきかん・あきびん</td>
+	<td>（注意）一部の地域では集団回収を行っています。詳細は循環社会推進課へお問い合わせください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=33&amp;page=1">一斗缶</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=35&amp;page=1">一輪車(スポーツ用)</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=34&amp;page=1">一輪車(運搬用)</a></td>
+	<td>大型ごみ</td>
+	<td>リヤカーは収集できません。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=47&amp;page=1">入れ歯</a></td>
+	<td>不燃の小物（もえない小物）</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=43&amp;page=1">医療系廃棄物(注射器、注射針など)</a></td>
+	<td>不可</td>
+	<td>医療機関に返却してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=42&amp;page=1">医療系廃棄物(注射器、注射針以外の物)</a></td>
+	<td>在宅医療廃棄物収集</td>
+	<td>北部環境事業所へ相談してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=49&amp;page=1">印鑑</a>
+	</td>
+	<td>不燃の小物（もえない小物）</td>
+	<td>石製は不燃の小物（もえない小物）で排出する。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=31&amp;page=1">板</a></td>
+	<td>大型ごみ</td>
+	<td>片手で持てる1くくりの大きさ（大きさ1メートル×0．5メートル、厚み10センチメートルまで）で排出してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=32&amp;page=1">板ガラス</a></td>
+	<td>大型ごみ</td>
+	<td>危険につき、紙等で包むか、テープなので固定して排出してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=30&amp;page=1">椅子</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=37&amp;page=1">犬、猫のトイレ用砂(紙・木製)</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td>パッケージに「可燃性」と書かれているものに限ります。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=38&amp;page=1">犬、猫のフン</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td>臭気がもれないように袋の口をしっかり結んで排出してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=39&amp;page=1">犬小屋</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=28&amp;page=1">石うす</a></td>
+	<td>不可</td>
+	<td>販売店等に相談してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=27&amp;page=1">石・岩</a></td>
+	<td>不可</td>
+	<td>販売店等に相談してください。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=48&amp;page=1">色鉛筆</a></td>
+	<td>家庭ごみ(もえる物)</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=29&amp;page=1">衣装箱(衣装ケース)</a></td>
+	<td>大型ごみ</td>
+	<td></td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=44&amp;page=1">衣類</a></td>
+	<td>地域の集団回収</td>
+	<td>少量であれば家庭ごみ（もえる物）で排出することもできます。</td>
+	</tr>
+	<tr>
+	<td><a href="https://udface3-iko.comcarry.com/udf7higashiosaka/module/garbage.php?kana=&amp;cate=&amp;keyword=&amp;mode=detail&amp;id=45&amp;page=1">衣類乾燥機</a></td>
+	<td>不可</td>
+	<td>家電リサイクル法の対象品目です。販売店に相談または、ご自身で処理してください。</td>
+	</tr>
+</tbody>
+</table>
+</div>
+<nav class="page_head">
+<p>全909件中1から50件目</p>
+<div class="pager">
+<p>[前へ]</p><ul><li>1ページ</li><li><a href="#">2ページ</a></li><li><a href="#">3ページ</a></li><li><a href="#">4ページ</a></li><li><a href="#">5ページ</a></li><li><a href="#">6ページ</a></li><li><a href="#">7ページ</a></li><li><a href="#">8ページ</a></li><li><a href="#">9ページ</a></li><li><a href="#">10ページ</a></li></ul><p>[<a href="#">次へ</a>]</p>
+</div>
+</nav>
+</div>
+</div>
+
+</div>
+</main>
+<!-- ▲▲▲▲▲メイン▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼フッタ▼▼▼▼▼ -->
+<footer class="main_footer">
+
+<div class="online_strage_a">
+<!-- ▼▼マイページ機能▼▼ -->
+<aside class="mypage online_strage">
+<div class="mypage_h2_wrapper">
+<h2 class="mypage_title online_strage_title">マイページ</h2>
+<button type="button" id="mypage_new_add">このページをチェックする</button><button type="button" onclick="location.href=''" onkeypress="location.href=''">編集</button>
+</div>
+<div class="online_strage_contents mypage_contents">
+<ul class="online_strage_list mypage_list">
+<li><p class="online_strage_title"><a href="#">観光・文化・産業</a></p></li><li><p class="online_strage_title"><a href="#">暮らしの情報</a></p></li><li><p class="online_strage_title"><a href="#">まちづくり</a></p></li><!--<li>チェックしているページはありません</li>-->
+</ul>
+<div class="online_strage_form mypage_new"></div>
+</div>
+</aside>
+<!-- ▲▲マイページ機能▲▲ -->
+</div>
+
+<div class="foot_modori">
+<p class="modoriin">
+<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>
+</p>
+</div>
+<div class="foot_wrap">
+<div class="foot">
+<ul class="foot_link">
+<li><a href="#">このサイトの考え方</a></li><li><a href="#">個人情報の取扱い</a></li><li><a href="#">著作権・リンク等</a></li>
+</ul>
+<div class="foot_id">
+<p class="address"><b>◯◯市役所</b></p>
+<p class="address"><span class="small">〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番　電話：<a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">0000-00-0000</a>（代表）　ファックス：0000-00-0000</span></p>
+<p class="address">開庁時間　<span class="small">午前◯時◯◯分から午後◯時◯◯分まで（土日祝及び年末年始を除く）</span></p>
+</div>
+</div>
+<div class="foot_copy"><p class="foot_copyin" lang="en">Copyright (C) ◯◯◯ All rights reserved.</p></div>
+</div>
+</footer>
+<!-- ▲▲▲▲▲フッタ▲▲▲▲▲ -->
+  </div>
+</div>
+<script src="js/jquery-3.6.0.min.js"></script>  
+<script src="js/toolbox.js"></script> 
+<script src="js/common.js"></script> 
+<script src="js/color.js"></script> 
+<script src="js/twitter.js"></script> 
+<script src="js/facebook.js"></script> 
+<script src="js/line.js"></script>
+</body>
+</html>

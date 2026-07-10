@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/*▼▼▼FAQのスタイル▼▼▼*/
+.faq .main .zone0102{
+	margin-top: -24px;
+}
+.faq_h1 {
+	background: #007bbb;
+	color: #fff;
+	padding: 14px 16px;
+	font-size: 180%;
+	margin-top: 0;
+	border-radius: 8px;
+}
+.infaq .main_naka{
+	margin-bottom: 0;
+	margin: 0 auto 24px;
+}
+.faq .design .main_naka h1 {
+	font-size: 180%;
+	padding: 12px 14px;
+	border-bottom: 3px solid #007bbb;
+	margin: 8px 0;
+}
+.faq .design .main_naka h2.answer{
+	background: #fff;
+	border: 2px solid #007bbb;
+	border-bottom: 5px solid #007bbb;
+	padding: 8px 12px;
+	border-radius: 8px;
+}
+.faq .design .main_naka h2.answer:after{
+	display: none;
+}
+.faq .design .main_naka .qa_search {
+	margin-top: 16px;
+	background: #eee;
+	padding: 4px 16px 16px;
+	border-radius: 8px;
+}
+.faq .design .main_naka .qa_search #qa_search_box {
+	margin: 0 0 8px 0;
+	width: 100%;
+}
+.faq .design .main_naka .qa_search li {
+	margin-right: 20px;
+	padding-left: 0;
+	display: inline-block;
+	line-height: 200%;
+	width: 100%;
+}
+.faq .design .main_naka .qa_search li::before {
+	display: none;
+}
+.faq .design .main_naka .qa_search li label{
+	margin-right: 6px;
+}
+.faq .design .main_naka .qa_search select {
+	font-size: 85%;
+	max-width: 100%;
+}
+.faq .design .main_naka .qa_search .qa_button {
+	text-align: center;
+	margin-top: 8px;
+	clear: both;
+}
+.faq .design .main_naka .new_post {
+	margin-top: 24px;
+}
+.faq .design .main_naka .new_post:first-child {
+	margin-top: 0;
+}
+.faq .design .main_naka .new_post li {
+	border-bottom: 1px dashed #bbb;
+	margin-top: 16px;
+	padding: 0 0 16px;
+}
+.faq .design .main_naka .new_post li::before {
+	display: none;
+}
+.faq .design .main_naka .catch_lst .new_lst {
+	margin-right: 110px;
+}
+.faq .design .main_naka .catch_lst .new_img {
+	float: right;
+	width: 96px;
+	margin-top: 0;
+}
+.faq .design .main_naka .category_p01 {
+	margin-top: 12px;
+}
+.faq .design .main_naka .category_p01 p{
+	line-height: 1.9;
+}
+.faq .design .main_naka .cate_post01 > a::before{
+	top: 0.7em;
+}
+.faq .design .main_naka .category_end li:first-child {
+	margin-top: 16px;
+}
+.faq .design .main_naka #formorder {
+	padding-bottom: 4px;
+	background-color: transparent;
+	width: auto;
+	border-bottom: 4px solid #eee;
+}
+.faq .design .main_naka .qa_narabi {
+	margin-top: 0;
+}
+.faq .design .main_naka .qa_narabi_box{
+	display: inline-block;
+	margin-right: 6px;
+}
+.faq .design .main_naka .qa_narabi label{
+	margin-right: 10px;
+}
+.faq .design .main_naka .qa_narabi select {
+	font-size: 85%;
+	margin-right: 10px;
+}
+.faq .design .main_naka .qa_narabi button{
+	margin-right: 10px;
+}
+.qa_main {
+	margin-top: 24px;
+}
+	@media only screen and (max-width: 1024px) {
+		.faq .main .zone0102{
+			margin-top: 0;
+		}
+		.faq .design .main_naka .qa_narabi_box{
+			display: block;
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+		.faq .design .main_naka .qa_narabi button{
+			margin: 12px auto 4px;
+			display: block !important;
+		}
+	}
+	@media only screen and (max-width: 480px) {
+		.faq .design .main_naka .qa_search li label{
+			width: 100%;
+			display: block;
+			margin-bottom: 2px;
+		}
+		.faq .design .main_naka .qa_narabi label{
+			width: 100%;
+			display: block;
+			margin-bottom: 2px;
+		}
+		.faq .design .main_naka .qa_narabi select{
+			margin-right: 0;
+		}
+	}

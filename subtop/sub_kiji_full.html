@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="●●●●">
+<meta property="og:title" content="ページタイトル">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../design_img/ogp_img.png">
+<meta property="og:url" content="http://www.xxx.jp/xxx.html">
+<meta property="og:description" content="●●●●">
+<meta property="og:site_name" content="サイトタイトル">
+<title>記事名称 | 分類1階層タイトル | サイトタイトル</title>
+<link rel="stylesheet" type="text/css" href="../css/sub_common.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/sub_other.css" media="screen,print">
+<link id="changecss" rel="stylesheet" type="text/css" href="../css/color01.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/sub_molecule_view.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/print.css" media="print">
+<link rel="icon" href="../design_img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../design_img/apple-touch-icon.png">
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="body" class="inbody inkiji insub" onload="getCookie();">
+<p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
+<div class="all">
+<div class="design">
+<!-- ▼▼▼▼▼ヘッダ▼▼▼▼▼ -->
+<header class="main_header">
+<p class="skip"><a href="#HONBUN" class="f_v_button">共通メニューなどをスキップして本文へ</a></p>
+<div class="head">
+<div class="h_top_wrap">
+<div class="h_top">
+ 
+<ul class="h_toplist">
+<li>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</li>
+<li>
+<div class="language">
+<div class="ac_box_wrap ac_box_lang">
+<div class="ac_box" id="language">
+<p class="lang_btn ac_title" lang="en">Language</p><button type="button" class="ac_display_lang ac_display">open</button></div>
+<div class="ac_box_in">
+<ul class="lang_list">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+<li>
+<div class="font_size">
+<p class="font_tit">文字サイズ</p>
+<ul class="font_list">
+<li><a href="javascript:textSizeReset();">標準</a></li>
+<li><a href="javascript:textSizeUp();"><strong>拡大</strong></a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="head_in">
+<div class="h1_wrap">
+	<p class="h1"><img src="../design_img/head_logo.png" alt="サイトタイトル"></p>
+	<p class="mainsite"><a href="#">総合サイトへ戻る</a></p>
+</div>
+<div class="h_main">
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+<noscript>
+<p class="noscript"><strong>文字サイズ変更機能を利用するにはJavaScript（アクティブスクリプト）を有効にしてください。JavaScript（アクティブスクリプト） を無効のまま文字サイズを変更する場合には，ご利用のブラウザの表示メニューから文字サイズを変更してください。文字サイズ変更以外にも，操作性向上の目的でJavaScript（アクティブスクリプト）を用いた機能を提供しています。可能であればJavaScript（アクティブスクリプト）を有効にしてください。</strong></p>
+</noscript>
+</div>
+
+<!-- ▼格納メニュー▼ -->
+<p id="menu_button" class="d_btn"><button class="menu" type="button" data-target="#drawer"><span class="icon_ham"></span><b class="menu_text">メニュー</b></button></p>
+
+<div id="drawer" class="drawer-nav" style="display:none;">
+<div class="drawer_in">
+<p id="menu_button2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p>
+<div class="drawer_menu">
+<div class="side_sitenavi">
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+		<ul class="sidr_navi">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!--
+<ul class="sidr_navi">
+<li><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+-->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+<p class="mainsite"><a href="#"><b>総合サイトへ戻る</b></a></p>
+<ul class="sidr_navi_sub">
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+</div>
+<div class="side_shien">
+<ul class="sidr_navi02">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+<ul class="sidr_navi03">
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+</ul>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</div>
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box-sp" name="cse-search-box-sp"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button_sp" name="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box-sp&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+</div>
+<!-- ▲格納メニュー▲ -->
+
+
+<div class="clone_header">
+<div class="inner">
+<div class="h1_wrap clone_h1_wrap">
+	<p class="clone_id"><img src="../design_img/head_logo.png" alt="サイトタイトル"></p>
+	<p class="mainsite"><a href="#">総合サイトへ戻る</a></p>
+</div>
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+	<!-- ▼▼グローバルメニュー▼▼ -->
+	<nav class="g_navi">
+		<ul class="g_navi_in">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</buton>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- ▲▲グローバルメニュー▲▲ -->
+</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!-- ▼▼グローバルメニュー▼▼ -->
+<!--
+<nav class="g_navi">
+<ul class="g_navi_in">
+<li><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+</nav>
+-->
+<!-- ▲▲グローバルメニュー▲▲ -->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+</div>
+</div>
+
+</header>
+
+<!-- ▲▲▲▲▲ヘッダ▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼メイン▼▼▼▼▼ -->
+<main>
+<p id="HONBUN" class="anchor focus_visible">ここから本文です</p>
+<div class="pankuzu">
+<div class="pankuzu_lower">
+<p class="pankuzu_tit">現在位置</p>
+<ul>
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div class="footstep">
+<div class="footstep_lower">
+<p class="footstep_tit">あしあと</p>
+<ul>
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div id="main_outline">
+
+<div class="main_naka_h1">
+<h1>記事名称</h1>
+</div>
+
+<div class="main_naka">
+<div class="syosai">
+<ul class="syosai_hiduke" itemscope itemtype="http://schema.org/WebPage">
+	<li>[公開日：<time itemprop="datePublished" datetime="2014-08-29">2014年8月29日</time>]</li><li>[更新日：<time itemprop="dateModified" datetime="2014-08-29">2014年8月29日</time>]</li><li class="syosai_id">ID:126</li>
+</ul>
+</div>
+</div>
+<div class="waku">
+<div class="waku_top">
+<p class="mol_ccbytop">
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="クリエイティブ・コモンズ・ライセンス" width="88"></a>このコンテンツは<a href="https://creativecommons.org/licenses/by/4.0/">クリエイティブ・コモンズ 表示 4.0 国際 ライセンスの下に提供されています。</a>
+</p>
+<!-- ▼▼ページ内目次▼▼ -->
+<section class="mol_page_contents">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box" id="page_contents_period"><h2 class="ac_title">ページ内目次</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="page_contents_lower">
+		<ul>
+			<li><a href="#link1" class="f_v_button">あああ</a>
+				<ul>
+					<li><a href="#link1-1" class="f_v_button">画像のサイズ:中　画像とコメントの位置:画像とコメントを左に寄せる　コメント領域の幅:広い</a></li>
+					<li><a href="#link1-2" class="f_v_button">画像のサイズ:中　画像とコメントの位置:画像とコメントを左に寄せる　コメント領域の幅:画像の幅に合わせる</a></li>
+					<li><a href="#link1-3" class="f_v_button">画像のサイズ:中　画像とコメントの位置:画像とコメントを中央に寄せる　コメント領域の幅:広い</a></li>
+					<li><a href="#link1-4" class="f_v_button">画像のサイズ:中　画像とコメントの位置:画像とコメントを中央に寄せる　コメント領域の幅:画像の幅に合わせる</a></li>
+					<li><a href="#link1-5" class="f_v_button">画像のサイズ:中　画像とコメントの位置:画像とコメントを右に寄せる　コメント領域の幅:広い</a></li>
+					<li><a href="#link1-6" class="f_v_button">画像のサイズ:中　画像とコメントの位置:画像とコメントを右に寄せる　コメント領域の幅:画像の幅に合わせる</a></li>
+					<li><a href="#link1-7" class="f_v_button">画像のサイズ:中　画像とコメントの位置:全体を左にコメントを画像の右に回り込ませる　コメント領域の幅:広い</a></li>
+					<li><a href="#link1-8" class="f_v_button">画像のサイズ:中　画像とコメントの位置:全体を左にコメントを画像の左に回り込ませる　コメント領域の幅:広い</a></li>
+					<li><a href="#link1-9" class="f_v_button">画像横並び（全て左から）　画像のサイズ：小・中・大・実サイズ　画像とコメントの位置：画像とコメントを左に寄せる　コメント領域の幅：画像の幅に合わせる（実サイズのみ狭い）</a></li>
+				</ul>
+			</li>
+			<li><a href="#link2" class="f_v_button">見出し2見出し2見出し2見出し2</a>
+				<ul>
+					<li><a href="#link2-1" class="f_v_button">見出し3見出し3見出し3見出し3</a>
+						<ul>
+							<li><a href="#link2-1-1" class="f_v_button">見出し4見出し4見出し4見出し4</a>
+								<ul>
+									<li><a href="#link2-1-1-1" class="f_v_button">見出し5見出し5見出し5見出し5</a>
+										<ul>
+											<li><a href="#link2-1-1-1-1" class="f_v_button">見出し6見出し6見出し6見出し6</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#link3" class="f_v_button">表と表</a></li>
+			<li><a href="#link4" class="f_v_button">テキスト（中央寄せ）</a></li>
+			<li><a href="#link5" class="f_v_button">テキスト（右寄せ）</a></li>
+			<li><a href="#link6" class="f_v_button">テキスト枠</a>
+				<ul>
+					<li><a href="#link6-1" class="f_v_button">関連情報</a></li>
+				</ul>
+			</li>
+			<li lang="en"><a href="#link8" class="f_v_button">aaa2aaa2aaa2aaa2</a>
+				<ul>
+					<li lang="en"><a href="#link8-1" class="f_v_button">aaa3aaa3aaa3aaa3</a>
+						<ul>
+							<li lang="en"><a href="#link8-1-1" class="f_v_button">aaa4aaa4aaa4aaa4</a></li>
+						</ul>
+					</li>
+					<li lang="en"><a href="#link8-2" class="f_v_button">Image size: Medium Image and comment position: Image and comment to the left Comment area width: Wide</a></li>
+				</ul>
+			</li>
+		</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ▲▲ページ内目次▲▲ -->
+<div class="main_naka_kiji_box">
+<div class="main_naka_kiji">
+
+<div class="mol_contents">
+
+<div id="link1" class="focus_visible">
+<h2 id="pagenailink01">あああ</h2>
+</div>
+
+<div id="link1-1" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:画像とコメントを左に寄せる　コメント領域の幅:広い</h3>
+</div>
+<div id="pagenailink02" class="mol_imageblock">
+<div class="mol_imageblock_left">
+<div class="mol_imageblock_w_long mol_imageblock_img_al_left">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-2" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:画像とコメントを左に寄せる　コメント領域の幅:画像の幅に合わせる</h3>
+</div>
+<div class="mol_imageblock">
+<div class="mol_imageblock_left">
+<div class="mol_imageblock_img_medium mol_imageblock_img_al_left">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-3" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:画像とコメントを中央に寄せる　コメント領域の幅:広い</h3>
+</div>
+<div class="mol_imageblock">
+<div class="mol_imageblock_center">
+<div class="mol_imageblock_w_long mol_imageblock_img_al_center">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-4" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:画像とコメントを中央に寄せる　コメント領域の幅:画像の幅に合わせる</h3>
+</div>
+<div class="mol_imageblock">
+<div class="mol_imageblock_center">
+<div class="mol_imageblock_img_medium mol_imageblock_img_al_center">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-5" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:画像とコメントを右に寄せる　コメント領域の幅:広い</h3>
+</div>
+<div class="mol_imageblock">
+<div class="mol_imageblock_right">
+<div class="mol_imageblock_w_long mol_imageblock_img_al_right">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-6" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:画像とコメントを右に寄せる　コメント領域の幅:画像の幅に合わせる</h3>
+</div>
+<div class="mol_imageblock">
+<div class="mol_imageblock_right">
+<div class="mol_imageblock_img_medium mol_imageblock_img_al_right">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-7" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:全体を左にコメントを画像の右に回り込ませる　コメント領域の幅:広い</h3>
+</div>
+<div class="mol_imageblock">
+<div class="mol_imageblock_imgfloatleft">
+<div class="mol_imageblock_w_long mol_imageblock_img_al_floatleft">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-8" class="focus_visible">
+<h3>画像のサイズ:中　画像とコメントの位置:全体を左にコメントを画像の左に回り込ませる　コメント領域の幅:広い</h3>
+</div>
+<div class="mol_imageblock">
+<div class="mol_imageblock_imgfloatright">
+<div class="mol_imageblock_w_long mol_imageblock_img_al_floatright">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="代替テキスト" src="../cmsfiles/mt.jpg"><br>
+<span class="window">別ウィンドウで開く</span></a></p>
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-9" class="focus_visible">
+<h3>画像横並び（全て左から）　画像のサイズ：小・中・大・実サイズ　画像とコメントの位置：画像とコメントを左に寄せる　コメント領域の幅：画像の幅に合わせる（実サイズのみ狭い）</h3>
+</div>
+<div class="mol_imageblock clearfix mol_imageblock_inlineblock"><div class="mol_imageblock_center"><div class="mol_imageblock_img_small mol_imageblock_img_al_center"><p class="mol_imageblock_img"><img class="mol_imageblock_img_small" src="../cmsfiles/mt06.jpg" alt="代替テキスト"></p><p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz画像画像画像画像画像画像画像画像画像画像画像画像画像</p></div></div></div>
+<div class="mol_imageblock clearfix mol_imageblock_inlineblock"><div class="mol_imageblock_left"><div class="mol_imageblock_img_medium mol_imageblock_img_al_left"><p class="mol_imageblock_img"><img class="mol_imageblock_img_medium" src="../cmsfiles/mt.jpg" alt="代替テキスト"></p><p>画像画像画像画像画像画像画像画像</p></div></div></div>
+<div class="mol_imageblock clearfix mol_imageblock_inlineblock"><div class="mol_imageblock_left"><div class="mol_imageblock_img_large mol_imageblock_img_al_left"><p class="mol_imageblock_img"><img class="mol_imageblock_img_large" src="../cmsfiles/mt05.jpg" alt="代替テキスト"></p><p>画像画像</p></div></div></div>
+<div class="mol_imageblock clearfix mol_imageblock_inlineblock"><div class="mol_imageblock_left"><div class="mol_imageblock_img_al_left"><p class="mol_imageblock_img"><img class="mol_imageblock_img_defaultimgsize" src="../cmsfiles/mt04.jpg" alt="代替テキスト"></p><p>画像画像画像画像画像画像画像画像画像画像画像</p></div></div></div>
+
+<div id="link2" class="focus_visible">
+<h2>見出し2見出し2見出し2見出し2</h2>
+</div>
+
+<div id="link2-1" class="focus_visible">
+<h3>見出し3見出し3見出し3見出し3</h3>
+</div>
+
+<div id="link2-1-1" class="focus_visible">
+<h4>見出し4見出し4見出し4見出し4</h4>
+</div>
+
+<div id="link2-1-1-1" class="focus_visible">
+<h5>見出し5見出し5見出し5見出し5</h5>
+</div>
+
+<div id="link2-1-1-1-1" class="focus_visible">
+<h6>見出し6見出し6見出し6見出し6</h6>
+</div>
+
+<div class="mol_textblock">
+<p>本文本文本文本文<em>em em em em</em>本文本本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文文本文<strong>strong strong strong</strong>本文本文<a href="http://hoge">リンク</a><a href="http://hoge"><strong>リンク</strong></a><strong><a href="http://hoge">リンク</a></strong></p>
+<p><a href="#">リンクテキストリンクテキストリンクテキストリンクテキストリンクテキストリンクテキストリンクテキストリンクテキスト</a></p>
+<ol>
+<li>段落番号1</li>
+<li>段落番号2</li>
+<li>段落番号3</li>
+<li>段落番号4</li>
+<li>段落番号5</li>
+<li>段落番号6</li>
+<li>段落番号7</li>
+<li>段落番号8</li>
+<li>段落番号9</li>
+<li>段落番号10</li>
+<li>段落番号11
+	<ol>
+		<li>段落番号11-1</li>
+		<li>段落番号11-2</li>
+		<li>段落番号11-3
+			<ol>
+				<li>段落番号11-3-1</li>
+				<li>段落番号11-3-2</li>
+				<li>段落番号11-3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>段落番号12
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+</ol>
+<ul>
+<li>箇条書き1</li>
+<li>箇条書き2
+	<ul>
+		<li>箇条書き2-1</li>
+		<li>箇条書き2-2</li>
+		<li>箇条書き2-3
+			<ul>
+				<li>箇条書き2-3-1</li>
+				<li>箇条書き2-3-2</li>
+				<li>箇条書き2-3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>箇条書き3
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ul>
+<br>
+</div>
+
+<div class="mol_tableblock">
+<table>
+<caption>スタジアム</caption>
+<tr>
+<th scope="col">スタジアム</th>
+<th scope="col">収容人数</th>
+<th scope="col">ホームチーム</th>
+</tr>
+<tr>
+<th scope="row">Estadio Municipal de Aveiro</th>
+<td>３万人</td>
+<td>SC Beira Mar</td>
+</tr>
+<tr>
+<th scope="row">Estadio Da Luz</th>
+<td>６万５０００人</td>
+<td>SlBenfica</td>
+</tr>
+<tr>
+<th class="t_right" scope="row">右寄せテキスト</th>
+<td class="t_right">１万人</td>
+<td class="t_right">aaa</td>
+</tr>
+<tr>
+<th class="t_center" scope="row">真ん中寄せテキスト</th>
+<td class="t_center">１万人</td>
+<td class="t_center">bbb</td>
+</tr>
+<tr>
+<th class="t_center" scope="row">p要素</th>
+<td class="t_center">１万人</td>
+<td class="t_center"><p>ccc</p></td>
+</tr>
+<tr>
+<th class="t_center" scope="row"><a href="#">リンク</a></th>
+<td class="t_center"><a href="#">１万人</a></td>
+<td class="t_center"><p><a href="#">ddd</a></p></td>
+</tr>
+<tr>
+<th scope="row">箇条書き</th>
+<td>
+<ul>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3
+			<ol>
+				<li>段落番号3-1</li>
+				<li>段落番号3-2</li>
+				<li>段落番号3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>１万人
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+<li>１万人
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3
+			<ul>
+				<li>箇条書き3-1</li>
+				<li>箇条書き3-2</li>
+				<li>箇条書き3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>１万人
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3
+			<ol>
+				<li>段落番号3-1</li>
+				<li>段落番号3-2</li>
+				<li>段落番号3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>eee
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+<li>eee
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3
+			<ul>
+				<li>箇条書き3-1</li>
+				<li>箇条書き3-2</li>
+				<li>箇条書き3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>eee
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<th class="t_right" scope="row">箇条書き右寄せ</th>
+<td class="t_right">
+<ul>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3
+			<ol>
+				<li>段落番号3-1</li>
+				<li>段落番号3-2</li>
+				<li>段落番号3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>１万人
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+<li>１万人
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3
+			<ul>
+				<li>箇条書き3-1</li>
+				<li>箇条書き3-2</li>
+				<li>箇条書き3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>１万人
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ul>
+</td>
+<td class="t_right">
+<ol>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3
+			<ol>
+				<li>段落番号3-1</li>
+				<li>段落番号3-2</li>
+				<li>段落番号3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>eee
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+<li>eee
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3
+			<ul>
+				<li>箇条書き3-1</li>
+				<li>箇条書き3-2</li>
+				<li>箇条書き3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>eee
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ol>
+</td>
+</tr>
+<tr>
+<th class="t_center" scope="row">箇条書き真ん中寄せ</th>
+<td class="t_center">
+<ul>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人</li>
+<li>１万人
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3
+			<ol>
+				<li>段落番号3-1</li>
+				<li>段落番号3-2</li>
+				<li>段落番号3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>１万人
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+<li>１万人
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3
+			<ul>
+				<li>箇条書き3-1</li>
+				<li>箇条書き3-2</li>
+				<li>箇条書き3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>１万人
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ul>
+</td>
+<td class="t_center">
+<ol>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3
+			<ol>
+				<li>段落番号3-1</li>
+				<li>段落番号3-2</li>
+				<li>段落番号3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>eee
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+<li>eee
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3
+			<ul>
+				<li>箇条書き3-1</li>
+				<li>箇条書き3-2</li>
+				<li>箇条書き3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>eee
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</div>
+
+<div class="mol_tableblock">
+<table class="px1000">
+<caption>スタジアム（固定値1000px）</caption>
+<tr>
+<th scope="row">箇条書き</th>
+<td>
+<ul>
+<li>１万人</li>
+<li>１万人１万人</li>
+<li>１万人１万人１万人</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>eee</li>
+<li>eeeeee</li>
+<li>eeeeeeeee</li>
+</ol>
+</td>
+</tr>
+<tr>
+<th class="t_right" scope="row">箇条書き右寄せ</th>
+<td class="t_right">
+<ul>
+<li>１万人</li>
+<li>１万人１万人</li>
+<li>１万人１万人１万人</li>
+</ul>
+</td>
+<td class="t_right">
+<ol>
+<li>eee</li>
+<li>eeeeee</li>
+<li>eeeeeeeee</li>
+</ol>
+</td>
+</tr>
+<tr>
+<th class="t_center" scope="row">箇条書き真ん中寄せ</th>
+<td class="t_center">
+<ul>
+<li>１万人</li>
+<li>１万人１万人</li>
+<li>１万人１万人１万人</li>
+</ul>
+</td>
+<td class="t_center">
+<ol>
+<li>eee</li>
+<li>eeeeee</li>
+<li>eeeeeeeee</li>
+</ol>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="link3" class="focus_visible">
+<h2 class="block_index_3">表と表</h2>
+</div>
+<div class="mol_tableblock mol_tableblock_inlineblock block_index_8"><table><caption>タイトル</caption> <colgroup><col class="px100" > <col class="px150" > <col class="px50" > <col ></colgroup><tbody><tr><th scope="row">商品名</th><th scope="col">在庫</th><th scope="col">原価</th><th scope="col">売価</th> </tr> <tr><th scope="row">リンゴ</th><td>12個</td><td>120円</td><td>140円</td> </tr> <tr><th scope="row">イチゴ</th><td>30個</td><td>80円</td><td>30円</td> </tr> <tr><th scope="row">なし</th><td>10個</td><td>95円</td><td>110円</td> </tr> <tr><th scope="row">もも</th><td>28個</td><td>130円</td><td>190円</td> </tr></tbody></table></div>
+<div class="mol_tableblock mol_tableblock_inlineblock block_index_9"><table><caption>タイトル2</caption> <colgroup><col class="px100" > <col class="px150" > <col class="px50" > <col ></colgroup><tbody><tr><th scope="row">商品名</th><th scope="col">在庫</th><th scope="col">原価</th><th scope="col">売価</th> </tr> <tr><th scope="row">リンゴ</th><td>12個</td><td>120円</td><td>140円</td> </tr> <tr><th scope="row">イチゴ</th><td>30個</td><td>80円</td><td>30円</td> </tr> <tr><th scope="row">なし</th><td>10個</td><td>95円</td><td>110円</td> </tr> <tr><th scope="row">もも</th><td>28個</td><td>130円</td><td>190円</td> </tr></tbody></table></div>
+
+<div id="link4" class="focus_visible">
+<h2>テキスト（中央寄せ）</h2>
+</div>
+<div class="mol_textblock mol_textblock_aligncenter">
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+<ol>
+<li>段落番号1</li>
+<li>段落番号2</li>
+<li>段落番号3</li>
+<li>段落番号4</li>
+<li>段落番号5</li>
+<li>段落番号6</li>
+<li>段落番号7</li>
+<li>段落番号8</li>
+<li>段落番号9</li>
+<li>段落番号10</li>
+<li>段落番号11
+	<ol>
+		<li>段落番号11-1</li>
+		<li>段落番号11-2</li>
+		<li>段落番号11-3
+			<ol>
+				<li>段落番号11-3-1</li>
+				<li>段落番号11-3-2</li>
+				<li>段落番号11-3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>段落番号12
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+</ol>
+<ul>
+<li>箇条書き1</li>
+<li>箇条書き2
+	<ul>
+		<li>箇条書き2-1</li>
+		<li>箇条書き2-2</li>
+		<li>箇条書き2-3
+			<ul>
+				<li>箇条書き2-3-1</li>
+				<li>箇条書き2-3-2</li>
+				<li>箇条書き2-3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>箇条書き3
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ul>
+</div>
+
+<div id="link5" class="focus_visible">
+<h2>テキスト（右寄せ）</h2>
+</div>
+<div class="mol_textblock mol_textblock_alignright">
+<p>
+コメントコメントコメントコメント。コメントコメントコメントコメント。
+</p>
+<ol>
+<li>段落番号1</li>
+<li>段落番号2</li>
+<li>段落番号3</li>
+<li>段落番号4</li>
+<li>段落番号5</li>
+<li>段落番号6</li>
+<li>段落番号7</li>
+<li>段落番号8</li>
+<li>段落番号9</li>
+<li>段落番号10</li>
+<li>段落番号11
+	<ol>
+		<li>段落番号11-1</li>
+		<li>段落番号11-2</li>
+		<li>段落番号11-3
+			<ol>
+				<li>段落番号11-3-1</li>
+				<li>段落番号11-3-2</li>
+				<li>段落番号11-3-3</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>段落番号12
+	<ul>
+		<li>箇条書き1</li>
+		<li>箇条書き2</li>
+		<li>箇条書き3</li>
+	</ul>
+</li>
+</ol>
+<ul>
+<li>箇条書き1</li>
+<li>箇条書き2
+	<ul>
+		<li>箇条書き2-1</li>
+		<li>箇条書き2-2</li>
+		<li>箇条書き2-3
+			<ul>
+				<li>箇条書き2-3-1</li>
+				<li>箇条書き2-3-2</li>
+				<li>箇条書き2-3-3</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>箇条書き3
+	<ol>
+		<li>段落番号1</li>
+		<li>段落番号2</li>
+		<li>段落番号3</li>
+	</ol>
+</li>
+</ul>
+</div>
+
+<div id="link6" class="focus_visible">
+<h2>テキスト枠</h2>
+</div>
+<div class="mol_textblock mol_textblock_black"><p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></div>
+<div class="mol_textblock mol_textblock_color">
+	<ol>
+		<li>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</li>
+		<li>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</li>
+	</ol>
+	<ul>
+		<li>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</li>
+		<li>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</li>
+	</ul>
+</div>
+
+<div class="mol_attachfileblock">
+<p class="mol_attachfileblock_title">添付ファイルブロックのタイトル</p>
+<ul>
+<li><a href="#"><img src="images/pdf.gif" alt="" width="22" height="24" class="icon">タイトル1  (pdf, 000KB)</a>
+<p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></li>
+<li><a href="#"><img src="images/xls.svg" alt="" width="22" height="24" class="icon">タイトル2  (xsl, 000KB)</a>
+<p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></li>
+<li><a href="#"><img src="images/doc.svg" alt="" width="22" height="24" class="icon">タイトル3  (doc,000KB)</a>
+<p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></li>
+<li><a href="#"><img src="images/ppt.svg" alt="" width="22" height="24" class="icon">タイトル4  (ppt,000KB)</a>
+<p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></li>
+<li><a href="#"><img src="images/img.svg" alt="" width="22" height="24" class="icon">タイトル5  (jpg, 000KB)</a>
+<p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></li>
+<li><a href="#"><img src="images/mov.svg" alt="" width="22" height="24" class="icon">タイトル6  (mov,000KB)</a>
+<p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></li>
+<li><a href="#"><img src="images/file.svg" alt="" width="22" height="24" class="icon">タイトル7  (txt,000KB)</a>
+<p>コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント</p></li>
+</ul>
+<dl class="mol_attachfileblock_adobe">
+<dt><img src="images/get_adobe_reader.png" alt="Adobe Acrobat Reader の入手"></dt><dd>PDFファイルの閲覧には Adobe Acrobat Reader が必要です。同ソフトがインストールされていない場合には、<a href="#">Adobe社のサイトから Adobe Acrobat Reader をダウンロード（無償）してください。</a></dd>
+</dl>
+<dl class="mol_attachfileblock_adobe">
+<dt><img alt="Windows Media Player の入手" src="images/get_wmp.png"></dt><dd>wmv,avi,asf,mpg,wav,mp3ファイルの閲覧には Microsoft社のWindows Media Playerが必要です。同ソフトがインストールされていない場合には、<a href="https://support.microsoft.com/ja-jp/help/14209/get-windows-media-player">Microsoft社のサイトから Windows Media Player をダウンロード（無償）してください。</a></dd>
+</dl>
+<dl class="mol_attachfileblock_adobe">
+<dt><img alt="QuickTime の入手" src="images/get_qt.png"></dt><dd>movファイルの閲覧には Apple社のQuickTimeが必要です。同ソフトがインストールされていない場合には、<a href="http://www.apple.com/jp/quicktime/download/">Apple社のサイトから QuickTime をダウンロード（無償）してください。</a></dd>
+</dl>
+<dl class="mol_attachfileblock_adobe">
+<dt><img alt="RealPlayer の入手" src="images/get_rp.png"></dt><dd>rm,raファイルの閲覧には リアルネットワークス社のRealPlayerが必要です。同ソフトがインストールされていない場合には、<a href="http://jp.real.com/">リアルネットワークス社のサイトから RealPlayer をダウンロード（無償）してください。</a></dd>
+</dl>
+</div>
+
+<div id="link6-1" class="focus_visible">
+<h3>関連情報</h3>
+</div>
+<div class="mol_linkslistblock">
+<ul>
+<li><a href="#">住民窓口センター・出先機関のご案内</a><p>住民窓口センター・出先機関についてはこちら</p></li>
+<li><a href="#">申請書、代理権授与通知書（委任状）ダウンロード</a></li>
+</ul>
+</div>
+
+<div id="link8" class="focus_visible">
+<h2 lang="en">aaa2aaa2aaa2aaa2</h2>
+</div>
+
+<div id="link8-1" class="focus_visible">
+<h3 lang="en">aaa3aaa3aaa3aaa3</h3>
+</div>
+
+<div id="link8-1-1" class="focus_visible">
+<h4 lang="en">aaa4aaa4aaa4aaa4</h4>
+</div>
+<div class="mol_textblock" lang="en">
+
+<p>texttexttexttext<em>em em em em</em>texttexttexttextm<sup>2</sup>CO<sub>2</sub>texttexttexttext<strong>strong strong strong</strong>texttext<a href="http://hoge">link</a><a href="http://hoge"><strong>link</strong></a><strong><a href="http://hoge">link</a></strong>tel：<a href="tel:044-200-2111" tabindex="-1">044-200-2111</a></p>
+<ol>
+<li>paragraph1</li>
+<li>paragraph2</li>
+<li>paragraph3</li>
+<li>paragraph4</li>
+<li>paragraph5</li>
+<li>paragraph6</li>
+<li>paragraph7</li>
+<li>paragraph8</li>
+<li>paragraph9</li>
+<li>paragraph10</li>
+<li>paragraph11</li>
+<li>paragraph12</li>
+</ol>
+<ul>
+<li>list1</li>
+<li>list2</li>
+<li>list3</li>
+</ul>
+<br>
+</div>
+
+<div class="mol_tableblock" lang="en">
+<table>
+<caption>Stadium</caption>
+<tr>
+<th scope="col">Stadium</th>
+<th scope="col">Capacity</th>
+<th scope="col">Home team</th>
+</tr>
+<tr>
+<th scope="row">Estadio Municipal de Aveiro</th>
+<td>30,000 people</td>
+<td>SC Beira Mar</td>
+</tr>
+<tr>
+<th scope="row">Estadio Da Luz</th>
+<td>65,000 people</td>
+<td>SlBenfica</td>
+</tr>
+<tr>
+<th class="t_right" scope="row">right</th>
+<td class="t_right">10,000 people</td>
+<td class="t_right">aaa</td>
+</tr>
+<tr>
+<th class="t_center" scope="row">center</th>
+<td class="t_center">10,000 people</td>
+<td class="t_center">bbb</td>
+</tr>
+<tr>
+<th class="t_center" scope="row">p</th>
+<td class="t_center">10,000 people</td>
+<td class="t_center"><p>ccc</p></td>
+</tr>
+<tr>
+<th class="t_center" scope="row"><a href="#">link</a></th>
+<td class="t_center"><a href="#">10,000 people</a></td>
+<td class="t_center"><p><a href="#">ddd</a></p></td>
+</tr>
+<tr>
+<th scope="row">list</th>
+<td>
+<ul>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+<li>10,000 people</li>
+</ul>
+</td>
+<td>
+<ol>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+<li>eee</li>
+</ol>
+</td>
+</tr>
+<tr>
+<th class="t_center" scope="row"><a href="#">linklinklinklinklinklinklinklinklinklinklinklink</a></th>
+<td class="t_center"><a href="#">10,000 people</a></td>
+<td class="t_center"><p><a href="#">ddd</a></p></td>
+</tr>
+</table>
+</div>
+
+<div id="link8-2" class="focus_visible">
+<h3 lang="en">Image size: Medium Image and comment position: Image and comment to the left Comment area width: Wide</h3>
+</div>
+<div class="mol_imageblock" lang="en">
+<div class="mol_imageblock_left">
+<div class="mol_imageblock_w_long mol_imageblock_img_al_left">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt.jpg" target="_blank"><img class="mol_imageblock_img_medium" alt="text" src="../cmsfiles/mt.jpg"><br>
+<span class="window">External Links</span></a></p>
+<ol><li>aaa</li></ol>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p>
+</div>
+</div>
+</div>
+
+<div class="mol_attachfileblock" lang="en">
+<p class="mol_attachfileblock_title">Attachment Block Title</p>
+<ul>
+<li><a href="#" target="_blank"><img src="images/pdf.gif" alt="" width="22" height="24" class="icon">title1  (pdf, 000KB)<span class="window">Open in new window</span></a>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p></li>
+<li><a href="#"><img src="images/xls.svg" alt="" width="22" height="24" class="icon">title2  (xsl, 000KB)</a>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p></li>
+<li><a href="#"><img src="images/doc.svg" alt="" width="22" height="24" class="icon">title3  (doc,000KB)</a>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p></li>
+<li><a href="#"><img src="images/ppt.svg" alt="" width="22" height="24" class="icon">title4  (ppt,000KB)</a>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p></li>
+<li><a href="#"><img src="images/img.svg" alt="" width="22" height="24" class="icon">title5  (jpg, 000KB)</a>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p></li>
+<li><a href="#"><img src="images/mov.svg" alt="" width="22" height="24" class="icon">title6  (mov,000KB)</a>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p></li>
+<li><a href="#"><img src="images/file.svg" alt="" width="22" height="24" class="icon">title7  (txt,000KB)</a>
+<p>abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrs</p></li>
+</ul>
+<dl class="mol_attachfileblock_adobe">
+<dt><img src="images/get_adobe_reader.png" alt="Get Adobe Acrobat Reader"></dt><dd>Adobe Acrobat Reader is required to view PDF files. If you do not have this software installed,<a href="#">Download Adobe Acrobat Reader (free of charge) from Adobe's website.</a></dd>
+</dl>
+<dl class="mol_attachfileblock_adobe">
+<dt><img alt="Get Windows Media Player" src="images/get_wmp.png"></dt><dd>Microsoft Windows Media Player is required to view wmv, avi, asf, mpg, wav, and mp3 files. If you do not have this software installed,<a href="https://support.microsoft.com/ja-jp/help/14209/get-windows-media-player">Please download Windows Media Player (free of charge) from Microsoft's website.</a></dd>
+</dl>
+<dl class="mol_attachfileblock_adobe">
+<dt><img alt="Get QuickTime" src="images/get_qt.png"></dt><dd>Apple's QuickTime is required to view mov files. If you do not have this software installed,<a href="http://www.apple.com/jp/quicktime/download/">Download QuickTime (free of charge) from the Apple website.</a></dd>
+</dl>
+<dl class="mol_attachfileblock_adobe">
+<dt><img alt="Get RealPlayer" src="images/get_rp.png"></dt><dd>RealPlayer by RealNetworks is required to view rm and ra files. If the software is not installed,<a href="http://jp.real.com/">Download RealPlayer (free of charge) from the RealNetworks website.</a></dd>
+</dl>
+</div>
+
+<div class="mol_xhtmlblock" lang="en" style="cursor: pointer;">
+<section style="padding: 4px 16px 16px; margin-top: 24px; background:#fff;">
+<h2>Free XHTML</h2>
+<div>
+<ul>
+<li><a href="#">aaaabbbbccccdddd</a></li>
+<li><a href="#">eeeeffffgggghhhh</a></li>
+<li><a href="#">iiiijjjjkkkkllll</a></li>
+</ul>
+</div>
+</section></div>
+
+</div>
+
+</div>
+</div>
+<!--  -->
+<div class="kiji_sub">
+<aside class="catch">
+<p><img src="../cmsfiles/catch01.jpg" alt=""></p>
+</aside>
+<section class="kiji_aside syosai_sonota">
+<h2>お問い合わせ</h2>
+<p>サイト運用者総務部総務課</p>
+<p>住所: 〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番</p>
+<p>電話: <a href="tel:0000-000-0000" title="電話発信のダイヤログを開く">0000-000-0000</a></p>
+<p>ファックス: 0000-00-0000</p>
+<p><strong>電話番号のかけ間違いにご注意ください！</strong></p>
+<p class="for_img"><a href="#">お問い合わせフォーム</a></p>
+</section>
+<aside class="kiji_aside kanrencon">
+<h2>関連情報</h2>
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">EuropeantextcheckEuropeantextcheck</a></li>
+<li><a href="#">財務会計に関するご相談</a></li>
+<li><a href="#">助成金に関するご相談</a></li>
+</ul>
+</div>
+</aside>
+<aside class="kiji_aside kakuka">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">総務部総務課</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">ローカルメニュー名称</a></li>
+<li><a href="#">親ジャンル</a>
+<ul>
+<li><a href="#">子ジャンル1</a></li>
+<li><a href="#">子ジャンル1</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<aside class="kiji_aside kanren">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">記事タイトル</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">財務会計に関するご相談</a></li>
+<li><a href="#">助成金に関するご相談</a>
+<ul>
+<li><a href="#">役所に提出する助成金申請書類について</a></li>
+<li><a href="#">役所に提出する助成金申請書類について</a></li>
+<li><a href="#">役所に提出する助成金申請書類について</a></li>
+</ul>
+</li>
+<li><a href="#">助成金に関するご相談</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<aside class="kiji_aside kanren2">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">この記事を見ている人はこんな記事も見ています</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">子育て支援センターイベント情報</a></li>
+<li><a href="#">子育て支援センターイベント情報</a></li>
+<li><a href="#">子育て支援センターイベント情報</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<div class="design">
+<div class="main_naka">
+<aside class="kiji_aside kanrenlink">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">関連リンク</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#" target="_blank">住民窓口センター・出先機関のご案内<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">税に関する証明のご案内</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<aside class="kiji_aside rssfide">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box" id="rssfide_period"><h2 class="ac_title">外部RSS</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="cat_aside_lower">
+<ul>
+<li><a href="#" target="_blank">外部RSSからのコンテンツ<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">外部RSSからのコンテンツ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<!-- ▼▼▼▼▼アンケート領域▼▼▼▼▼ -->
+<div class="kiji_aside syosai_qa">
+<aside class="syosai_qa2">
+<form action="#">
+<h2>ご意見をお聞かせください</h2>
+<div class="kiji_aside_lower">
+<div>
+<ul>
+<li><fieldset><legend>このページは役に立ちましたか？</legend>
+<p><span><input type="radio" name="Evaluation" id="a01" checked="checked"><label for="a01">役に立った</label></span><span><input type="radio" name="Evaluation" id="a02"><label for="a02">どちらとも言えない</label></span><span><input type="radio" name="Evaluation" id="a03"><label for="a03">役に立たなかった</label></span></p>
+</fieldset></li>
+<li><fieldset><legend>このページは見つけやすかったですか？</legend>
+<p><span><input type="radio" name="Evaluation2" id="b01" checked="checked"><label for="b01">見つけやすかった</label></span><span><input type="radio" name="Evaluation2" id="b02"><label for="b02">どちらとも言えない</label></span><span><input type="radio" name="Evaluation2" id="b03"><label for="b03">見つけにくかった</label></span></p>
+</fieldset></li>
+</ul>
+</div>
+<p><label for="opinion">このページに関してのご意見がありましたらご記入ください。</label></p>
+<p>（注意）お答えが必要なお問合せは、直接担当部署へお願いいたします（こちらではお受けできません）。</p>
+<textarea cols="100" rows="3" id="opinion"></textarea>
+<div class="qa_button">
+<button type="submit">確認</button>
+</div>
+</div>
+</form>
+</aside>
+</div>
+<!-- ▲▲▲▲▲アンケート領域▲▲▲▲▲ -->
+<aside class="route_box">
+<h2>記事タイトルの別ルート</h2>
+<ul class="route">
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li><li>現在地</li>
+</ul>
+<ul class="route">
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li><li><a href="#">◯◯◯◯</a></li><li>現在地</li>
+</ul>
+</aside>
+<div class="sns_box">
+<p class="sns_btn"><span class="small">ソーシャルサイトへのリンクは別ウィンドウで開きます</span></p><ul><li id="snsfb" class="sns_btn"></li><li id="snstw" class="sns_btn"></li><li id="snsln" class="sns_btn"></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- ▲▲▲▲▲メイン▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼フッタ▼▼▼▼▼ -->
+<footer class="main_footer">
+
+<div class="online_strage_a">
+<!-- ▼▼マイページ機能▼▼ -->
+<aside class="mypage online_strage">
+<div class="mypage_h2_wrapper">
+<h2 class="mypage_title online_strage_title">マイページ</h2>
+<button type="button" id="mypage_new_add">このページをチェックする</button><button type="button" onclick="location.href=''" onkeypress="location.href=''">編集</button>
+</div>
+<div class="online_strage_contents mypage_contents">
+<ul class="online_strage_list mypage_list">
+<li><p class="online_strage_title"><a href="#">観光・文化・産業</a></p></li><li><p class="online_strage_title"><a href="#">暮らしの情報</a></p></li><li><p class="online_strage_title"><a href="#">まちづくり</a></p></li><!--<li>チェックしているページはありません</li>-->
+</ul>
+<div class="online_strage_form mypage_new"></div>
+</div>
+</aside>
+<!-- ▲▲マイページ機能▲▲ -->
+</div>
+
+<div class="foot_modori">
+<p class="modoriin">
+<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>
+</p>
+</div>
+<div class="foot_wrap">
+<div class="foot">
+<ul class="foot_link">
+<li><a href="#">このサイトの考え方</a></li><li><a href="#">個人情報の取扱い</a></li><li><a href="#">著作権・リンク等</a></li>
+</ul>
+<div class="foot_id">
+<p class="address"><b>◯◯市役所</b></p>
+<p class="address"><span class="small">〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番　電話：<a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">0000-00-0000</a>（代表）　ファックス：0000-00-0000</span></p>
+<p class="address">開庁時間　<span class="small">午前◯時◯◯分から午後◯時◯◯分まで（土日祝及び年末年始を除く）</span></p>
+</div>
+</div>
+<div class="foot_copy"><p class="foot_copyin" lang="en">Copyright (C) ◯◯◯ All rights reserved.</p></div>
+</div>
+</footer>
+<!-- ▲▲▲▲▲フッタ▲▲▲▲▲ -->
+</div>
+</div>
+<script src="../js/toolbox.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/color.js"></script>
+<script src="../js/twitter.js"></script>
+<script src="../js/facebook.js"></script>
+<script src="../js/line.js"></script>
+</body>
+</html>

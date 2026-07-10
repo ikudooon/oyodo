@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+.all{
+	margin: 0 !important;
+	width: 1080px !important;
+}
+.design .noscript{
+	display: none !important;
+}
+*{
+	text-shadow: none !important;
+}
+
+/* 追従メニュー */
+.clone-nav{
+	display: none;
+}
+
+/*Firefox対応 印刷時の文字2重表示対策*/
+h1,h2,h3,h4,h5,h6,strong,th,em{
+	font-family: arial, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro";
+}
+b{
+	font-weight: normal;
+}

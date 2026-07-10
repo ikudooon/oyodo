@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="●●●●">
+<meta property="og:title" content="ページタイトル">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../design_img/ogp_img.png">
+<meta property="og:url" content="http://www.xxx.jp/xxx.html">
+<meta property="og:description" content="●●●●">
+<meta property="og:site_name" content="サイトタイトル">
+<title>サブサイトタイトル | サイトタイトル</title>
+<link rel="alternate" title="サイトの見出し" href="http://servername.domain/rss/rss.xml" type="application/rss+xml">
+<link rel="stylesheet" type="text/css" href="../css/sub_common.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/sub_index.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/slider.css" media="screen,print">
+<link id="changecss" rel="stylesheet" type="text/css" href="../css/color01.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/print.css" media="print">
+<link rel="icon" href="../design_img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../design_img/apple-touch-icon.png">
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="body" class="sub" onload="getCookie();">
+<p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
+<div class="all">
+<div class="design">
+<!-- ▼▼▼▼▼ヘッダ▼▼▼▼▼ -->
+<header class="main_header">
+<p class="skip"><a href="#HONBUN" class="f_v_button">共通メニューなどをスキップして本文へ</a></p>
+<div class="head">
+<div class="h_top_wrap">
+<div class="h_top">
+ 
+<ul class="h_toplist">
+<li>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</li>
+<li>
+<div class="language">
+<div class="ac_box_wrap ac_box_lang">
+<div class="ac_box" id="language">
+<p class="lang_btn ac_title" lang="en">Language</p><button type="button" class="ac_display_lang ac_display">open</button></div>
+<div class="ac_box_in">
+<ul class="lang_list">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+<li>
+<div class="font_size">
+<p class="font_tit">文字サイズ</p>
+<ul class="font_list">
+<li><a href="javascript:textSizeReset();">標準</a></li>
+<li><a href="javascript:textSizeUp();"><strong>拡大</strong></a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="head_in">
+<div class="h1_wrap">
+	<h1 class="h1"><img src="../design_img/head_logo.png" alt="サイトタイトル"></h1>
+	<p class="mainsite"><a href="#">総合サイトへ戻る</a></p>
+</div>
+<div class="h_main">
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+<noscript>
+<p class="noscript"><strong>文字サイズ変更機能を利用するにはJavaScript（アクティブスクリプト）を有効にしてください。JavaScript（アクティブスクリプト） を無効のまま文字サイズを変更する場合には，ご利用のブラウザの表示メニューから文字サイズを変更してください。文字サイズ変更以外にも，操作性向上の目的でJavaScript（アクティブスクリプト）を用いた機能を提供しています。可能であればJavaScript（アクティブスクリプト）を有効にしてください。</strong></p>
+</noscript>
+</div>
+
+<!-- ▼格納メニュー▼ -->
+<p id="menu_button" class="d_btn"><button class="menu" type="button" data-target="#drawer"><span class="icon_ham"></span><b class="menu_text">メニュー</b></button></p>
+
+<div id="drawer" class="drawer-nav" style="display:none;">
+<div class="drawer_in">
+<p id="menu_button2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p>
+<div class="drawer_menu">
+<div class="side_sitenavi">
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+	<ul class="sidr_navi">
+		<li><a href="#"><b>ホーム</b></a></li>
+		<li class="ac_box_nav">
+			<div class="ac_box_nav_sub">
+				<button id="sp_nav01" type="button"><b>暮らしの情報</b></button>
+			</div>
+			<div class="ac_box_nav_in">
+				<div class="nav_inner">
+					<div class="nav_sub_close">
+						<button type="button">暮らしの情報を隠す</button>
+					</div>
+					<div class="nav_inner_ul">
+						<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+						<ul>
+							<li><a href="#">暮らしの情報リンク1</a></li>
+							<li><a href="#">暮らしの情報リンク2</a></li>
+							<li><a href="#">暮らしの情報リンク3</a></li>
+							<li><a href="#">暮らしの情報リンク4</a></li>
+							<li><a href="#">暮らしの情報リンク5</a></li>
+							<li><a href="#">暮らしの情報リンク6</a></li>
+						</ul>
+					</div>
+					<div class="nav_sub_close">
+						<button type="button">暮らしの情報を隠す</button>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="ac_box_nav">
+			<div class="ac_box_nav_sub">
+				<button id="sp_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+			</div>
+			<div class="ac_box_nav_in">
+				<div class="nav_inner">
+					<div class="nav_sub_close">
+						<button type="button">観光・文化・産業を隠す</button>
+					</div>
+					<div class="nav_inner_ul">
+						<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+						<ul>
+							<li><a href="#">観光・文化・産業リンク1</a></li>
+							<li><a href="#">観光・文化・産業リンク2</a></li>
+							<li><a href="#">観光・文化・産業リンク3</a></li>
+							<li><a href="#">観光・文化・産業リンク4</a></li>
+							<li><a href="#">観光・文化・産業リンク5</a></li>
+							<li><a href="#">観光・文化・産業リンク6</a></li>
+						</ul>
+					</div>
+					<div class="nav_sub_close">
+						<button type="button">観光・文化・産業を隠す</button>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="ac_box_nav">
+			<div class="ac_box_nav_sub">
+				<button id="sp_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+			</div>
+			<div class="ac_box_nav_in">
+				<div class="nav_inner">
+					<div class="nav_sub_close">
+						<button type="button">健康・福祉・教育を隠す</button>
+					</div>
+					<div class="nav_inner_ul">
+						<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+						<ul>
+							<li><a href="#">健康・福祉・教育リンク1</a></li>
+							<li><a href="#">健康・福祉・教育リンク2</a></li>
+							<li><a href="#">健康・福祉・教育リンク3</a></li>
+							<li><a href="#">健康・福祉・教育リンク4</a></li>
+							<li><a href="#">健康・福祉・教育リンク5</a></li>
+							<li><a href="#">健康・福祉・教育リンク6</a></li>
+						</ul>
+					</div>
+					<div class="nav_sub_close">
+						<button type="button">健康・福祉・教育を隠す</button>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="ac_box_nav">
+			<div class="ac_box_nav_sub">
+				<button id="sp_nav04" type="button"><b>まちづくり</b></button>
+			</div>
+			<div class="ac_box_nav_in">
+				<div class="nav_inner">
+					<div class="nav_sub_close">
+						<button type="button">まちづくりを隠す</button>
+					</div>
+					<div class="nav_inner_ul">
+						<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+						<ul>
+							<li><a href="#">まちづくりリンク1</a></li>
+							<li><a href="#">まちづくりリンク2</a></li>
+							<li><a href="#">まちづくりリンク3</a></li>
+							<li><a href="#">まちづくりリンク4</a></li>
+							<li><a href="#">まちづくりリンク5</a></li>
+							<li><a href="#">まちづくりリンク6</a></li>
+						</ul>
+					</div>
+					<div class="nav_sub_close">
+						<button type="button">まちづくりを隠す</button>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!--
+<ul class="sidr_navi">
+<li><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+-->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+<p class="mainsite"><a href="#"><b>総合サイトへ戻る</b></a></p>
+<ul class="sidr_navi_sub">
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+</div>
+<div class="side_shien">
+<ul class="sidr_navi02">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+<ul class="sidr_navi03">
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+</ul>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</div>
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box-sp" name="cse-search-box-sp"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button_sp" name="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box-sp&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+</div>
+<!-- ▲格納メニュー▲ -->
+
+
+<div class="clone_header">
+<div class="inner">
+<div class="h1_wrap clone_h1_wrap">
+	<p class="clone_id"><img src="../design_img/head_logo.png" alt="サイトタイトル"></p>
+	<p class="mainsite"><a href="#">総合サイトへ戻る</a></p>
+</div>
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+	<!-- ▼▼グローバルメニュー▼▼ -->
+	<nav class="g_navi">
+		<ul class="g_navi_in">
+			<li class="active"><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- ▲▲グローバルメニュー▲▲ -->
+</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!-- ▼▼グローバルメニュー▼▼ -->
+<!--
+<nav class="g_navi">
+<ul class="g_navi_in">
+<li class="active"><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+</nav>
+-->
+<!-- ▲▲グローバルメニュー▲▲ -->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+</div>
+</div>
+
+</header>
+
+<!-- ▲▲▲▲▲ヘッダ▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼メイン▼▼▼▼▼ -->
+<main>
+<p id="HONBUN" class="anchor focus_visible">ここから本文です</p>
+<div id="main_outline">
+<div class="main">
+<div class="category_p01"><p>分類1階層の説明文分類1階層の説明文分類1階層の説明文分類1階層の説明文分類1階層の説明文分類1階層の説明文分類1階層の説明文分類1階層の説明文分類1階層の説明文分類1階層の説明文</p></div>
+<!-- ▼▼▼領域01▼▼▼ -->
+<div class="zone01">
+<div class="zone01_in">
+<!-- ▼▼重要なお知らせ▼▼ -->
+<article class="important">
+<h2>重要なお知らせ</h2>
+<div class="important_lower">
+<ul>
+<li><a href="#"><span class="date">[2014年9月12日]</span>午後5時10分に○○市全域に大雨警報が発表されました。今後の気象情報に注意してください。</a></li>
+<li><a href="#"><span class="date">[2014年9月12日]</span>午前7時34分頃、○○市で震度3の地震がありました。津波の心配はありません。</a></li>
+</ul>
+<ul class="more">
+<li class="rss"><a href="#"><span>重要なお知らせRSS</span></a></li>
+</ul>
+</div>
+</article>
+<!-- ▲▲重要なお知らせ▲▲ -->
+<!-- ▼▼スライドショー（画像リスト）▼▼ -->
+<section class="splide slider1" aria-labelledby="slider1">
+<h2 id="slider1" class="notit">ビジュアルエリア。◯◯市役所からの紹介、お知らせ。</h2>
+<div class="splide_in">
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide"><a href="#" target="_blank"><img src="../cmsfiles/vis01.jpg" alt=""><span class="window">別ウィンドウで開く</span><span class="caption">ビジュアルエリアの代替テキスト01</span></a></li>
+<li class="splide__slide"><a href="#"><img src="../cmsfiles/vis01.jpg" alt="ビジュアルエリアの代替テキスト02"></a></li>
+<li class="splide__slide"><a href="#"><img src="../cmsfiles/vis01.jpg" alt="ビジュアルエリアの代替テキスト03"></a></li>
+<li class="splide__slide"><a href="#"><img src="../cmsfiles/vis01.jpg" alt="ビジュアルエリアの代替テキスト04"></a></li>
+<li class="splide__slide"><img src="../cmsfiles/vis01.jpg" alt="ビジュアルエリアの代替テキスト05"></li>
+</ul>
+</div>
+<div class="pagination-box">
+	<div class="pagination_inner">
+		<ul class="splide__pagination"></ul>
+		<div class="splide_nav">
+		<button class="splide__toggle" id="splide__toggle1" type="button"><span class="splide__toggle__play">再生</span><span class="splide__toggle__pause">停止</span></button>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+<!-- ▲▲スライドショー（画像リスト）▲▲ -->
+<!-- ▼▼スライドショー2（画像リスト）▼▼ -->
+<section class="splide slider2" aria-labelledby="slider2">
+<h2 id="slider2">スライドショー2（画像リスト）</h2>
+<div class="splide_in">
+<div class="splide__arrows">
+<button class="splide__arrow splide__arrow--prev">前へ</button>
+<div class="splide__track">
+<ul class="splide__list">
+<li class="splide__slide"><a href="#" target="_blank">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image2.png" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキスト</p>
+<span class="window">別ウィンドウで開く</span>
+</div>
+</div>
+</a></li>
+<li class="splide__slide"><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image2.png" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li class="splide__slide"><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image2.png" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li class="splide__slide"><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image2.png" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li class="splide__slide"><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image2.png" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li class="splide__slide"><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image2.png" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+</ul>
+</div>
+<button class="splide__arrow splide__arrow--next">次へ</button>
+<div class="pagination-box">
+	<div class="pagination_inner">
+		<ul class="splide__pagination"></ul>
+		<div class="splide_nav">
+		<button class="splide__toggle" id="splide__toggle2" type="button"><span class="splide__toggle__play">再生</span><span class="splide__toggle__pause">停止</span></button>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ▲▲スライドショー2（画像リスト）▲▲ -->
+<!-- ▼▼画像リスト▼▼ -->
+<section class="ilist">
+<h2>画像リスト1</h2>
+<div class="ilist_lower">
+<ul>
+<li><a href="#" target="_blank">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+<span class="window">別ウィンドウで開く</span>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<p class="ilist_text">テキストテキストテキストテキストテキストテキストテキスト</p>
+</div>
+</div>
+</a></li>
+</ul>
+</div>
+</section>
+<!-- ▲▲画像リスト▲▲ -->
+<!-- ▼▼画像リスト2▼▼ -->
+<section class="ilist2">
+<h2>画像リスト2</h2>
+<div class="ilist2_lower">
+<ul>
+<li><a href="#" target="_blank">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+<span class="window">別ウィンドウで開く</span>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+</div>
+</div>
+</a></li>
+<li><a href="#">
+<div class="ilist_in">
+<div class="ilist_left">
+<img src="../cmsfiles/image.gif" alt="画像リスト">
+</div>
+<div class="ilist_right">
+<p class="ilist_title">タイトル</p>
+</div>
+</div>
+</a></li>
+</ul>
+</div>
+</section>
+<!-- ▲▲画像リスト2▲▲ -->
+<!-- ▼▼分類2階層▼▼ -->
+<section class="category">
+<h2><a href="#" target="_blank">分類1階層<span class="window">別ウィンドウで開く</span></a></h2>
+</section>
+<!-- ▲▲分類2階層▲▲ -->
+<!-- ▼▼分類3階層▼▼ -->
+<section class="category2">
+<h2><a href="#">分類2階層</a></h2>
+<div class="category_lower">
+<ul class="category_2">
+<li><a href="#" target="_blank">分類3階層<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">分類3階層</a></li>
+<li><a href="#">分類3階層</a></li>
+<li><a href="#"><span class="date">[2014年9月1日]</span>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</a></li>
+</ul>
+</div>
+</section>
+<!-- ▲▲分類3階層▲▲ -->
+<!-- ▼▼分類4階層▼▼ -->
+<section class="category3">
+<h2><a href="#">分類2階層</a></h2>
+<div class="category_lower">
+<ul class="category_2_ul">
+<li class="category_2_li"><a href="#">分類3階層</a>
+<ul class="category_3">
+<li><a href="#" target="_blank">分類4階層<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">分類4階層</a></li>
+<li><a href="#">分類4階層</a></li>
+<li><a href="#"><span class="date">[2014年9月1日]</span>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</a></li>
+</ul>
+</li>
+<li class="category_2_li"><a href="#">分類3階層</a>
+<ul class="category_3">
+<li><a href="#">分類4階層</a></li>
+<li><a href="#">分類4階層</a></li>
+<li><a href="#">分類4階層</a></li>
+<li><a href="#"><span class="date">[2014年9月1日]</span>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<!-- ▲▲分類4階層▲▲ -->
+<!-- ▼▼分類5階層▼▼ -->
+<section class="category4">
+<h2><a href="#">分類2階層</a></h2>
+<div class="category_lower">
+<ul class="category_2_ul">
+<li class="category_2_li"><a href="#">分類3階層</a>
+<ul class="category_3_ul">
+<li class="category_3_li"><a href="#">分類4階層</a>
+<ul class="category_4">
+<li><a href="#" target="_blank">分類5階層<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">分類5階層</a></li>
+<li><a href="#">分類5階層</a></li>
+<li><a href="#"><span class="date">[2014年9月1日]</span>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</a></li>
+</ul>
+</li>
+<li class="category_3_li"><a href="#">分類3階層</a>
+<ul class="category_4">
+<li><a href="#">分類5階層</a></li>
+<li><a href="#">分類5階層</a></li>
+<li><a href="#">分類5階層</a></li>
+<li><a href="#"><span class="date">[2014年9月1日]</span>記事タイトル記事タイトル記事タイトル記事タイトル記事タイトル</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<!-- ▲▲分類5階層▲▲ -->
+</div>
+</div>
+<!-- ▲▲▲領域01▲▲▲ -->
+<!-- ▼▼▼領域02▼▼▼ -->
+<div class="zone02">
+<div class="zone02_in">
+<!-- ▼▼催し物・講座▼▼ -->
+<article class="event">
+<h2><a href="#">催し物・講座</a></h2>
+<div class="event_lower">
+<ul class="event_month"><li><b><a href="#">8月</a></b></li><li class="pre"><a href="#">前月</a></li><li class="next"><a href="#">翌月</a></li></ul>
+<ul>
+<li><a href="#" target="_blank"><span class="list_icon">NEW</span>骨粗しょう症健診を受けましょう！<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">トレーニング機器使用講習会</a></li>
+<li><a href="#">滋賀県指定有形文化財安国寺遺跡経塚出土品展</a></li>
+</ul>
+</div>
+</article>
+<!-- ▲▲催し物・講座▲▲ -->
+<!-- ▼▼イベントカレンダー▼▼ -->
+<article class="calendar">
+<h2><a href="#">2月イベントカレンダー</a></h2>
+<div class="calendar_lower">
+<ul class="event_month"><li class="pre"><a href="#">前月</a></li><li class="next"><a href="#">翌月</a></li></ul>
+<table>
+<caption>2月イベントカレンダー</caption>
+<tr>
+<th scope="col" class="sun"><img src="images/sun.svg" alt="日曜日" width="14"></th>
+<th scope="col"><img src="images/mon.svg" alt="月曜日" width="14"></th>
+<th scope="col"><img src="images/tue.svg" alt="火曜日" width="14"></th>
+<th scope="col"><img src="images/wed.svg" alt="水曜日" width="14"></th>
+<th scope="col"><img src="images/thu.svg" alt="木曜日" width="14"></th>
+<th scope="col"><img src="images/fri.svg" alt="金曜日" width="14"></th>
+<th scope="col" class="sat"><img src="images/sat.svg" alt="土曜日" width="14"></th>
+</tr>
+<tr>
+<td class="sun">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="#">1</a></td>
+<td>2</td>
+<td>3</td>
+<td class="sat">4</td>
+</tr>
+<tr>
+<td class="sun">5</td>
+<td>6</td>
+<td>7</td>
+<td><a href="#">8</a></td>
+<td>9</td>
+<td>10</td>
+<td class="sat">11</td>
+</tr>
+<tr>
+<td class="today sun" aria-current="date">12</td>
+<td class="sun">13<span>勤労感謝の日</span></td>
+<td class="today" aria-current="date"><strong>14</strong></td>
+<td class="sun"><a href="#">15</a><span>勤労感謝の日</span></td>
+<td class="today sun" aria-current="date"><strong>16</strong><span>勤労感謝の日</span></td>
+<td class="today sun" aria-current="date"><a href="#"><strong>17</strong></a><span>勤労感謝の日</span></td>
+<td class="today sat" aria-current="date">18</td>
+</tr>
+<tr>
+<td class="sun"><a href="#">19</a></td>
+<td><a href="#">20</a></td>
+<td>21</td>
+<td><a href="#">22</a></td>
+<td>23</td>
+<td>24</td>
+<td class="sat"><a href="#">25</a></td>
+</tr>
+<tr>
+<td class="sun">26</td>
+<td>27</td>
+<td><a href="#">28</a></td>
+<td><a href="#">29</a></td>
+<td><a href="#">30</a></td>
+<td>31</td>
+<td class="sat">&nbsp;</td>
+</tr>
+</table>
+</div>
+</article>
+<!-- ▲▲イベントカレンダー▲▲ -->
+<!-- ▼▼イベントカレンダー▼▼ -->
+<article class="calendar">
+<h2><a href="#">3月イベントカレンダー</a></h2>
+<div class="calendar_lower">
+<ul class="event_month"><li class="pre"><a href="#">前月</a></li><li class="next"><a href="#">翌月</a></li></ul>
+<table>
+<caption>3月イベントカレンダー</caption>
+<tr>
+<th scope="col" class="sun"><img src="images/sun.svg" alt="日曜日" width="14"></th>
+<th scope="col"><img src="images/mon.svg" alt="月曜日" width="14"></th>
+<th scope="col"><img src="images/tue.svg" alt="火曜日" width="14"></th>
+<th scope="col"><img src="images/wed.svg" alt="水曜日" width="14"></th>
+<th scope="col"><img src="images/thu.svg" alt="木曜日" width="14"></th>
+<th scope="col"><img src="images/fri.svg" alt="金曜日" width="14"></th>
+<th scope="col" class="sat"><img src="images/sat.svg" alt="土曜日" width="14"></th>
+</tr>
+<tr>
+<td class="sun">&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td><a href="#">1</a></td>
+<td>2</td>
+<td>3</td>
+<td class="sat">4</td>
+</tr>
+<tr>
+<td class="sun">5</td>
+<td>6</td>
+<td>7</td>
+<td><a href="#">8</a></td>
+<td>9</td>
+<td>10</td>
+<td class="sat">11</td>
+</tr>
+<tr>
+<td class="sun">12</td>
+<td class="sun">13<span>勤労感謝の日</span></td>
+<td class="today" aria-current="date"><a href="#"><strong>14</strong></a></td>
+<td>15</td>
+<td><a href="#">16</a></td>
+<td><a href="#">17</a></td>
+<td class="sat">18</td>
+</tr>
+<tr>
+<td class="sun"><a href="#">19</a></td>
+<td><a href="#">20</a></td>
+<td>21</td>
+<td><a href="#">22</a></td>
+<td>23</td>
+<td>24</td>
+<td class="sat"><a href="#">25</a></td>
+</tr>
+<tr>
+<td class="sun">26</td>
+<td>27</td>
+<td><a href="#">28</a></td>
+<td><a href="#">29</a></td>
+<td><a href="#">30</a></td>
+<td>31</td>
+<td class="sat">&nbsp;</td>
+</tr>
+</table>
+</div>
+</article>
+<!-- ▲▲イベントカレンダー▲▲ -->
+<!-- ▼▼新着情報▼▼ -->
+<article class="new">
+<h2><a href="#">新着情報</a></h2>
+<div class="new_lower">
+<ul>
+<li class="catch_lst"><a href="#" target="_blank"><div class="new_img"><img alt="" src="../cmsfiles/catch01.jpg"></div><div class="new_lst"><div class="date">12月20日</div><div class="list"><span class="list_icon">NEW</span>市政広報番組『草津スケッチ』放映中！<span class="window">別ウィンドウで開く</span></div></div></a></li>
+<li class="catch_lst"><a href="#"><div class="new_img"><img alt="" src="../cmsfiles/catch02.jpg"></div><div class="new_lst"><div class="date">12月20日</div><div class="list">ファミリー・サポート・センター講習会</div></div></a></li>
+<li class="catch_lst"><a href="#"><div class="new_img"><img alt="" src="../cmsfiles/catch03.jpg"></div><div class="new_lst"><div class="date">12月20日</div><div class="list">毎週水曜日に無料法律相談を行っています。法律に関するご相談に、法律の専門家が直接お答えします。</div></div></a></li>
+<li><a href="#"><div class="new_lst"><div class="date">12月20日</div><div class="list">毎週水曜日に無料法律相談を行っています。法律に関するご相談に、法律の専門家が直接お答えします。</div></div></a></li>
+</ul>
+<ul class="more">
+<li><a href="#"><span>新着情報一覧</span></a></li>
+<li class="rss"><a href="#"><span>新着情報RSS</span></a></li>
+</ul>
+</div>
+</article>
+<!-- ▲▲新着情報▲▲ -->
+<!-- ▼▼トピックス▼▼ -->
+<article class="topics">
+<h2><a href="#">トピックス</a></h2>
+<div class="topics_lower">
+<ul>
+<li><a href="#" target="_blank"><div class="date">12月20日</div><div class="list"><span class="list_icon">NEW</span>市政広報番組『草津スケッチ』放映中！<span class="window">別ウィンドウで開く</span></div></a></li>
+<li><a href="#"><div class="date">12月20日</div><div class="list">ファミリー・サポート・センター講習会</div></a></li>
+<li><a href="#"><div class="date">12月20日</div><div class="list">モロコ観察日記（ホンモロコ養殖実験の記録）</div></a></li>
+</ul>
+<ul class="more">
+<li><a href="#"><span>トピックス一覧</span></a></li>
+<li class="rss"><a href="#"><span>トピックスRSS</span></a></li>
+</ul>
+</div>
+</article>
+<!-- ▲▲トピックス▲▲ -->
+<!-- ▼▼フリーHTML領域▼▼ -->
+<div class="free_tab">
+	<div class="tab_index">
+		<div class="tab_change"><a href="javascript:void(0);"><strong>新着情報</strong></a></div>
+		<div class="tab_change"><a href="javascript:void(0);"><strong>トピックス</strong></a></div>
+	</div>
+	<ul>
+		<li class="tab_panel">
+			<!-- ▼▼新着情報▼▼ -->
+			<article class="new">
+			<h2>新着情報</h2>
+			<div class="new_lower">
+			<ul>
+			<li class="catch_lst"><a href="#" target="_blank"><div class="new_img"><img alt="" src="../cmsfiles/catch01.jpg"></div><div class="new_lst"><div class="date">12月20日</div><div class="list"><span class="list_icon">NEW</span>市政広報番組『草津スケッチ』放映中！<span class="window">別ウィンドウで開く</span></div></div></a></li>
+			<li class="catch_lst"><a href="#"><div class="new_img"><img alt="" src="../cmsfiles/catch02.jpg"></div><div class="new_lst"><div class="date">12月20日</div><div class="list">ファミリー・サポート・センター講習会</div></div></a></li>
+			<li class="catch_lst"><a href="#"><div class="new_img"><img alt="" src="../cmsfiles/catch03.jpg"></div><div class="new_lst"><div class="date">12月20日</div><div class="list">毎週水曜日に無料法律相談を行っています。法律に関するご相談に、法律の専門家が直接お答えします。</div></div></a></li>
+			<li><a href="#"><div class="new_lst"><div class="date">12月20日</div><div class="list">毎週水曜日に無料法律相談を行っています。法律に関するご相談に、法律の専門家が直接お答えします。</div></div></a></li>
+			</ul>
+			<ul class="more">
+			<li><a href="#"><span>新着情報一覧</span></a></li>
+			<li class="rss"><a href="#"><span>新着情報RSS</span></a></li>
+			</ul>
+			</div>
+			</article>
+			<!-- ▲▲新着情報▲▲ -->
+		</li>
+		<li class="tab_panel">
+			<!-- ▼▼トピックス▼▼ -->
+			<article class="topics">
+			<h2>トピックス</h2>
+			<div class="topics_lower">
+			<ul>
+			<li><a href="#" target="_blank"><div class="date">12月20日</div><div class="list"><span class="list_icon">NEW</span>市政広報番組『草津スケッチ』放映中！<span class="window">別ウィンドウで開く</span></div></a></li>
+			<li><a href="#"><div class="date">12月20日</div><div class="list">ファミリー・サポート・センター講習会</div></a></li>
+			<li><a href="#"><div class="date">12月20日</div><div class="list">モロコ観察日記（ホンモロコ養殖実験の記録）</div></a></li>
+			</ul>
+			<ul class="more">
+			<li><a href="#"><span>トピックス一覧</span></a></li>
+			<li class="rss"><a href="#"><span>トピックスRSS</span></a></li>
+			</ul>
+			</div>
+			</article>
+			<!-- ▲▲トピックス▲▲ -->
+		</li>
+	</ul>
+</div>
+<!-- ▲▲フリーHTML領域▲▲ -->
+<!-- ▼▼ピックアップ1▼▼ -->
+<article class="pickup">
+<h2><a href="#">ピックアップ1</a></h2>
+<div class="pickup_lower">
+<section class="pickup_sub">
+<h3>ピックアップカテゴリのタイトル</h3>
+<p>ピックアップカテゴリの説明文ピックアップカテゴリの説明文</p>
+<ul>
+<li><a href="#"><span class="list_icon">NEW</span>6月から皆様の市・府民税の税額が変わります</a></li>
+<li><a href="#">分譲マンション建て替え・大規模修繕アドバイザー派遣制度を創設しました</a></li>
+</ul>
+</section>
+<section class="pickup_sub">
+<h3>ピックアップカテゴリのタイトル</h3>
+<p>ピックアップカテゴリの説明文ピックアップカテゴリの説明文</p>
+<ul>
+<li><a href="#">6月から皆様の市・府民税の税額が変わります</a></li>
+<li><a href="#">分譲マンション建て替え・大規模修繕アドバイザー派遣制度を創設しました</a></li>
+</ul>
+</section>
+</div>
+</article>
+<!-- ▲▲ピックアップ1▲▲ -->
+<!-- ▼▼ピックアップ2▼▼ -->
+<article class="pickup2">
+<h2><a href="#">ピックアップ2</a></h2>
+<div class="pickup2_lower">
+<section class="pickup_sub">
+<h3>ピックアップカテゴリのタイトル</h3>
+<p>ピックアップカテゴリの説明文ピックアップカテゴリの説明文</p>
+<ul>
+<li><a href="#"><span class="list_icon">NEW</span>6月から皆様の市・府民税の税額が変わります</a></li>
+<li><a href="#">分譲マンション建て替え・大規模修繕アドバイザー派遣制度を創設しました</a></li>
+</ul>
+</section>
+<section class="pickup_sub">
+<h3>ピックアップカテゴリのタイトル</h3>
+<p>ピックアップカテゴリの説明文ピックアップカテゴリの説明文</p>
+<ul>
+<li><a href="#">6月から皆様の市・府民税の税額が変わります</a></li>
+<li><a href="#">分譲マンション建て替え・大規模修繕アドバイザー派遣制度を創設しました</a></li>
+</ul>
+</section>
+</div>
+</article>
+<!-- ▲▲ピックアップ2▲▲ -->
+</div>
+</div>
+<!-- ▲▲▲領域02▲▲▲ -->
+<!-- ▼▼▼領域03▼▼▼ -->
+<div class="zone03">
+<div class="zone03_in">
+<!-- ▼▼ランキング情報▼▼ -->
+<article class="ranking">
+<h2>ランキング</h2>
+<div class="ranking_lower">
+<ol>
+<li><a href="#">ゴミの分け方が変わりました。</a></li>
+<li><a href="#">5月1日よりゴミの分け方が変わります。</a></li>
+<li><a href="#">平成22年国勢調査を実施します</a></li>
+<li><a href="#">「夏休みおはなし会」の開催について</a></li>
+</ol>
+</div>
+</article>
+<!-- ▲▲ランキング情報▲▲ -->
+<!-- ▼▼人口・世帯数▼▼ -->
+<section class="j_s">
+<h2>人口・世帯数</h2>
+<div class="j_s_lower">
+<ul>
+<li><b>人口</b>15,351人</li>
+<li><b>世帯</b>5,855世帯</li>
+<li><b>男性</b>7,576人</li>
+<li><b>女性</b>7,775人</li>
+</ul>
+<p>[2014年8月1日現在]</p>
+</div>
+</section>
+<!-- ▲▲人口・世帯数▲▲ -->
+<!-- ▼▼リンク・画像領域（画像）▼▼ -->
+<section class="image">
+<h2>
+<a href="#" target="_blank"><span class="image_img"><img src="../cmsfiles/image.gif" alt="リンク・画像領域（画像）"></span><span class="window">別ウィンドウで開く</span></a>
+</h2>
+</section>
+<!-- ▲▲リンク・画像領域（画像）▲▲ -->
+<!-- ▼▼リンク・画像領域（テキスト）▼▼ -->
+<section class="link">
+<h2><a href="#" target="_blank">テキストリンク<span class="window">別ウィンドウで開く</span></a></h2>
+</section>
+<!-- ▲▲リンク・画像領域（テキスト）▲▲ -->
+<!-- ▼▼マルチフォームカテゴリー▼▼ -->
+<section class="option">
+<h2><a href="#" target="_blank">マルチフォームカテゴリー<span class="window">別ウィンドウで開く</span></a></h2>
+<div class="option_lower">
+<ul>
+<li><a href="#" target="_blank">フォーム1<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">フォーム2</a></li>
+<li><a href="#">フォーム3</a></li>
+<li><a href="#">フォーム4</a></li>
+</ul>
+</div>
+</section>
+<!-- ▲▲マルチフォームカテゴリー▲▲ -->
+<!-- ▼▼フリーXHTML領域▼▼ -->
+<section style="padding: 4px 16px 16px; margin-top: 24px; background:#fff;" >
+<h2 style="display:none;">フリーXHTML領域</h2>
+<div >
+<ul>
+<li><a href="#">（財）草津市コミュニティ事業団</a></li>
+<li><a href="#">文化・スポーツ施設（広域利用対象施設）</a></li>
+<li><a href="#">湖南4市蔵書横断検索</a></li>
+</ul>
+</div>
+</section>
+<!-- ▲▲フリーXHTML領域▲▲ -->
+<!-- ▼▼外部RSS▼▼ -->
+<article class="rssfide">
+<h2>トップページ（RSS）</h2>
+<div class="rssfide_lower">
+<section class="rssfide_sub">
+<div class="h3">
+<h3>チャンネル情報</h3>
+<p><a href="#" class="rss_icon">外部RSS<img src="images/rss.svg" alt=""></a></p>
+</div>
+<div class="rssfide_management">
+<p class="title">サイト管理元</p>
+<ul>
+<li>発行：2019年9月9日　19時24分18秒</li>
+<li>取得：2020年2月26日　16時6分18秒</li>
+</ul>
+<p class="rssfide_copy" lang="en">Copyright (C) 著作者 All rights reserved.</p>
+</div>
+<div class="rssfide_list">
+<ul>
+<li>
+<a href="#">
+<p class="date">2019年5月9日　18時22分</p>
+外部RSSからのコンテンツサンプル1</a>
+<p>コンテンツの概要コンテンツの概要コンテンツの概要</p>
+</li>
+<li>
+<a href="#">
+<p class="date">2019年5月9日　10時36分</p>
+外部RSSからのコンテンツサンプル2</a>
+<p>コンテンツの概要コンテンツの概要コンテンツの概要</p>
+</li>
+</ul>
+</div>
+</section>
+<ul class="more">
+<li class="rss"><a href="#"><span>トップページRSS</span></a></li>
+</ul>
+</div>
+</article>
+<!-- ▲▲外部RSS▲▲ -->
+</div>
+</div>
+<!-- ▲▲▲領域03▲▲▲ -->
+<!-- ▼▼▼領域04▼▼▼ -->
+<div class="zone04">
+<div class="zone04_in">
+<!-- ▼▼バナー広告▼▼ -->
+<section class="bana">
+<div class="bana_h2">
+<h2>バナー広告</h2><p>(広告をクリックすると別ウィンドウを開きます)</p>
+</div>
+<div class="bana_lower">
+<ul>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト1"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト2"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト3"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト4"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト5"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト6"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト7"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト8"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト9"></span></a></li>
+<li><a href="#" rel="nofollow" target="_blank"><span class="bana_img"><img src="../cmsfiles/banner/bana.png" alt="バナー広告の代替テキスト10"></span></a></li>
+</ul>
+</div>
+</section>
+<!-- ▲▲バナー広告▲▲ -->
+</div>
+</div>
+<!-- ▲▲▲領域04▲▲▲ -->
+</div>
+</div>
+</main>
+<!-- ▲▲▲▲▲メイン▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼フッタ▼▼▼▼▼ -->
+<footer class="main_footer">
+
+<div class="online_strage_a">
+<!-- ▼▼マイページ機能▼▼ -->
+<aside class="mypage online_strage">
+<div class="mypage_h2_wrapper">
+<h2 class="mypage_title online_strage_title">マイページ</h2>
+<button type="button" id="mypage_new_add">このページをチェックする</button><button type="button" onclick="location.href=''" onkeypress="location.href=''">編集</button>
+</div>
+<div class="online_strage_contents mypage_contents">
+<ul class="online_strage_list mypage_list">
+<li><p class="online_strage_title"><a href="#">観光・文化・産業</a></p></li><li><p class="online_strage_title"><a href="#">暮らしの情報</a></p></li><li><p class="online_strage_title"><a href="#">まちづくり</a></p></li><!--<li>チェックしているページはありません</li>-->
+</ul>
+<div class="online_strage_form mypage_new"></div>
+</div>
+</aside>
+<!-- ▲▲マイページ機能▲▲ -->
+</div>
+
+<div class="foot_modori">
+<p class="modoriin">
+<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>
+</p>
+</div>
+<div class="foot_wrap">
+<div class="foot">
+<ul class="foot_link">
+<li><a href="#">このサイトの考え方</a></li><li><a href="#">個人情報の取扱い</a></li><li><a href="#">著作権・リンク等</a></li>
+</ul>
+<div class="foot_id">
+<p class="address"><b>◯◯市役所</b></p>
+<p class="address"><span class="small">〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番　電話：<a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">0000-00-0000</a>（代表）　ファックス：0000-00-0000</span></p>
+<p class="address">開庁時間　<span class="small">午前◯時◯◯分から午後◯時◯◯分まで（土日祝及び年末年始を除く）</span></p>
+</div>
+</div>
+<div class="foot_copy"><p class="foot_copyin" lang="en">Copyright (C) ◯◯◯ All rights reserved.</p></div>
+</div>
+</footer>
+<!-- ▲▲▲▲▲フッタ▲▲▲▲▲ -->
+</div>
+</div>
+<script src="../js/splide.js"></script>
+<script src="../js/toolbox.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/onload.js"></script>
+<script src="../js/color.js"></script>
+</body>
+</html>

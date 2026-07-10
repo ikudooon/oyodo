@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/**** トップページ2カラム ****/
+.zone0102{
+	clear: both;
+	overflow: hidden;
+}
+.zone01 {
+	float: left;
+	width: 28%;
+}
+.zone02 {
+	float: right;
+	margin-left: 40px;
+	width: calc(72% - 40px);
+}
+.zone03 {
+	clear: both;
+}
+.zone04 {
+	clear: both;
+}
+.zone0102{
+	padding: 0 12px;
+}
+.zone0102 .zone01_in,
+.zone0102 .zone02_in{
+	padding: 0;
+}
+	@media only screen and (max-width: 1024px) {
+		.zone01 {
+			float: none;
+			width: 100%;
+		}
+		.zone02 {
+			margin-left: 0;
+			float: none;
+			width: 100%;
+		}
+	}

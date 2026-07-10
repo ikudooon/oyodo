@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="●●●●">
+<meta property="og:title" content="ページタイトル">
+<meta property="og:type" content="website">
+<meta property="og:image" content="design_img/ogp_img.png">
+<meta property="og:url" content="http://www.xxx.jp/xxx.html">
+<meta property="og:description" content="●●●●">
+<meta property="og:site_name" content="サイトタイトル">
+<title>全手続き一覧 | サイトタイトル</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="css/other.css" media="screen,print">
+<link id="changecss" rel="stylesheet" type="text/css" href="css/color01.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print">
+<link rel="icon" href="design_img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="design_img/apple-touch-icon.png">
+<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body id="body" class="inbody tetsuzuki" onload="getCookie();">
+<p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
+<div class="all">
+<div class="design">
+<!-- ▼▼▼▼▼ヘッダ▼▼▼▼▼ -->
+<header class="main_header">
+<p class="skip"><a href="#HONBUN" class="f_v_button">共通メニューなどをスキップして本文へ</a></p>
+<div class="head">
+<div class="h_top_wrap">
+<div class="h_top">
+ 
+<ul class="h_toplist">
+<li>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</li>
+<li>
+<div class="language">
+<div class="ac_box_wrap ac_box_lang">
+<div class="ac_box" id="language">
+<p class="lang_btn ac_title" lang="en">Language</p><button type="button" class="ac_display_lang ac_display">open</button></div>
+<div class="ac_box_in">
+<ul class="lang_list">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+<li>
+<div class="font_size">
+<p class="font_tit">文字サイズ</p>
+<ul class="font_list">
+<li><a href="javascript:textSizeReset();">標準</a></li>
+<li><a href="javascript:textSizeUp();"><strong>拡大</strong></a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="head_in">
+<p class="h1"><img src="design_img/head_logo.png" alt="サイトタイトル"></p>
+<div class="h_main">
+
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+<noscript>
+<p class="noscript"><strong>文字サイズ変更機能を利用するにはJavaScript（アクティブスクリプト）を有効にしてください。JavaScript（アクティブスクリプト） を無効のまま文字サイズを変更する場合には，ご利用のブラウザの表示メニューから文字サイズを変更してください。文字サイズ変更以外にも，操作性向上の目的でJavaScript（アクティブスクリプト）を用いた機能を提供しています。可能であればJavaScript（アクティブスクリプト）を有効にしてください。</strong></p>
+</noscript>
+</div>
+
+<!-- ▼格納メニュー▼ -->
+<p id="menu_button" class="d_btn"><button class="menu" type="button" data-target="#drawer"><span class="icon_ham"></span><b class="menu_text">メニュー</b></button></p>
+
+<div id="drawer" class="drawer-nav" style="display:none;">
+<div class="drawer_in">
+<p id="menu_button2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p>
+<div class="drawer_menu">
+<div class="side_sitenavi">
+	<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+	<div class="g_nav_open">
+		<ul class="sidr_navi">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+	<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+	<!--
+	<ul class="sidr_navi">
+		<li><a href="#"><b>ホーム</b></a></li>
+		<li><a href="#"><b>暮らしの情報</b></a></li>
+		<li><a href="#"><b>観光・文化・産業</b></a></li>
+		<li><a href="#"><b>健康・福祉・教育</b></a></li>
+		<li><a href="#"><b>まちづくり</b></a></li>
+	</ul>
+	-->
+	<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+<ul class="sidr_navi_sub">
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+</div>
+<div class="side_shien">
+<ul class="sidr_navi02">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+<ul class="sidr_navi03">
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+</ul>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</div>
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box-sp" name="cse-search-box-sp"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button_sp" name="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box-sp&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+</div>
+<!-- ▲格納メニュー▲ -->
+
+
+<div class="clone_header">
+<div class="inner">
+<p class="clone_id"><img src="design_img/head_logo.png" alt="サイトタイトル"></p>
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+	<!-- ▼▼グローバルメニュー▼▼ -->
+	<nav class="g_navi">
+		<ul class="g_navi_in">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</buton>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- ▲▲グローバルメニュー▲▲ -->
+</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!-- ▼▼グローバルメニュー▼▼ -->
+<!--
+<nav class="g_navi">
+<ul class="g_navi_in">
+<li><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+</nav>
+-->
+<!-- ▲▲グローバルメニュー▲▲ -->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+</div>
+</div>
+
+</header>
+
+<!-- ▲▲▲▲▲ヘッダ▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼メイン▼▼▼▼▼ -->
+<main>
+<p id="HONBUN" class="anchor focus_visible">ここから本文です</p>
+<div class="pankuzu">
+<div class="pankuzu_lower">
+<p class="pankuzu_tit">現在位置</p>
+<ul>
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div class="footstep">
+<div class="footstep_lower">
+<p class="footstep_tit">あしあと</p>
+<ul>
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div id="main_outline">
+
+<div class="main_naka_h1">
+<h1>全手続き一覧</h1>
+</div>
+
+<div class="main_naka">
+<nav class="tetsuzuki_back">
+<ul>
+	<li><a href="#">手続き検索TOPに戻る</a></li>
+	<li><a href="#">検索画面へ戻る</a></li>
+</ul>
+</nav>
+
+
+
+<div class="tetsuzuki_page_search">
+  <p>ページ内検索でページ内の単語が検索できます。</p>
+  <div class="float_set">
+  <form onsubmit="fncHighlight('13'); return false;">
+    <input type="text" id="word" title="ページ内検索キーワード" onkeypress="fncHighlight(event.keyCode);">
+    <button type="submit">ページ内テキスト検索</button><button type="reset" name="reset" id="reset">リセット</button><button type="button" onclick="location.reload(true);" onkeypress="location.reload(true);">ページリセット</button><button type="button" onclick="fncPrev();" onkeypress="fncPrev();">前へ</button><button type="button" id="next" onclick="fncNext();" onkeypress="fncNext();">次へ</button>
+    <p>
+      <span id="all_no"></span>
+      <span id="now_no"></span>
+    </p>
+  </form>
+  </div>
+</div>
+
+<table class="tetsuzuki_ichiran">
+<caption>手続き一覧</caption>
+<thead>
+    <tr>
+        <th>手続き名</th>
+        <th>備考</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td><a href="#">転入届（住所変更手続き）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">転出届（住所変更手続き）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">転居届（住所変更手続き）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">在留カード住居地届出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">在留カードの返納</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特別永住者証明書の居住地</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特別永住者証明書の返納</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">市営住宅退去の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">入居者異動届の提出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">マイナンバーカードの記載事項変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">住民基本台帳カードの記載事項変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民年金の加入手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民年金種別変更の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民年金保険料の学生納付特例制度申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民年金死亡一時金請求手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">寡婦年金の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">遺族基礎年金の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">遺族・未支給年金請求手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民健康保険加入手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民健康保険、資格喪失届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民健康保険、被保険者証の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民健康保険、被保険者証の氏名変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民健康保険、出産育児一時金の給付</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民健康保険、被保険者証の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">国民健康保険、葬祭費の請求</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">後期高齢者医療保険加入手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">後期高齢者医療保険資格喪失届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">後期高齢者医療保険被保険者証の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">後期高齢者医療保険被保険者証の氏名変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">後期高齢者医療保険葬祭費の請求</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">福祉給付金受給者証の交付申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">福祉給付金受給受給者証の返納</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">福祉給付金受給受給者証の氏名変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">福祉給付金受給受給者証の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険被保険者証の交付</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険被保険者証の返却</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険被保険者証の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">その他介護保険被保険者証等の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険受給資格証明書の申請及び発行</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険負担割合証の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">前市区町村窓口へ住所地特例届の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険送付先変更の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護認定申請の取り下げ手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">要介護・要支援認定の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険被保険者証等の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">高額介護サービス費等の振込口座変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">住所地特例適用届の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">介護保険負担限度額認定証の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">身体障がい者手帳 、療育手帳 、精神障がい者保健福祉手帳の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">転出に伴う身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい者医療費受給者証の交付</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい者医療費受給者証の返納</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい者手帳、療育手帳、精神障がい者保健福祉手帳等の氏名変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい者医療費受給資格変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">身体障がい者手帳・療育手帳・精神障がい者保健福祉手帳の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">身体障がい者手帳、療育手帳、精神障がい者保健福祉手帳等の氏名変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">自立支援医療受給者証（精神通院・更生医療）の交付</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">自立支援医療費受給者証（精神通院・更生医療）の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">自立支援医療費受給者証（精神通院・更生医療）の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">養育医療券・自立支援医療受給者証の転入申請の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">自立支援医療受給者証の氏名変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい福祉サービスの利用申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい福祉サービス受給者証の返却</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい福祉サービス受給者証の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい福祉サービスの受給者証の氏名変更・世帯構成の変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい児童通所サービスの利用申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい児童通所サービス受給者証の返却</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい児童通所サービス受給者証の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">障がい児童通所サービス受給者証の氏名変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特定疾患医療給付事業受給者票又は特定医療費受給者証の転入手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特定疾患医療給付事業受給者票又は特定医療費受給者証の転出手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特定疾患医療給付事業受給者票又は特定医療費受給者証の変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特定疾患医療給付事業受給者票の氏名・住所・保険等の変更、世帯構成の変更 特定医療費受給者証（指定難病）の氏名・住所・保険等の変更、世帯構成の変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特定疾患医療給付事業受給者票又は特定医療費受給者証（指定難病）の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">先天性血液凝固因子障害等治療研究事業受給者票の転入手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">先天性血液凝固因子障害等治療研究事業受給者票の変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">先天性血液凝固因子障害等治療研究事業受給者票の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">B型・C型肝炎患者医療給付事業受給者票の転入手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">B型・C型肝炎患者医療給付事業受給者票の返納届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">B型・C型肝炎患者医療給付事業受給者票の変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">戦傷病者手帳の更新（転入）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">戦傷病者手帳の更新（転出）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">戦傷病者手帳の変更手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">戦傷病者手帳の返却手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">小児慢性特定疾病医療受給者証の転入申請の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">小児慢性特定疾病医療受給者証の転出手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">小児慢性特定疾病医療受給者証の変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">小児慢性特定疾病医療受給者証の返還</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">予防接種券の交付</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">予防接種の記録の提出（こどもが7歳6か月未満の場合）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">予防接種に関する手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">心身障がい者扶養共済の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当の申請（転入時）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当の新規申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当の増額申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当の消滅届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当受給者の変更手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当消滅、額改定の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童手当未支給、新規申請の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童扶養手当の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童扶養手当の転出届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童扶養手当の変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童扶養手当の喪失届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童扶養手当の喪失または額改定</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童扶養手当の増額申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">児童扶養手当、母子・父子家庭医療費受給者証の交付</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特別児童扶養手当の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特別児童扶養手当に係る手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特別児童扶養手当の喪失手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特別児童扶養手当の転出届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">特別児童扶養手当の住所変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">教育保育給付認定又は施設等利用給付認定の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">子ども医療費受給者証の交付</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">子ども医療費受給者証の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">子ども医療費受給者証の返納</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">子ども医療費受給者資格変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">子ども医療費受給者証の氏名・保険変更手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">母子・父子家庭医療受給資格取得届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">母子・父子家庭医療費受給者証の返納</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">母子・父子家庭医療受給資格変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">妊婦・産婦・乳児健康診査受診票の交換</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">保育所の入所申込</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">幼稚園の入園申込</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">学区外就学許可の交付申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">転校の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">奨学金の貸与</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">原動機付自転車（125cc以下）、小型特殊自動車の住所変更 標識の変更または廃車</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">軽自動車、軽三輪の車検証等の住所変更 標識の変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">普通自動車の車検証等の住所変更 標識の変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">オートバイ（125cc超）の車検証等の住所変更 標識の変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">固定資産税　相続人代表者指定届出書の提出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">市県民税　相続人代表者指定届出書の提出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">市県民税の納税管理人の廃止</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">市県民税の納税管理人の指定</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">固定資産税の納税管理人の廃止</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">固定資産税の納税管理人の指定</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">出生届の提出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">出生届出証明書発行</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">低体重児出生届の提出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">世帯変更届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">養子縁組の届出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">入籍の届出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">離婚届の提出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">離婚の際に称していた氏を称する届</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">養子離縁の届出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">死亡届の提出</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">埋・火葬許可の申請</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">水道の使用手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">水道の使用中止</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">水道の名義変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">水道の引き落とし口座の変更手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">印鑑登録</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">印鑑登録証の返却</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">農地法3条の3に基づく届出書（農地を受け継ぐ人の届出）</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">森林の土地所有者の変更手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">くみ取り券の発行</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">くみ取り券の払戻し</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">し尿くみ取り券の内容変更手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">防災ラジオに登録してある地区（自治区）情報の設定変更</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">ソート番号800の手続き</a></td>
+        <td>テストデータです。</td>
+    </tr>
+    <tr>
+        <td><a href="#">公開期間中の手続き</a></td>
+        <td>公開期間中の手続きです。</td>
+    </tr>
+    <tr>
+        <td><a href="#">初期チェックが設定されている条件を持つ手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">無条件フラグが設定されている条件を持つ手続き</a></td>
+        <td>テストデータです。</td>
+    </tr>
+    <tr>
+        <td><a href="#">2件中1件が無条件フラグの手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">各項目確認用の手続き</a></td>
+        <td>手続き共通の備考欄です。</td>
+    </tr>
+    <tr>
+        <td><a href="#">ソート番号900の手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">持ち物一覧非表示フラグありの手続き</a></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td><a href="#">出来事なしの条件を持つ手続き</a></td>
+        <td></td>
+    </tr>
+</tbody>
+</table>
+
+
+
+<div class="tetsuzuki_back">
+<p><a href="#">手続き検索TOPに戻る</a></p>
+<p><a href="#">検索画面へ戻る</a></p>
+<p><a href="#">条件選択へ戻る</a></p>
+</div>
+</div>
+
+
+</div>
+</main>
+<!-- ▲▲▲▲▲メイン▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼フッタ▼▼▼▼▼ -->
+<footer class="main_footer">
+
+<div class="online_strage_a">
+<!-- ▼▼マイページ機能▼▼ -->
+<aside class="mypage online_strage">
+<div class="mypage_h2_wrapper">
+<h2 class="mypage_title online_strage_title">マイページ</h2>
+<button type="button" id="mypage_new_add">このページをチェックする</button><button type="button" onclick="location.href=''" onkeypress="location.href=''">編集</button>
+</div>
+<div class="online_strage_contents mypage_contents">
+<ul class="online_strage_list mypage_list">
+<li><p class="online_strage_title"><a href="#">観光・文化・産業</a></p></li><li><p class="online_strage_title"><a href="#">暮らしの情報</a></p></li><li><p class="online_strage_title"><a href="#">まちづくり</a></p></li><!--<li>チェックしているページはありません</li>-->
+</ul>
+<div class="online_strage_form mypage_new"></div>
+</div>
+</aside>
+<!-- ▲▲マイページ機能▲▲ -->
+</div>
+
+<div class="foot_modori">
+<p class="modoriin">
+<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>
+</p>
+</div>
+<div class="foot_wrap">
+<div class="foot">
+<ul class="foot_link">
+<li><a href="#">このサイトの考え方</a></li><li><a href="#">個人情報の取扱い</a></li><li><a href="#">著作権・リンク等</a></li>
+</ul>
+<div class="foot_id">
+<p class="address"><b>◯◯市役所</b></p>
+<p class="address"><span class="small">〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番　電話：<a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">0000-00-0000</a>（代表）　ファックス：0000-00-0000</span></p>
+<p class="address">開庁時間　<span class="small">午前◯時◯◯分から午後◯時◯◯分まで（土日祝及び年末年始を除く）</span></p>
+</div>
+</div>
+<div class="foot_copy"><p class="foot_copyin" lang="en">Copyright (C) ◯◯◯ All rights reserved.</p></div>
+</div>
+</footer>
+<!-- ▲▲▲▲▲フッタ▲▲▲▲▲ -->
+</div>
+</div>
+<script src="js/toolbox.js"></script>
+<script src="js/common.js"></script>
+<script src="js/color.js"></script>
+<script src="js/word_search.js"></script>
+</body>
+</html>

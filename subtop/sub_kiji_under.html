@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="●●●●">
+<meta property="og:title" content="ページタイトル">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../design_img/ogp_img.png">
+<meta property="og:url" content="http://www.xxx.jp/xxx.html">
+<meta property="og:description" content="●●●●">
+<meta property="og:site_name" content="サイトタイトル">
+<title>記事名称 | 分類1階層タイトル | サイトタイトル</title>
+<link rel="stylesheet" type="text/css" href="../css/sub_common.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/sub_other.css" media="screen,print">
+<link id="changecss" rel="stylesheet" type="text/css" href="../css/color01.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/sub_molecule_view.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="../css/print.css" media="print">
+<link rel="icon" href="../design_img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../design_img/apple-touch-icon.png">
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body id="body" class="inbody inkiji insub" onload="getCookie();">
+<p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
+<div class="all">
+<div class="design">
+<!-- ▼▼▼▼▼ヘッダ▼▼▼▼▼ -->
+<header class="main_header">
+<p class="skip"><a href="#HONBUN" class="f_v_button">共通メニューなどをスキップして本文へ</a></p>
+<div class="head">
+<div class="h_top_wrap">
+<div class="h_top">
+ 
+<ul class="h_toplist">
+<li>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</li>
+<li>
+<div class="language">
+<div class="ac_box_wrap ac_box_lang">
+<div class="ac_box" id="language">
+<p class="lang_btn ac_title" lang="en">Language</p><button type="button" class="ac_display_lang ac_display">open</button></div>
+<div class="ac_box_in">
+<ul class="lang_list">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+<li>
+<div class="font_size">
+<p class="font_tit">文字サイズ</p>
+<ul class="font_list">
+<li><a href="javascript:textSizeReset();">標準</a></li>
+<li><a href="javascript:textSizeUp();"><strong>拡大</strong></a></li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="head_in">
+<div class="h1_wrap">
+	<p class="h1"><img src="../design_img/head_logo.png" alt="サイトタイトル"></p>
+	<p class="mainsite"><a href="#">総合サイトへ戻る</a></p>
+</div>
+<div class="h_main">
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+<noscript>
+<p class="noscript"><strong>文字サイズ変更機能を利用するにはJavaScript（アクティブスクリプト）を有効にしてください。JavaScript（アクティブスクリプト） を無効のまま文字サイズを変更する場合には，ご利用のブラウザの表示メニューから文字サイズを変更してください。文字サイズ変更以外にも，操作性向上の目的でJavaScript（アクティブスクリプト）を用いた機能を提供しています。可能であればJavaScript（アクティブスクリプト）を有効にしてください。</strong></p>
+</noscript>
+</div>
+
+<!-- ▼格納メニュー▼ -->
+<p id="menu_button" class="d_btn"><button class="menu" type="button" data-target="#drawer"><span class="icon_ham"></span><b class="menu_text">メニュー</b></button></p>
+
+<div id="drawer" class="drawer-nav" style="display:none;">
+<div class="drawer_in">
+<p id="menu_button2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p>
+<div class="drawer_menu">
+<div class="side_sitenavi">
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+		<ul class="sidr_navi">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="sp_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!--
+<ul class="sidr_navi">
+<li><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+-->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+<p class="mainsite"><a href="#"><b>総合サイトへ戻る</b></a></p>
+<ul class="sidr_navi_sub">
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">お問い合わせ</a></li>
+</ul>
+</div>
+<div class="side_shien">
+<ul class="sidr_navi02">
+<li><a href="#" lang="en">English</a></li>
+<li><a href="#" lang="zh">中文简体</a></li>
+<li><a href="#" lang="zh-tw">中文繁體</a></li>
+<li><a href="#" lang="ko">한국</a></li>
+</ul>
+<ul class="sidr_navi03">
+<li><a href="#">読み上げ</a></li>
+<li><a href="#">ふりがな</a></li>
+</ul>
+<div class="bg_color">
+<p class="bg_tit">色の反転</p>
+<ul class="bg_list">
+<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
+<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+</ul>
+</div>
+</div>
+<!-- ▼▼検索ボックス▼▼ -->
+<div class="src_box">
+<form action="https://www.google.com/cse" id="cse-search-box-sp" name="cse-search-box-sp"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button_sp" name="search_button" type="submit">検索</button></form>
+<script src="https://www.google.com/cse/brand?form=cse-search-box-sp&amp;lang=ja"></script>
+</div>
+<!-- ▲▲検索ボックス▲▲ -->
+</div>
+</div>
+</div>
+<!-- ▲格納メニュー▲ -->
+
+
+<div class="clone_header">
+<div class="inner">
+<div class="h1_wrap clone_h1_wrap">
+	<p class="clone_id"><img src="../design_img/head_logo.png" alt="サイトタイトル"></p>
+	<p class="mainsite"><a href="#">総合サイトへ戻る</a></p>
+</div>
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
+<div class="g_nav_open">
+	<!-- ▼▼グローバルメニュー▼▼ -->
+	<nav class="g_navi">
+		<ul class="g_navi_in">
+			<li><a href="#"><b>ホーム</b></a></li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav01" type="button"><b>暮らしの情報</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
+							<ul>
+								<li><a href="#">暮らしの情報リンク1</a></li>
+								<li><a href="#">暮らしの情報リンク2</a></li>
+								<li><a href="#">暮らしの情報リンク3</a></li>
+								<li><a href="#">暮らしの情報リンク4</a></li>
+								<li><a href="#">暮らしの情報リンク5</a></li>
+								<li><a href="#">暮らしの情報リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">暮らしの情報を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</buton>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
+							<ul>
+								<li><a href="#">観光・文化・産業リンク1</a></li>
+								<li><a href="#">観光・文化・産業リンク2</a></li>
+								<li><a href="#">観光・文化・産業リンク3</a></li>
+								<li><a href="#">観光・文化・産業リンク4</a></li>
+								<li><a href="#">観光・文化・産業リンク5</a></li>
+								<li><a href="#">観光・文化・産業リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">観光・文化・産業を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
+							<ul>
+								<li><a href="#">健康・福祉・教育リンク1</a></li>
+								<li><a href="#">健康・福祉・教育リンク2</a></li>
+								<li><a href="#">健康・福祉・教育リンク3</a></li>
+								<li><a href="#">健康・福祉・教育リンク4</a></li>
+								<li><a href="#">健康・福祉・教育リンク5</a></li>
+								<li><a href="#">健康・福祉・教育リンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">健康・福祉・教育を隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="ac_box_nav">
+				<div class="ac_box_nav_sub">
+					<button id="pc_nav04" type="button"><b>まちづくり</b></button>
+				</div>
+				<div class="ac_box_nav_in">
+					<div class="nav_inner">
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+						<div class="nav_inner_ul">
+							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
+							<ul>
+								<li><a href="#">まちづくりリンク1</a></li>
+								<li><a href="#">まちづくりリンク2</a></li>
+								<li><a href="#">まちづくりリンク3</a></li>
+								<li><a href="#">まちづくりリンク4</a></li>
+								<li><a href="#">まちづくりリンク5</a></li>
+								<li><a href="#">まちづくりリンク6</a></li>
+							</ul>
+						</div>
+						<div class="nav_sub_close">
+							<button type="button">まちづくりを隠す</button>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- ▲▲グローバルメニュー▲▲ -->
+</div>
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
+<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<!-- ▼▼グローバルメニュー▼▼ -->
+<!--
+<nav class="g_navi">
+<ul class="g_navi_in">
+<li><a href="#"><b>ホーム</b></a></li>
+<li><a href="#"><b>暮らしの情報</b></a></li>
+<li><a href="#"><b>観光・文化・産業</b></a></li>
+<li><a href="#"><b>健康・福祉・教育</b></a></li>
+<li><a href="#"><b>まちづくり</b></a></li>
+</ul>
+</nav>
+-->
+<!-- ▲▲グローバルメニュー▲▲ -->
+<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
+</div>
+</div>
+
+</header>
+
+<!-- ▲▲▲▲▲ヘッダ▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼メイン▼▼▼▼▼ -->
+<main>
+<p id="HONBUN" class="anchor focus_visible">ここから本文です</p>
+<div class="pankuzu">
+<div class="pankuzu_lower">
+<p class="pankuzu_tit">現在位置</p>
+<ul>
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div class="footstep">
+<div class="footstep_lower">
+<p class="footstep_tit">あしあと</p>
+<ul>
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li>
+</ul>
+</div>
+</div>
+<div id="main_outline">
+
+<div class="main_naka_h1">
+<h1>記事名称</h1>
+</div>
+
+<div class="main_naka">
+<div class="syosai">
+<ul class="syosai_hiduke" itemscope itemtype="http://schema.org/WebPage">
+	<li>[公開日：<time itemprop="datePublished" datetime="2014-08-29">2014年8月29日</time>]</li><li>[更新日：<time itemprop="dateModified" datetime="2014-08-29">2014年8月29日</time>]</li><li class="syosai_id">ID:126</li>
+</ul>
+</div>
+</div>
+<div class="waku">
+<div class="waku_top">
+<!-- ▼▼ページ内目次▼▼ -->
+<section class="mol_page_contents">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box" id="page_contents_period"><h2 class="ac_title">ページ内目次</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="page_contents_lower">
+	<ul>
+		<li><a href="#link1" class="f_v_button">毎週水曜日に無料法律相談を行っています。</a>
+			<ul>
+				<li><a href="#link1-1" class="f_v_button">法律相談</a>
+					<ul>
+						<li><a href="#link1-1-1" class="f_v_button">弁護士が、法律に関するご相談に応じます</a>
+							<ul>
+								<li><a href="#link1-1-1-1" class="f_v_button">相談内容</a>
+									<ul>
+										<li><a href="#link1-1-1-1-1" class="f_v_button">ご相談に応じます</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#link1-2" class="f_v_button">行政相談</a></li>
+				<li><a href="#link1-3" class="f_v_button">関連情報</a></li>
+			</ul>
+		</li>
+	</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ▲▲ページ内目次▲▲ -->
+<div class="main_naka_kiji_box">
+<div class="main_naka_kiji">
+<!--  -->
+
+<div class="mol_contents">
+<div id="link1" class="focus_visible">
+<h2>毎週水曜日に無料法律相談を行っています。</h2>
+</div>
+
+<div id="link1-1" class="focus_visible">
+<h3>法律相談</h3>
+</div>
+
+<div id="link1-1-1" class="focus_visible">
+<h4>弁護士が、法律に関するご相談に応じます。</h4>
+</div>
+<div id="link1-1-1-1" class="focus_visible">
+<h5>相談内容</h5>
+</div>
+<div id="link1-1-1-1-1" class="focus_visible">
+<h6>ご相談に応じます</h6>
+</div>
+<div class="mol_textblock">
+<p>日常生活で困っていることから専門的な知識や経験が必要な、法律に関するご相談に、法律の専門家が直接お答えします。日常生活で困っていることから専門的な知識や経験が必要な、法律に関するご相談に、法律の専門家が直接お答えします。</p>
+
+<ul>
+<li><strong>訴訟や裁判になる場合などは有料</strong>となることがあります。</li>
+<li>電話の混雑状況などによりお時間をいただく場合もございますので、あらかじめご了承ください。</li>
+<li><strong>相談の時間は、30分まで</strong>とさせていただきます。</li>
+</ul>
+</div>
+
+<div class="mol_imageblock">
+<div class="mol_imageblock_center">
+<div class="mol_imageblock_img_defaultimgsize mol_imageblock_img_al_center">
+<p class="mol_imageblock_img"><a href="../cmsfiles/mt04.jpg" target="_blank"><img src="../cmsfiles/mt04.jpg" alt="代替テキスト"><br>
+</a></p>
+<p>
+日常生活で困っていることから専門的な知識や経験が必要な、法律に関するご相談に、法律の専門家が直接お答えします。
+</p>
+</div>
+</div>
+</div>
+
+<div id="link1-2" class="focus_visible">
+<h3>行政相談</h3>
+</div>
+<div class="mol_textblock">
+<p>弁護士が、行政に関するご相談に応じます。</p>
+<p>日常生活で困っていることから専門的な知識や経験が必要な、行政に関するご相談に、行政の専門家が直接お答えします。日常生活で困っていることから専門的な知識や経験が必要な、行政に関するご相談に、行政の専門家が直接お答えします。</p>
+
+<ul>
+<li>訴訟や裁判になる場合などは有料となることがあります。</li>
+<li>電話の混雑状況などによりお時間をいただく場合もございますので、あらかじめご了承ください。</li>
+<li>相談の時間は、30分までとさせていただきます。</li>
+</ul>
+</div>
+
+<div class="mol_tableblock">
+<table>
+<caption>行政相談の詳細</caption>
+<tr>
+<th scope="row">日時</th>
+<td>毎週水曜日　午後1時30分から午後3時30分　（受付：午後1時から）</td>
+</tr>
+<tr>
+<th scope="row">受付場所</th>
+<td>市役所1階　まちづくり推進課<br>（○○市役所正面玄関入って左側）</td>
+</tr>
+<tr>
+<th scope="row">相談時間</th>
+<td>20分以内</td>
+</tr>
+<tr>
+<th scope="row">定員</th>
+<td>15名（先着順）</td>
+</tr>
+<tr>
+<th scope="row">申込</th>
+<td>申込書を明記の上、まちづくり推進課まで郵送してください。</td>
+</tr>
+</table>
+</div>
+
+
+<div class="mol_textblock">
+<p>日常生活で困っていることから専門的な知識や経験が必要な、行政に関するご相談に、行政の専門家が直接お答えします。日常生活で困っていることから専門的な知識や経験が必要な、行政に関するご相談に、行政の専門家が直接お答えします。</p>
+<ul>
+<li>訴訟や裁判になる場合などは有料となることがあります。</li>
+<li>電話の混雑状況などによりお時間をいただく場合もございますので、あらかじめご了承ください。</li>
+<li>相談の時間は、30分までとさせていただきます。</li>
+</ul>
+<ol>
+<li>日常生活で困っていること
+	<ol>
+		<li>訴訟や裁判になる場合
+			<ol>
+				<li>相談時間</li>
+			</ol>
+		</li>
+	</ol>
+</li>
+<li>専門的な知識や経験が必要な行政に関するご相談
+	<ul>
+		<li>訴訟や裁判になる場合</li>
+	</ul>
+</li>
+</ol>
+<ul>
+<li>日常生活で困っていること
+	<ul>
+		<li>訴訟や裁判になる場合
+			<ul>
+				<li>相談時間</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li>専門的な知識や経験が必要な行政に関するご相談
+	<ol>
+		<li>訴訟や裁判になる場合</li>
+	</ol>
+</li>
+</ul>
+</div>
+
+
+<div class="mol_attachfileblock">
+<p class="mol_attachfileblock_title">添付ファイル</p>
+<ul>
+<li><a href="#"><img src="images/pdf.gif" alt="" width="22" height="24" class="icon">無料相談申込書 (pdf, 150KB)</a>
+  <p>明記の上、まちづくり推進課まで郵送してください。</p></li>
+<li><a href="#"><img src="images/pdf.gif" alt="" width="22" height="24" class="icon">相談場所の地図 (pdf, 50KB)</a></li>
+</ul>
+<dl class="mol_attachfileblock_adobe">
+<dt><img src="images/get_adobe_reader.png" alt="Adobe Acrobat Reader の入手"></dt><dd>PDFファイルの閲覧には Adobe Acrobat Reader が必要です。同ソフトがインストールされていない場合には、<a href="#">Adobe社のサイトから Adobe Acrobat Reader をダウンロード（無償）してください。</a></dd>
+</dl>
+</div>
+
+<div id="link1-3" class="focus_visible">
+<h3>関連情報</h3>
+</div>
+<div class="mol_linkslistblock">
+<ul>
+<li><a href="#">住民窓口センター・出先機関のご案内</a><p>住民窓口センター・出先機関についてはこちら</p></li>
+<li><a href="#">申請書、代理権授与通知書（委任状）ダウンロード</a></li>
+</ul>
+</div>
+
+</div>
+
+</div>
+</div>
+<!--  -->
+<div class="kiji_sub">
+<aside class="catch">
+<p><img src="../cmsfiles/catch01.jpg" alt=""></p>
+</aside>
+<aside class="kiji_aside kanren">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">記事タイトル</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">財務会計に関するご相談</a></li>
+<li><a href="#">助成金に関するご相談</a>
+<ul>
+<li><a href="#">役所に提出する助成金申請書類について</a></li>
+<li><a href="#">役所に提出する助成金申請書類について</a></li>
+<li><a href="#">役所に提出する助成金申請書類について</a></li>
+</ul>
+</li>
+<li><a href="#">助成金に関するご相談</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<aside class="kiji_aside kanren2">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">この記事を見ている人はこんな記事も見ています</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">子育て支援センターイベント情報</a></li>
+<li><a href="#">子育て支援センターイベント情報</a></li>
+<li><a href="#">子育て支援センターイベント情報</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+<div class="design">
+<div class="main_naka">
+<aside class="kiji_aside kanrenlink">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">関連リンク</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#" target="_blank">住民窓口センター・出先機関のご案内<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">税に関する証明のご案内</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<aside class="kiji_aside rssfide">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box" id="rssfide_period"><h2 class="ac_title">外部RSS</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="cat_aside_lower">
+<ul>
+<li><a href="#" target="_blank">外部RSSからのコンテンツ<span class="window">別ウィンドウで開く</span></a></li>
+<li><a href="#">外部RSSからのコンテンツ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<!-- ▼▼▼▼▼アンケート領域▼▼▼▼▼ -->
+<div class="kiji_aside syosai_qa">
+<aside class="syosai_qa2">
+<form action="#">
+<h2>ご意見をお聞かせください</h2>
+<div class="kiji_aside_lower">
+<div>
+<ul>
+<li><fieldset><legend>このページは役に立ちましたか？</legend>
+<p><span><input type="radio" name="Evaluation" id="a01" checked="checked"><label for="a01">役に立った</label></span><span><input type="radio" name="Evaluation" id="a02"><label for="a02">どちらとも言えない</label></span><span><input type="radio" name="Evaluation" id="a03"><label for="a03">役に立たなかった</label></span></p>
+</fieldset></li>
+<li><fieldset><legend>このページは見つけやすかったですか？</legend>
+<p><span><input type="radio" name="Evaluation2" id="b01" checked="checked"><label for="b01">見つけやすかった</label></span><span><input type="radio" name="Evaluation2" id="b02"><label for="b02">どちらとも言えない</label></span><span><input type="radio" name="Evaluation2" id="b03"><label for="b03">見つけにくかった</label></span></p>
+</fieldset></li>
+</ul>
+</div>
+<p><label for="opinion">このページに関してのご意見がありましたらご記入ください。</label></p>
+<p>（注意）お答えが必要なお問合せは、直接担当部署へお願いいたします（こちらではお受けできません）。</p>
+<textarea cols="100" rows="3" id="opinion"></textarea>
+<div class="qa_button">
+<button type="submit">確認</button>
+</div>
+</div>
+</form>
+</aside>
+</div>
+<!-- ▲▲▲▲▲アンケート領域▲▲▲▲▲ -->
+<aside class="kiji_aside kanrencon">
+<h2>関連情報</h2>
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">財務会計に関するご相談</a></li>
+<li><a href="#">助成金に関するご相談</a></li>
+</ul>
+</div>
+</aside>
+<aside class="kiji_aside kakuka">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box"><h2 class="ac_title">総務部総務課</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="kiji_aside_lower">
+<ul>
+<li><a href="#">ローカルメニュー名称</a></li>
+<li><a href="#">親ジャンル</a>
+<ul>
+<li><a href="#">子ジャンル1</a></li>
+<li><a href="#">子ジャンル1</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</aside>
+<section class="kiji_aside syosai_sonota">
+<h2>お問い合わせ</h2>
+<div class="kiji_aside_lower">
+<p>サイト運用者総務部総務課</p>
+<p>住所: 〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番</p>
+<p>電話: <a href="tel:000-000-0000" title="電話発信のダイヤログを開く">000-000-0000</a> ファックス: 0000-00-0000</p>
+<p class="for_txt">電話番号のかけ間違いにご注意ください！</p><p><a href="#">お問い合わせフォーム</a></p>
+</div>
+</section>
+<aside class="route_box">
+<h2>記事タイトルの別ルート</h2>
+<ul class="route">
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li><li>現在地</li>
+</ul>
+<ul class="route">
+<li><a href="#">ホーム</a></li><li><a href="#">◯◯◯◯</a></li><li><a href="#">◯◯◯◯</a></li><li>現在地</li>
+</ul>
+</aside>
+<div class="sns_box">
+<p class="sns_btn"><span class="small">ソーシャルサイトへのリンクは別ウィンドウで開きます</span></p><ul><li id="snsfb" class="sns_btn"></li><li id="snstw" class="sns_btn"></li><li id="snsln" class="sns_btn"></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- ▲▲▲▲▲メイン▲▲▲▲▲ -->
+<!-- ▼▼▼▼▼フッタ▼▼▼▼▼ -->
+<footer class="main_footer">
+
+<div class="online_strage_a">
+<!-- ▼▼マイページ機能▼▼ -->
+<aside class="mypage online_strage">
+<div class="mypage_h2_wrapper">
+<h2 class="mypage_title online_strage_title">マイページ</h2>
+<button type="button" id="mypage_new_add">このページをチェックする</button><button type="button" onclick="location.href=''" onkeypress="location.href=''">編集</button>
+</div>
+<div class="online_strage_contents mypage_contents">
+<ul class="online_strage_list mypage_list">
+<li><p class="online_strage_title"><a href="#">観光・文化・産業</a></p></li><li><p class="online_strage_title"><a href="#">暮らしの情報</a></p></li><li><p class="online_strage_title"><a href="#">まちづくり</a></p></li><!--<li>チェックしているページはありません</li>-->
+</ul>
+<div class="online_strage_form mypage_new"></div>
+</div>
+</aside>
+<!-- ▲▲マイページ機能▲▲ -->
+</div>
+
+<div class="foot_modori">
+<p class="modoriin">
+<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>
+</p>
+</div>
+<div class="foot_wrap">
+<div class="foot">
+<ul class="foot_link">
+<li><a href="#">このサイトの考え方</a></li><li><a href="#">個人情報の取扱い</a></li><li><a href="#">著作権・リンク等</a></li>
+</ul>
+<div class="foot_id">
+<p class="address"><b>◯◯市役所</b></p>
+<p class="address"><span class="small">〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番　電話：<a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">0000-00-0000</a>（代表）　ファックス：0000-00-0000</span></p>
+<p class="address">開庁時間　<span class="small">午前◯時◯◯分から午後◯時◯◯分まで（土日祝及び年末年始を除く）</span></p>
+</div>
+</div>
+<div class="foot_copy"><p class="foot_copyin" lang="en">Copyright (C) ◯◯◯ All rights reserved.</p></div>
+</div>
+</footer>
+<!-- ▲▲▲▲▲フッタ▲▲▲▲▲ -->
+</div>
+</div>
+<script src="../js/toolbox.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/color.js"></script>
+<script src="../js/twitter.js"></script>
+<script src="../js/facebook.js"></script>
+<script src="../js/line.js"></script>
+</body>
+</html>

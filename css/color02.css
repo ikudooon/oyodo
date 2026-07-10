@@ -1,0 +1,473 @@
+@charset "UTF-8";
+
+body,
+.foot_copy,
+.event_back_cal_ac_box a p:not(.ac_display03),
+.mol_page_contents .ac_box a h2,
+.waku .kiji_sub .kiji_aside.syosai_sonota p a[href^="tel:"],
+.design .main_naka .garbage_body .garbage_cal th .cal_ora,
+.shelter .main_naka .ac_box h4, .shelter .main_naka .ac_box h5, .shelter .main_naka .ac_box h6{
+	color: #fff !important;
+}
+a,
+.font_list li a,
+a:link > strong,
+.skip a,
+.date,
+.design .main_naka .month_lst .month_select,
+.design .main_naka #calendar_month .eve_cate,
+#src_box #search_button,
+#body input[type="submit"], #body input[type="reset"], #body input[type="button"], button,
+#body .print input[type="button"],
+#foot_modori .modoriin a,
+.slick-prev, .slick-next,
+#body .slick-dots li button,
+.slick_ps a,
+.window,
+.design .main_naka .event_back_cal .calendar_month caption,
+.main_header .ac_box_kin_wrap .ac_box_kin button:not(.close) .close,
+.ac_ema_display,
+.kinkyu .more a,
+.main_header .emergency_lower ul.kin_link li a,
+#body .ac_box_ema_in .ac_box_ema,
+#menu_button button .menu_text, #menu_button2 button .menu_text,
+.side_sitenavi .mainsite a,
+.inbody .design .sns_box li a,
+.head_in .h1 a span,
+.head_in .h1 a span:hover,
+.kinkyu .more a:hover,
+.main_header .emergency_lower ul.kin_link li a:hover,
+.innew .design .main_naka .new_post li a, .inema .design .main_naka .ema_post li a,
+.map .design .main_naka .map_category .ac_box_in li a,
+.shel_list article .more a,
+#body input[type="submit"]:hover, #body input[type="reset"]:hover, header button[type="button"]:hover, #main_outline button[type="button"]:hover, footer button[type="button"]:hover, header button:hover, #main_outline button:hover, footer button:hover, #body #shelter_search:hover, #body #reset:hover, #body .print input[type="button"]:hover{
+	color: #FFFF00 !important;
+	background-color: #121212;
+}
+.main_naka_h1_img h1,
+.tetsuzuki .data input[type="radio"]:checked + label{
+	color: #222 !important;
+}
+.design .main_naka .calendar_month .eve_cate,
+.inform .design .main_naka .form_error p,
+.design .main_naka .garbage_category_hanrei caption,
+.design .main_naka .garbage_body .garbage_cal td .cal_ora,
+.main_naka_h1 h1,
+.main_naka h2,
+.mol_contents h2,
+.mol_contents h3,
+.main .calendar .today strong,
+.design .main_naka .calendar_month .hdy strong,
+.mol_contents em,
+.inform .design .main_naka .form_error p strong,
+.mol_tableblock caption,
+.inform .error_text{
+	color: #fff !important;
+}
+body,
+.sub_navi,
+.design .main_naka #calendar_month td,
+.mol_tableblock th,
+.main_naka .syosai_sonota,
+.inform .design .main_naka form h2,
+.inform .design .main_naka .form_error ul,
+.inform .design .main_naka .syosai_qa,
+.slide_btn a,
+.foot_id p a,
+.shisei .ilist_lower ul li .ilist_in,
+.g_navi,
+.pick,
+.pick .vis_bg ul li,
+.slick-prev, .slick-next,
+.pick .vis_bg .button,
+#body .slick-dots li button,
+.slick_ps a,
+.head_in .src_box #search_button, #sidr .src_box #search_button_sp,
+.g_navi_in li .g_navi_in_sub > div,
+.foot .sns li a,
+.foot_copy p,
+.foot_id ul,
+.pick .vis_bg .button a,
+.main_naka h5,
+.design .main_naka .toiawase,
+.design .main_naka .calendar_month .cal_sat,
+.design .main_naka .calendar_month .cal_sun,
+.design .main_naka .calendar_month .eve_cate,
+.design .main_naka .kiji_aside.syosai_qa,
+.waku .kiji_sub .kiji_aside h2,
+.waku .kiji_sub .kiji_aside > ul,
+.waku .kiji_sub .kiji_aside.syosai_sonota,
+.mol_contents h5,
+.inkiji .main_naka .kiji_aside,
+.infaq .main_naka .kiji_aside,
+.foot .sns,
+.csv_search,
+.inform .design .main_naka .form_error,
+.faq .design .main_naka .qa_search,
+.main .calendar .sun,
+.main .calendar .sat,
+#body .main_naka .calender_change ul li input[type="button"],
+.design .main_naka .garbage_body .garbage_cal th div,
+.main .topics_lower,
+.main .new_lower,
+.main .j_s_lower,
+.online_strage_a .mypage_h2_wrapper,
+.online_strage_a .mypage_contents,
+.foot_wrap,
+.foot_copy,
+.main .emergency h2, .main .emergency .h2,
+.main h2,
+.main .new .h2,
+.h_emergency_2 .emergency .h2,
+.main .option_lower,
+.main .faq_new_lower,
+.main .popular_lower,
+.rss .rss_lower,
+.rssfide .rssfide_lower,
+.main .h2,
+.rssfide .rssfide_management,
+.pankuzu_tit, .footstep_tit,
+.design .main_naka table,
+.design .main_naka .main_naka_eme .h2,
+.design .main_naka .page_right ul,
+.design .main_naka .cat_aside,
+.design .main_naka .event_period,
+.waku_top,
+.waku .kiji_sub .kiji_aside,
+.inform .design .main_naka form,
+.main .pickup_lower,
+.main .pickup2_lower,
+.h_top_wrap,
+.main_header,
+.main,
+.main_footer,
+.foot_modori,
+.bana,
+.bana .bana_lower,
+.select_search_box,
+.shelter_search_wrap,
+.shelter .open,
+.bana_h2,
+.emergency_shelter,
+#sidr,
+#sidr .side_shien,
+.pankuzu,
+.inbody .design .sns_box,
+.main_naka,
+.congestion_close,
+.congestion_aki,
+.congestion_yayakonztsu,
+.congestion_konzatsu,
+.tetsuzuki .form_bg,
+.tetsuzuki .select_bg,
+.tetsuzuki #container,
+.tetsuzuki .data .otherinfo,
+.tetsuzuki .error,
+.design .main_naka .cs_search,
+.cate_post,
+.tetsuzuki .select_bg .ac_box02_wrap,
+.tetsuzuki .event_list,
+.tetsuzuki .float_set.is-show,
+.tetsuzuki .maybe,
+.tetsuzuki .mochimono .list_icon,
+#main_outline,
+.footstep,
+.tetsuzuki .ac_box02_wrap.tetsuzuki_your,
+.tetsuzuki .ac_box02_wrap.tetsuzuki_your li .answer,
+.readsp,
+.kinkyu,
+.oshirase_in,
+.tetsuzuki .float_set.is-show form,
+#drawer.drawer-nav,
+.side_shien,
+.design .main_naka .event_list li .eve_cate_lsit li .eve_cate,
+.ema_label, .ema_category a,
+.clone-nav,
+.inform .att_tag,
+.inform .att_text,
+.inform .error_text,
+.inform .add_list,
+.inform .design .main_naka form, .inform .design .main_naka .form_wrap,
+.map_category nav,
+.map .design .main_naka .page_left nav,
+.map_cate_wrap .ac_box_in,
+.map .design .main_naka .page_left label,
+.shel_list article,
+.shel_list .tag02,
+.shel_list .tag01,
+.shel_list .tag03,
+.shelter .shel_list_card,
+.tetsuzuki .select_bg .ac_box_wrap,
+.tetsuzuki .tetsuzuki_your,
+.tetsuzuki .tetsuzuki_your li .answer{
+	background: #000 !important;
+}
+.bg_list li a,
+.font_list li a,
+.event_month li.pre a, .event_month li.next a,
+.pickup_lower .pickup_sub h3,
+.main .pickup2_lower .pickup_sub h3,
+.main_naka_h1 h1,
+.design .main_naka .kakuka_link,
+.design .main_naka th,
+.design .main_naka #toiawase,
+.design .main_naka #cat_new h2,
+.design .main_naka .bana h2,
+.design .main_naka .month_lst .month_select,
+.design .main_naka #calendar_month .eve_cate,
+.design .main_naka #calendar_month .hdy,
+p.mol_attachfileblock_title,
+.main_naka .page_head,
+.inbody .design p.sns_btn,
+#src_box,
+.design .main_naka .pickup_post .category_p01 p,
+#csv_search,
+.infaq .design .main_naka #qa_search,
+.infaq .design .main_naka h1,
+.infaq .design .main_naka h2.answer,
+.inform .design .main_naka .form_error p,
+.design .main_naka .garbage_category_hanrei caption,
+.main .ilist_lower ul > li .ilist_in,
+.main .ilist2_lower ul > li .ilist_in,
+.main_naka h2,
+.main_naka h3,
+.mol_contents h3,
+.mol_contents h2,
+#body .main_naka .calender_change ul li input[type="button"].active,
+.design .main_naka .garbage_body .garbage_cal td .cal_icon,
+.lang_btn a,
+.lang_list,
+.g_navi_in > li > a,
+.g_navi_in_sub,
+.main .free_tab .tab_index .tab_change a,
+.main .more li a,
+.main .free_js .btn a,
+#body .online_strage_a .online_strage button[type="button"],
+.online_strage_a .mypage_list li p.online_strage_title,
+.foot_modori a,
+#body input[type="submit"], #body input[type="reset"], #body button[type="button"], #body button,
+.mol_page_contents h2,
+.waku .kiji_sub .kiji_aside.syosai_sonota .for_img a,
+.h_top .h_toplist > li a,
+.design .page_right .blog_list_more a, .waku .kiji_sub .blog_list_more a,
+.faq_h1,
+.select_search_box ul li label,
+.shelter_more a,
+a.rss_icon,a.rss_icon2,
+#menu_button a,
+#sidr ul.sidr_navi02 li a,
+#sidr .close a,
+.mol_tableblock caption,
+.design .main_naka .event_back_cal,
+.ac_display_col a,
+.frm_wrap legend,
+.tetsuzuki_button li a,
+.tetsuzuki .tetsuzuki_back a,
+.design .main_naka .cate_post01 > a,
+.design .main_naka .cate_post02 > a,
+.design .main_naka .category_end li a,
+#main_outline .garbage_back a,
+.tetsuzuki .pager li a,
+.tetsuzuki .data .switch-y,
+.tetsuzuki .data .switch-d,
+.tetsuzuki .data .switch-n,
+.design .main_naka .main_naka_eme .more li a,
+.list_icon,
+.ac_display02, .ac_box02_in .close .ac_box02,
+.event_back_cal_ac_box .ac_display03, .event_back_cal_ac_box.close a,
+.innew .design .main_naka .new_post li a,
+.design .main_naka .cate_post01 > a, .sitemap_body > li > a, .sitemap_body > li .sitemap_body_title, .main_naka .rss_body > li > a,
+.ac_display, .ac_box_in .close .ac_box,
+.h_main .h1 a span,
+.design .main_naka .page_right h2, .waku .kiji_sub h2,
+.main_header .h_main .ac_box_kin_wrap a,
+.main_header .ac_box_kin_wrap .ac_box_kin button:not(.close) .close,
+.splide.slider2 li a,
+.splide .caption,
+.online_strage_a .mypage_list li p.online_strage_title a,
+.design .main_naka .toiawase a,
+.sidr_navi li a,
+.sidr_navi_sub li a,
+.sidr_navi02 li a,
+.sidr_navi03 li a,
+.head_in .mainsite a,
+.shel_list article .more a:hover,
+.h1_wrap .mainsite a,
+.nav_sub_close a {
+	background: #121212 !important;
+}
+.g_nav_open li.ac_box_nav .ac_box_nav_in {
+	background: #131313 !important;
+}
+.nav_inner_ul ul {
+	background: #313131 !important;
+}
+.anchor, .notit{
+	background: none;
+}
+.head_main_top .h1 img,
+.foot_id p img,
+.head_in .h1,
+.tetsuzuki .data input[type="radio"]:checked + label{
+	background: #fff !important;
+}
+.ac_display::before, .ac_display::after,
+.splide_nav button.is-active::after, #main_outline .splide_nav button.is-active::after,
+.splide_nav button.is-active::before, #main_outline .splide_nav button.is-active::before{
+	background-color: #FFFF00 !important;
+}
+.free_search .keyword li,
+.free_search .keyword .btn a{
+	text-shadow: none !important;
+}
+.slide_btn a,
+.foot .sns,
+.foot .sns li a,
+.csv_search,
+.inform .design .main_naka .form_error,
+.design .main_naka .garbage_category_hanrei caption,
+.faq .design .main_naka .qa_search,
+#menu_button button, #menu_button2 button,
+#body input[type="text"], #body input[type="file"], #body textarea, #body input[type="password"], #body input[type="email"], #body input[type="tel"],
+.saigai img, .resistance img, .toilet img,
+.congestion_img img{
+	border: 1px solid #fff !important;
+}
+.sidr_navi li a,
+.design .main_naka .page_left .page_left_float .cate_post01 > a,
+.side_sitenavi .mainsite a,
+.mol_ccbytop a img,
+.head_in .h1 a span,
+.design .main_naka .month_lst li a,
+.mol_attachfileblock .icon,
+.tetsuzuki_button li a .tetsuzuki_btn_img img{
+	border: 1px solid #FFFF00 !important;
+}
+.g_navi_in > li {
+	border-color: #000 !important;
+}
+.g_navi_in > li.active > a,
+.nav_inner_ul ul li a::before {
+	border-color: #FFF !important;
+}
+.g_nav_open .ac_box_nav_sub button[type="button"],
+.g_nav_open li.ac_box_nav .ac_box_nav_in {
+	border-color: #FFFF00 !important;
+}
+.g_nav_open .active .ac_box_nav_sub button::before,
+.g_nav_open .ac_box_nav_sub button:hover::before,
+.g_nav_open .ac_box_nav_sub button:focus-visible::before {
+	border-left-color: #FFFF00 !important;
+}
+.g_nav_open li.ac_box_nav .nav_inner::before {
+	border-bottom-color: #FFFF00 !important;
+}
+.drawer_menu .g_nav_open .sidr_navi .nav_inner .nav_inner_ul a {
+	border: 0 !important;
+}
+strong,
+.tetsuzuki .error,
+.mol_textblock em{
+	color: #f00 !important;
+}
+.src_box #search_button, .src_box #search_button_sp,
+a.rss_icon,a.rss_icon2,
+.splide .caption{
+	text-shadow: #000 1px 1px 0, #000 -1px -1px 0,#000 -1px 1px 0, #000 1px -1px 0,#000 0px 1px 0, #000  0-1px 0,#000 -1px 0 0, #000 1px 0 0 !important;
+}
+a,
+.sidr_navi_sub li a,
+.h_top .h_toplist > li a,
+.g_navi_in > li > a,
+.foot_modori a,
+#body .online_strage_a .online_strage button[type="button"],
+.online_strage_a .mypage_list li p.online_strage_title a,
+.design .main_naka .toiawase a,
+.design .main_naka .main_naka_eme .more li a,
+.h_top .h_toplist .lang_list li a,
+.splide__arrow::before,
+.main .ilist_lower ul > li .ilist_in,
+.main .ilist2_lower ul > li .ilist_in,
+.list_icon,
+.main .image a img,
+.main .bana li a img,
+.main .new ul li.catch_lst a .new_img img,
+.main .ilist_lower a .ilist_left img,
+.main .ilist2_lower a .ilist_left img,
+.splide.slider2 a .ilist_left img,
+.slider1 a img,
+.design .main_naka .category_p02 .cat_img img,
+.design .main_naka .category_end .catch_lst .cat_img img,
+.design .main_naka .bana li img,
+.mol_imageblock a img,
+.mol_attachfileblock_adobe img,
+.innew .design .main_naka .catch_lst .new_img img,
+.inema .design .main_naka .catch_lst .ema_img img,
+.sitemap_body .image_lower a img{
+	border-color: #FFFF00 !important;
+	outline-color:  #FFFF00 !important;
+}
+.g_nav_open .ac_box_nav_sub button[type="button"]:focus-visible {
+	outline-color:  #FFF !important;
+}
+.splide_nav button:not(.is-active)::before, #main_outline .splide_nav button:not(.is-active)::before{
+	border: 6px solid transparent;
+	border-left: 8px solid #FFFF00 !important;
+}
+button,
+th,td,
+#body input[type="submit"], #body input[type="reset"], header button[type="button"], #main_outline button[type="button"], footer button[type="button"], header button, #main_outline button, footer button, #body #shelter_search, #body #reset, #body .print input[type="button"],
+.main_header,
+.src_box .q,
+.foot_wrap,
+.lang_list li,
+.ac_display, #main_outline button[type="button"].ac_display, header button[type="button"].ac_display,
+.main .image img,
+.main .new ul li.catch_lst .new_img img,
+.main .ilist_lower .ilist_left img,
+.main .ilist2_lower .ilist_left img,
+.splide.slider2 .ilist_left img,
+.slider1 img ,
+.mol_imageblock img,
+.waku .kiji_sub .catch img,
+.design .page_right .profile_box .cat_img img,
+.waku .kiji_sub .profile_box .cat_img img,
+.mol_imagefileblock img,
+.inform .design .main_naka form .form_img img,
+.tetsuzuki .data label{
+	border-color: #fff !important;
+	outline-color:  #fff !important;
+}
+.g_navi_in > li.active > a,
+.splide__pagination button.is-active, #main_outline .splide__pagination button.is-active,
+#main_outline .ac_box_map.ac_map_active .ac_box button[type="button"].ac_display,
+.map .design .main_naka .map_category .ac_box_in li.active a,
+#main_outline .j_alphabet button.selected, #main_outline .j_alphabet button:hover,
+.map .design .main_naka input:checked + label,
+.main .free_tab .tab_index .tab_change.is-active a{
+	background: #FFFF !important;
+	color: #000 !important;
+}
+.main .event_month li.pre a::before{
+	border-color: transparent #FFFF00 transparent transparent;
+}
+.main .event_month li.next a::before{
+	border-color: transparent transparent transparent #FFFF00;
+}
+.main .free_tab .tab_index .tab_change a{
+	border-bottom: 1px solid #FFFF00 !important;
+}
+.main .calendar .today,
+.main .calendar .sun.today,
+.main .calendar .sut.today{
+	background: #c9171e !important;
+}
+.design .main_naka .garbage_body .garbage_cal td .cal_ora, .design .main_naka .garbage_body .garbage_cal th .cal_ora{
+	box-shadow: none;
+}
+
+	@media only screen and (max-width: 1024px) {
+		.waku .kiji_sub .kiji_aside.syosai_sonota p a[href^="tel:"]{
+			color: #FFFF00 !important;
+		}
+	}
