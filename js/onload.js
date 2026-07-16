@@ -28,10 +28,12 @@ if (slider2El) {
     autoplay: true,
     interval: 5000,
     pagination: true,
-    perPage: 4,
+    arrows: false,
+    perPage: 3,
     perMove: 1,
     focus: 0,
-    gap:10,
+    gap:'2.25rem',
+    padding: 150,
     drag: true,
     flickMaxPages: 1,
     flickPower    : 1,
@@ -39,8 +41,10 @@ if (slider2El) {
     breakpoints: {
     768: {
       perPage: 2,
+      gap:'1.5rem',
+      padding: 75,
       },
-    480: {
+    500: {
       perPage: 1,
       },
     },

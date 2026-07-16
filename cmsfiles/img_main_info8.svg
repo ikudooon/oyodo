@@ -1,0 +1,19 @@
+<svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_74_149" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="52" height="52">
+<rect width="52" height="52" fill="#D9D9D9"/>
+</mask>
+<g mask="url(#mask0_74_149)">
+<path d="M32.85 39.89C32.85 39.89 32.99 38.42 35.36 35.61C38.33 32.08 40.24 29.48 40.24 25.09C40.24 18.12 34.59 12.47 27.62 12.47C20.65 12.47 15 18.12 15 25.09C15 29.48 16.9 32.08 19.88 35.61C22.25 38.43 22.39 39.89 22.39 39.89H32.85Z" fill="#FFFF5A"/>
+<path d="M29.85 36.89C29.85 36.89 29.99 35.42 32.36 32.61C35.33 29.08 37.24 26.48 37.24 22.09C37.24 15.12 31.59 9.46997 24.62 9.46997C17.65 9.46997 12 15.12 12 22.09C12 26.48 13.9 29.08 16.88 32.61C19.25 35.43 19.39 36.89 19.39 36.89H29.85Z" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.1299 37.4099H31.1099" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.1899 40.3398H31.0399" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.5 43.2698H30.74" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.7998 46.2H30.4398" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M29.0199 48.4299C28.5599 49.3899 26.8199 50.3499 24.5599 50.3499C22.2999 50.3499 20.5599 49.3899 20.0999 48.4299" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.1499 27.3999H29.0899" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.6201 37.4099V27.3999" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M24.6201 2V5.59" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.5 4.27002L18.56 7.21002" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M32.7299 4.27002L30.6699 7.21002" stroke="#654214" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>
