@@ -1,6 +1,16 @@
 @charset "UTF-8";
 @keyframes splide-loading{0%{transform:rotate(0)}to{transform:rotate(1turn)}}.splide__track--draggable{-webkit-touch-callout:none;-webkit-user-select:none;-ms-user-select:none;user-select:none}.splide__track--fade>.splide__list>.splide__slide{margin:0!important;opacity:0;z-index:0}.splide__track--fade>.splide__list>.splide__slide.is-active{opacity:1;z-index:1}.splide--rtl{direction:rtl}.splide__track--ttb>.splide__list{display:block}.splide__container{box-sizing:border-box;position:relative}.splide__list{backface-visibility:hidden;display:-ms-flexbox;display:flex;height:100%;margin:0!important;padding:0!important}.splide.is-initialized:not(.is-active) .splide__list{display:block}.splide__pagination{-ms-flex-align:center;align-items:center;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-ms-flex-pack:center;justify-content:center;margin:0;pointer-events:none}.splide__pagination li{display:inline-block;line-height:1;list-style-type:none;margin:0;pointer-events:auto}.splide:not(.is-overflow) .splide__pagination{display:none}.splide__progress__bar{width:0}.splide{position:relative;visibility:hidden}.splide.is-initialized,.splide.is-rendered{visibility:visible}.splide__slide{backface-visibility:hidden;box-sizing:border-box;-ms-flex-negative:0;flex-shrink:0;list-style-type:none!important;margin:0;position:relative}.splide__slide img{vertical-align:bottom}.splide__spinner{animation:splide-loading 1s linear infinite;border:2px solid #999;border-left-color:transparent;border-radius:50%;bottom:0;contain:strict;display:inline-block;height:20px;left:0;margin:auto;position:absolute;right:0;top:0;width:20px}.splide__sr{clip:rect(0 0 0 0);border:0;height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.splide__toggle.is-active .splide__toggle__play,.splide__toggle__pause{display:none}.splide__toggle.is-active .splide__toggle__pause{display:inline}.splide__track{overflow:hidden;position:relative;z-index:0}
 /** splide共通css **/
+:root{
+	--green1: #2DE693;
+	--green2: #DCF645;
+	--green3: #CBF0DA;
+	--yellow: #FFF56B;
+	--brown: #654214;
+	--beige: #EDE5D3;
+	--bg: #FCFDEB;
+}
+
 .splide_in{
   position: relative;
 }
@@ -72,7 +82,7 @@
 /** ページネーションとボタン **/
 .pagination-box {
 	display: block;
-	position: relative;
+	/* position: absolute; */
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -98,26 +108,28 @@
 #main_outline .splide_nav button{
     display: inline-block;
     text-decoration: none;
-    background: #fff;
-    outline: 1px solid #007bbb;
-    font-size: 85%;
-    padding: 3px 6px 3px 20px;
-    border-radius: 4px;
-    color: #2b3095;
-    min-height: 27px;
+    background: #333;
+    color: #fff;
+    outline: 1px solid #333;
+    /* font-size: 85%; */
+    padding-block: 0.4375em 0.5em;
+    padding-inline: 1.25em 0.375em;
+    line-height: 1;
+    border-radius: 8px;
+    /* min-height: 31px; */
     border: none;
     transition: 0.2s;
     position: relative;
+    font-family: "UD新ゴ R","UD Shin Go Regular";
 }
 .pagination-box .splide_nav button,
 #main_outline .pagination-box .splide_nav button {
 	height: fit-content;
-	margin-top: 8px;
+	margin: 0;
 }
 .splide_nav button:hover,
 #main_outline .splide_nav button:hover{
-    color: #860000;
-    background: #efefef;
+    background: #555;
 }
 .splide_nav button:focus-visible,
 #main_outline .splide_nav button:focus-visible{
@@ -128,30 +140,36 @@
 #main_outline .splide_nav button.is-active::before{
     content: '';
     position: absolute;
-    top: 8px;
-    left: 8px;
-    height: 12px;
-    width: 2px;
-    background-color: #007bbb;
+    /* top: 0.625em; */
+    top: 50%;
+    left: 0.5em;
+    transform: translateY(-50%);
+    height: 0.625em;
+    width: 0.15625em;
+    background-color: #fff;
 }
 .splide_nav button.is-active::after,
 #main_outline .splide_nav button.is-active::after{
     content: '';
     position: absolute;
-    top: 8px;
-    left: 12px;
-    height: 12px;
-    width: 2px;
-    background-color: #007bbb;
+    /* top: 0.625em; */
+    top: 50%;
+    left: 0.8125em;
+    transform: translateY(-50%);
+    height: 0.625em;
+    width: 0.15625em;
+    background-color: #fff;
 }
 .splide_nav button:not(.is-active)::before,
 #main_outline .splide_nav button:not(.is-active)::before{
     content: '';
     position: absolute;
-    top: 8px;
-    left: 8px;
-    border: 6px solid transparent;
-    border-left: 8px solid #007bbb;
+    /* top: 0.625em; */
+    top: 50%;
+    left: 0.5em;
+    transform: translateY(-50%);
+    border: 0.375em solid transparent;
+    border-left: 0.4375em solid #fff;
 }
 /* ページネーション */
 .splide:not(.is-overflow) .splide__pagination{
@@ -162,79 +180,94 @@
     margin: 0;
     justify-content: right;
 }
+.pagination_inner{
+    align-items: center;
+    gap: 0.5625em;
+}
 .pagination-box .splide__pagination {
 	width: auto;
-	padding-right: 1em;
+}
+.pagination-box .splide__pagination{
+    gap: 0.4375em;
 }
 .splide__pagination button,
 #main_outline .splide__pagination button{
     background: #fff;
-    outline: 1px solid #007bbb;
-    border-radius: 4px;
+    outline: 1px solid #333;
+    border-radius: 50%;
     left: 0;
     top: 0;
-    display: inline-block;
-    width: 28px;
-    min-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.625em;
+    min-height: 1.625em;
     padding: 0;
-    margin: 8px 0 0 8px;
-    color: #fff;
+    margin: 0;
+    color: #333;
     position: relative;
-    color: #2b3095;
     transition: 0.2s;
     border:none;
+    line-height: 1;
+    letter-spacing: 0;
+    font-family: "UD新ゴ R","UD Shin Go Regular";
+
 }
 .splide__pagination button:hover,
 #main_outline .splide__pagination button:hover{
-    background: #efefef;
-    color: #860000;   
+    background: #fff;
 }
 .splide__pagination button.is-active,
 #main_outline .splide__pagination button.is-active{
-    background: #007bbb;
-    color: #fff;
-    outline: 1px solid #fff;
+    background: var(--yellow);
 }
 .splide__pagination button:focus-visible,
 #main_outline .splide__pagination button:focus-visible{
-    outline: 2px solid #333;   
+    outline: 2px solid #333;
 }
-    @media only screen and (max-width: 480px) {
-        .splide__arrows .splide__pagination{
-            width: calc(100% + 3.5em);
-            position: relative;
-            left: -3.5em;
-        }
+
+@media screen and (max-width: 768px) {
+    .pagination-box{
+        font-size: 0.875em;
     }
+}
+
+@media only screen and (max-width: 480px) {
+    .splide__arrows .splide__pagination{
+        width: calc(100% + 3.5em);
+        position: relative;
+        left: -3.5em;
+    }
+}
 /* キャプション */
 .splide .caption {
-  background: rgba(0, 123, 187, 0.8);
-  color: #fff;
+  background: #fff;
+  color: #333;
   position: absolute;
-  bottom: 12px;
-  right: 12px;
-  padding: 6px 12px;
+  bottom: 5em;
+  right: 25px;
+  padding: 0.5rem;
   line-height: 1.5;
-  font-size: 85%;
-  text-shadow: #007bbb 1px 1px 0, #007bbb -1px -1px 0,#007bbb -1px 1px 0, #007bbb 1px -1px 0,#007bbb 0px 1px 0, #007bbb 0 -1px 0,#007bbb -1px 0 0, #007bbb 1px 0 0;
+  font-size: 0.875em;
+  border-radius: 10px;
 }
 .splide a:focus-visible .caption{
     width: calc(100% - 4px);
     bottom: 2px;
     right: -2px;
 }
-    @media only screen and (max-width: 480px) {
-        .splide .caption{
-            position: relative;
-            bottom: 0;
-            right: 0;
-            background: #007bbb;
-            display: block;
-        }
+@media only screen and (max-width: 768px) {
+    .splide .caption{
+        font-size: 0.75em;
+        position: static;
+        display: block;
+        width: 100%;
+        border-radius: 0;
     }
+}
 /* 別ウィンドウで開く */
 .splide .window {
   position: absolute;
-  top: 12px;
-  right: 8px;
+  top: 15px;
+  right: 15px;
 }
