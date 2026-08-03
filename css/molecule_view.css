@@ -1,18 +1,32 @@
 @charset "UTF-8";
 /********************** 記事ページのスタイル **********************/
+:root{
+	--green1: #2DE693;
+	--green2: #DCF645;
+	--green3: #CBF0DA;
+	--green4: #E0F2A5;
+	--yellow: #FFF56B;
+	--brown: #654214;
+	--beige: #EDE5D3;
+	--bg: #FCFDEB;
+	--line1: #8e8e8e;
+	--inline18: 1316px;
+	--inline70: 1420px;
+}
+
 .inkiji .main_naka_h1 {
 	margin-bottom: 0;
 }
 .inkiji .main_naka {
-	margin-bottom: 8px;
+	/* margin-bottom: 8px; */
 }
 .waku {
 	margin: 0 auto 24px;
 }
 .waku_top{
 	margin: 0 auto;
-	max-width: 1224px;
-	padding: 0 12px;
+	max-width: var(--inline18);
+	padding: 0 18px;
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -84,21 +98,21 @@
 /*お問い合わせフォーム*/
 .waku .kiji_sub .kiji_aside.syosai_sonota {
 	margin-top: 16px;
-	padding: 12px;
-	border: 1px solid #777;
-	font-size: 85%;
+	padding: 1em;
+	border: 1px solid var(--brown);
+	font-size: 0.875em;
 	text-align: center;
 	word-wrap: break-word;
-	border-radius: 8px;
+	border-radius: 20px;
 }
 .waku .kiji_sub .kiji_aside.syosai_sonota h2 {
 	display: inline-block;
 	padding: 6px 4px 4px;
-	background: #007bbb;
 	border: 0;
-	color: #fff;
 	width: 100%;
-	border-radius: 4px;
+}
+.waku .kiji_sub .kiji_aside.syosai_sonota h2::before{
+	display: none;
 }
 .waku .kiji_sub .kiji_aside.syosai_sonota p {
 	text-align: left;
@@ -109,13 +123,28 @@
 	text-decoration: none;
 }
 .waku .kiji_sub .kiji_aside.syosai_sonota .for_img a {
-	display: block;
-	padding: 8px 5px;
-	text-decoration: none;
-	width: 100%;
-	border-radius: 4px;
+	color: #333;
+    background-color: var(--green1);
+    background-image: url(img/main_link_icon_wh.svg);
+    background-repeat: no-repeat;
+    background-position: right 0.9375em center;
+    background-size: 1.3125em auto;
+    border: 1px solid var(--brown);
+    border-radius: 99px;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    padding-block: 1em;
+    padding-inline: 1em 2.25em;
 	text-align: center;
-	border: 1px solid #007bbb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .2s;
+    box-shadow: 4px 4px 0 0 var(--yellow);
+}
+.waku .kiji_sub .kiji_aside.syosai_sonota .for_img a:hover{
+	background-color: var(--yellow);
+	box-shadow: none;
 }
 	@media only screen and (max-width: 1024px) {
 		.waku .kiji_sub .kiji_aside.syosai_sonota p a[href^="tel:"]{
@@ -126,27 +155,44 @@
 	}
 /*共通スタイル*/
 .waku .kiji_sub .kiji_aside{
-	margin-top: 16px;
-	background: #fff;
-	border: 1px solid #777;
-	border-radius: 8px;
-	overflow: hidden;
+	margin-top: 1.25em;
+	/* background: #fff; */
+	/* border: 1px solid var(--brown); */
+	/* border-radius: 20px; */
+	/* overflow: hidden; */
+	border-top: 1px solid var(--line1);
+	padding-top: 1em;
+}
+.waku .kiji_sub .kiji_aside:last-of-type{
+	border-bottom: 1px solid var(--line1);
+	padding-bottom: 1.25em;
 }
 .waku .kiji_sub .kiji_aside_lower{
-	padding: 0 16px 16px;
+	padding-inline: 0.75em;
+	padding-block: 0.125em 1.25em;
+	background-color: var(--beige);
+	border-radius: 15px;
+	margin-top: 1em;
 }
 .waku .kiji_sub .kiji_aside h2 {
-	background: #007bbb;
 	border: 0;
-	color: #fff;
-	padding: 10px 12px 8px;
 	margin-top: 0;
 	font-size: 100%;
-	border-radius: 7px 7px 0 0;
+    padding-inline: 1.25em 0;
+    padding-block: 0;
+    position: relative;
 }
-.waku .kiji_sub .kiji_aside h2 a{
-	color: #fff;
+.waku .kiji_sub .kiji_aside h2::before{
+	content: "";
+    position: absolute;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: var(--green1);
+    border-radius: 3px;
+    top: 0.35em;
+    left: 0;
 }
+
 .waku .kiji_sub .kiji_aside > ul {
 	padding: 0;
 	margin: 0;
@@ -157,15 +203,14 @@
 }
 .waku .kiji_sub .kiji_aside li::before {
 	display: block;
-	content: '';
-	position: absolute;
-	top: .5em;
-	left: 0;
-	width: 6px;
-	height: 6px;
-	border-right: 1px solid #777;
-	border-bottom: 1px solid #777;
-	transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--green1);
+    border-radius: 50%;
 }
 .waku .kiji_sub .kiji_aside li li {
 	font-size: 85%;
@@ -194,7 +239,7 @@
 }
 /**** コンテンツ評価のスタイル ****/
 .design .main_naka .kiji_aside.syosai_qa {
-	background: #fff;
+	/* background: #fff; */
 }
 .design .main_naka .kiji_aside.syosai_qa li {
 	padding-left: 0;
@@ -256,14 +301,15 @@
 }
 /**** 別ルートのスタイル ****/
 .design .main_naka .route_box {
-	margin-bottom: 24px;
+	margin-block: 1.5em;
 }
 .design .main_naka .route_box h2{
-	background: #fff;
-	border-bottom: 2px solid #ccc;
 	font-size: 100%;
-	padding: 2px;
+	padding-inline: 2px;
 	margin: 0 0 12px;
+	background-color: transparent;
+	border-bottom: 1px solid var(--green1);
+	border-radius: 0;
 }
 .design .main_naka .route_box h2::after{
 	display: none;
@@ -302,15 +348,17 @@
 /**** 記事ページ下メニューのスタイル ****/
 .inkiji .main_naka .kiji_aside,
 .infaq .main_naka .kiji_aside{
-	background: #fff;
-	margin-bottom: 24px;
-	border: 1px solid #777;
-	border-radius: 8px;
-	overflow: hidden;
+    margin-top: 1.25em;
+	border-top: 1px solid var(--line1);
+    padding-top: 1em;
 }
 .inkiji .main_naka .kiji_aside_lower,
 .infaq .main_naka .kiji_aside_lower{
-	padding: 0 16px 16px;
+	padding-block: 0.75em 1.5em;
+    padding-inline: 1.5em;
+    background-color: var(--beige);
+    margin-top: 1em;
+    border-radius: 20px;
 }
 .inkiji .main_naka .kiji_aside_lower a[href^="tel:"]{
 	cursor: default;
@@ -319,14 +367,26 @@
 }
 .inkiji .main_naka .kiji_aside h2,
 .infaq .main_naka .kiji_aside h2{
-	background: #007bbb;
 	border: 0;
-	color: #fff;
-	padding: 10px 12px 8px;
-	margin-top: 0;
-	font-size: 100%;
-	border-radius: 7px 7px 0 0;
+    margin-top: 0;
+    font-size: 1.125em;
+    padding-inline: 1.25em 0;
+    padding-block: 0;
+    position: relative;
+	background-color: transparent;
 }
+.inkiji .main_naka .kiji_aside h2::before,
+.infaq .main_naka .kiji_aside h2::before{
+    content: "";
+    position: absolute;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: var(--green1);
+    border-radius: 3px;
+    top: 0.35em;
+    left: 0;
+}
+
 .inkiji .main_naka .kiji_aside h2::after,
 .infaq .main_naka .kiji_aside h2::after{
 	display: none;
@@ -413,10 +473,16 @@
 	display: flex;
 	align-items: center;
 	background: #fff;
-	border: 1px solid #777;
-	border-radius: 8px;
+	border: 1px solid var(--brown);
+	border-radius: 40px;
 	text-decoration: none;
 	padding: 0 15px 0 0;
+	box-shadow: 4px 4px 0 var(--beige);
+	transition: .2s;
+}
+.inbody .design .sns_box li a:hover{
+	background-color: var(--beige);
+	box-shadow: none;
 }
 .inbody .design .sns_btn img {
 	min-width: 30px;
@@ -460,45 +526,54 @@
 }
 /**** 記事ページ見出しのスタイル ****/
 .mol_contents h2 {
-	font-size: 136%;
-	width: 100%;
-	padding: 2px;
-	margin: 40px 0 0;
-	position: relative;
-	border-bottom: 4px solid #ccc;
-}
-.mol_contents h2::after {
-	position: absolute;
-	bottom: -4px;
-	left: 0;
-	z-index: 2;
-	content: '';
-	width: 30%;
-	height: 4px;
-	background-color: #007bbb;
+	font-size: 1.375em;
+    width: 100%;
+    padding-block: 0.82em;
+    padding-inline: 0.68em;
+    margin: 1em 0 0;
+    position: relative;
+    display: block;
+    background-color: var(--green3);
+    border-radius: 12px;
 }
 .mol_contents h3 {
-	margin: 32px 0 0 8px;
-	padding: 2px 2px 2px 12px;
-	border-left: 4px solid #007bbb;
-	font-size: 120%;
+	margin: 1em 0 0;
+    padding-inline: 1em;
+    padding-block: 0.5em;
+    font-size: 1.125em;
+    background-color: var(--green4);
+    border-radius: 40px;
 }
 .mol_contents h4 {
-	margin: 24px 0 0 16px;
-	padding: 2px;
-	border-bottom: 2px solid #007bbb;
-	font-size: 110%;
+	margin-block: 1em 0;
+    padding-block: 0 5px;
+    padding-inline: 2px;
+    border-bottom: 1px solid var(--green1);
+	margin-left: 6px;
 }
 .mol_contents h5 {
-	margin: 16px 0 0 16px;
-	padding: 4px 8px;
-	background-color: #e8f4f9;
-	border-radius: 8px;
+	margin-block: 1em 0;
+    padding-block: 4px;
+    padding-inline: 2px;
+    border-bottom: 1px solid var(--line1);
+	margin-left: 6px;
 }
 .mol_contents h6 {
-	margin: 16px 0 0 16px;
-	padding: 0 8px 4px;
-	border-bottom: 2px solid #e8f4f9;
+	margin: 1em 0 0;
+	padding-block: 0.25em;
+	padding-left: 1em;
+	position: relative;
+	margin-left: 6px;
+}
+.mol_contents h6::before{
+	content: "";
+	position: absolute;
+	width: 0.5em;
+	height: 0.5em;
+	background-color: var(--green2);
+	border-radius: 2px;
+	top: 0.75em;
+	left: 0;
 }
 /**** 記事ページ_文字の装飾 ****/
 /*em(黒太字)*/
@@ -510,48 +585,49 @@
 /*囲み枠_色*/
 .mol_textblock_color{
 	margin-top: 16px;
-	padding: 0 20px 15px;
-	border: 2px solid #007BBB;
-	border-radius: 8px;
+	padding: 0 1.25em 1.25em;
+	border: 3px solid var(--green1);
+	background-color: #fff;
+	border-radius: 20px;
 }
 /*囲み枠_黒*/
 .mol_textblock_black{
 	margin-top: 16px;
 	padding: 0 20px 15px;
-	border: 2px solid #ccc;
+	background-color: #fff;
+	border: 3px solid var(--beige);
 }
 /**** ページ内目次のスタイル ****/
 .mol_page_contents{
-	border: 1px solid #777;
+	border: 1px solid var(--brown);
 	margin: 24px 0 0;
-	border-radius: 8px;
+	border-radius: 20px;
+	padding: 1.5em;
 	overflow: hidden;
 }
 .mol_page_contents .ac_box a h2{
 	color: #333;
 }
 .mol_page_contents h2{
-	background: #efefef;
+	color: var(--brown);
 	border: 0;
-	font-size: 136%;
+	font-size: 1.375em;
 	margin-top: 0;
-	padding: 10px 12px 8px;
-	border-radius: 8px 8px 0 0;
 }
 .mol_page_contents .ac_box:focus-visible{
 	outline: 2px solid #000;
 }
 .mol_page_contents .page_contents_lower{
-	padding: 8px 16px 16px;
+	/* padding: 8px 16px 16px; */
 }
 .mol_page_contents .ac_box_in{
 	padding-bottom: 16px;
 }
 .mol_page_contents ul li{
-	padding-left: 16px;
-	position: relative;
+	padding-left: 1.5em;
+    background: url(img/main_link_icon.svg) no-repeat left top 0.25em / 1em auto;
 }
-.mol_page_contents ul li::before{
+/* .mol_page_contents ul li::before{
 	content: '';
 	position: absolute;
 	top: 7px;
@@ -561,15 +637,15 @@
 	border-right: 1px solid #777;
 	border-bottom: 1px solid #777;
 	transform: rotate(-45deg);
-}
-	@media only screen and (max-width: 1024px) {
-		.mol_page_contents h2.ac_title {
-			padding-right: max(3.5em, 70px) !important;
-		}
-		#main_outline .mol_page_contents h2 + button[type="button"].ac_display{
-			top: 14px;
-		}
+} */
+@media only screen and (max-width: 1024px) {
+	.mol_page_contents h2.ac_title {
+		padding-right: max(3.5em, 70px) !important;
 	}
+	#main_outline .mol_page_contents h2 + button[type="button"].ac_display{
+		top: 14px;
+	}
+}
 
 /* ページ内目次内リストに下線をつける
 .mol_page_contents ul li a {
@@ -766,15 +842,16 @@ div.mol_contents .mol_tableblock table,
 	outline-offset: -2px;
 }
 .mol_tableblock caption {
-	background-color: #007bbb;
+	background-color: var(--green1);
 	padding: 6px 12px 4px;
-	color: #fff;
+	border: 1px solid var(--line1);
+	border-bottom: none;
 }
 .mol_tableblock th {
 	padding: 6px 8px 4px;
 	background: #eee;
-	border: 1px solid #777;
-	font-size: 85%;
+	border: 1px solid var(--line1);
+	font-size: 0.875em;
 	text-align: left;
 	vertical-align: top;
 }
@@ -783,8 +860,9 @@ div.mol_contents .mol_tableblock table,
 }
 .mol_tableblock td {
 	padding: 5px 8px 4px;
-	border: 1px solid #777;
-	font-size: 85%;
+	border: 1px solid var(--line1);
+	background-color: #fff;
+	font-size: 0.875em;
 	text-align: left;
 	vertical-align: top;
 }
@@ -896,10 +974,11 @@ div.mol_contents .mol_tableblock table,
 /**** 記事ページ添付ファイルブロックのスタイル ****/
 div.mol_contents .mol_attachfileblock {
 	margin-top: 16px;
-	padding: 16px;
-	border: 1px solid #777;
+	padding: 1.25em;
+	border: 1px solid var(--line1);
 	margin-left: 24px;
-	border-radius: 8px;
+	border-radius: 20px;
+	background-color: #fff;
 }
 .mol_attachfileblock p {
 	margin-top: 8px;
@@ -908,7 +987,7 @@ div.mol_contents .mol_attachfileblock {
 	text-indent: 0;
 }
 .mol_attachfileblock ul li {
-	border-bottom: 1px dashed #bbb;
+	border-bottom: 1px dashed var(--line1);
 	margin-top: 16px;
 	margin-left: 0;
 	padding: 0 0 16px 16px;
@@ -937,7 +1016,7 @@ p.mol_attachfileblock_title {
 .mol_attachfileblock_adobe {
 	margin-top: 16px;
 	padding: 16px;
-	border: 1px dashed #bbb;
+	border: 1px dashed var(--line1);
 	font-size: 85%;
 }
 .mol_attachfileblock_adobe dt {
@@ -955,10 +1034,11 @@ p.mol_attachfileblock_title {
 /**** 関連情報のスタイル ****/
 .mol_linkslistblock{
 	margin-top: 16px;
-	padding: 16px;
-	border: 1px solid #777;
+	padding: 1.25em;
+	border: 1px solid var(--line1);
 	margin-left: 24px;
-	border-radius: 8px;
+	border-radius: 20px;
+	background-color: #fff;
 }
 .mol_linkslistblock_title,
 .mol_contents h2.mol_linkslistblock_title{
@@ -996,11 +1076,12 @@ p.mol_attachfileblock_title {
 
 /* クリエイティブ・コモンズ */
 .mol_ccbytop{
-	border: 2px solid #ccc;
+	border: 3px solid var(--beige);
+	background-color: #fff;
 	padding: 12px;
 	font-size: 100%;
 	margin: 16px 0;
-	border-radius: 8px;
+	border-radius: 10px;
 }
 .mol_ccbytop a:first-child{
 	display: inline-block;

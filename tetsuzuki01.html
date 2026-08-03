@@ -28,64 +28,60 @@
 <header class="main_header">
 <p class="skip"><a href="#HONBUN" class="f_v_button">共通メニューなどをスキップして本文へ</a></p>
 <div class="head">
-<div class="h_top_wrap">
-<div class="h_top">
- 
-<ul class="h_toplist">
+<div class="flexArea">
+<div class="head_l">
+	<a href="#">
+	<p class="h1">
+		<img src="design_img/head_logo.png" alt="大淀町　OOYODO TOWN">
+		<span class="link">ホームへ</span>
+	</p></a>
+</div>
+<div class="head_r">
+<ul class="shien shien1">
 <li>
-<div class="bg_color">
-<p class="bg_tit">色の反転</p>
-<ul class="bg_list">
-<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
-<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
+<ul>
+<li><a href="#">やさしい日本語</a></li>
+<li><a href="#" lang="en">Language</a></li>
 </ul>
-</div>
 </li>
-<li>
-<div class="language">
-<div class="ac_box_wrap ac_box_lang">
-<div class="ac_box" id="language">
-<p class="lang_btn ac_title" lang="en">Language</p><button type="button" class="ac_display_lang ac_display">open</button></div>
-<div class="ac_box_in">
-<ul class="lang_list">
-<li><a href="#" lang="en">English</a></li>
-<li><a href="#" lang="zh">中文简体</a></li>
-<li><a href="#" lang="zh-tw">中文繁體</a></li>
-<li><a href="#" lang="ko">한국</a></li>
+	<!-- 文字サイズ -->
+	<li>
+		<div class="font_size">
+		<p class="font_tit">文字サイズ</p>
+		<ul class="font_list">
+		<li><a href="javascript:textSizeReset();">標準</a></li>
+		<li class="font-big"><a href="javascript:textSizeUp();"><strong>拡大</strong></a></li>
+		</ul>
+		</div>
+	</li>
+	<!-- 読み上げ -->
+	<li>
+	<div class="read">
+	<div class="tsutaeru-speech">
+		<div class="tsutaeru-speech-buttons">
+		<button type="button" class="tsutaeru-button tsutaeru-button-speech-start">読み上げ</button>
+		<button type="button" class="tsutaeru-button tsutaeru-button-config tsutaeru-button-speech-config">読み上げ設定</button>
+		</div>
+	</div>
+	</div>
+	</li>
 </ul>
-</div>
-</div>
-</div>
-</li>
-<li><a href="#">サイトマップ</a></li>
-<li><a href="#">お問い合わせ</a></li>
-<li><a href="#">読み上げ</a></li>
-<li><a href="#">ふりがな</a></li>
-<li>
-<div class="font_size">
-<p class="font_tit">文字サイズ</p>
-<ul class="font_list">
-<li><a href="javascript:textSizeReset();">標準</a></li>
-<li><a href="javascript:textSizeUp();"><strong>拡大</strong></a></li>
-</ul>
-</div>
-</li>
+
+<ul class="shien shien2">
+	<li><a href="#">サイトマップ</a></li>
+	<li><a href="#">お問い合わせ</a></li>
+	<!-- ▼▼検索ボックス▼▼ -->
+	<li>
+		<div class="src_box">
+		<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button" type="submit">検索</button></form>
+		<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+		</div>
+	</li>
+	<!-- ▲▲検索ボックス▲▲ -->
 </ul>
 </div>
 </div>
 
-<div class="head_in">
-<p class="h1"><img src="design_img/head_logo.png" alt="サイトタイトル"></p>
-<div class="h_main">
-
-<!-- ▼▼検索ボックス▼▼ -->
-<div class="src_box">
-<form action="https://www.google.com/cse" id="cse-search-box" name="cse-search-box"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button" type="submit">検索</button></form>
-<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=ja"></script>
-</div>
-<!-- ▲▲検索ボックス▲▲ -->
-</div>
-</div>
 <noscript>
 <p class="noscript"><strong>文字サイズ変更機能を利用するにはJavaScript（アクティブスクリプト）を有効にしてください。JavaScript（アクティブスクリプト） を無効のまま文字サイズを変更する場合には，ご利用のブラウザの表示メニューから文字サイズを変更してください。文字サイズ変更以外にも，操作性向上の目的でJavaScript（アクティブスクリプト）を用いた機能を提供しています。可能であればJavaScript（アクティブスクリプト）を有効にしてください。</strong></p>
 </noscript>
@@ -99,152 +95,35 @@
 <p id="menu_button2" class="d_btn"><button class="menu" type="button"><span class="icon_ham"></span><b class="menu_text">閉じる</b></button></p>
 <div class="drawer_menu">
 <div class="side_sitenavi">
-	<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
-	<div class="g_nav_open">
-		<ul class="sidr_navi">
-			<li><a href="#"><b>ホーム</b></a></li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="sp_nav01" type="button"><b>暮らしの情報</b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">暮らしの情報を隠す</button>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
-							<ul>
-								<li><a href="#">暮らしの情報リンク1</a></li>
-								<li><a href="#">暮らしの情報リンク2</a></li>
-								<li><a href="#">暮らしの情報リンク3</a></li>
-								<li><a href="#">暮らしの情報リンク4</a></li>
-								<li><a href="#">暮らしの情報リンク5</a></li>
-								<li><a href="#">暮らしの情報リンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">暮らしの情報を隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="sp_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">観光・文化・産業を隠す</button>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
-							<ul>
-								<li><a href="#">観光・文化・産業リンク1</a></li>
-								<li><a href="#">観光・文化・産業リンク2</a></li>
-								<li><a href="#">観光・文化・産業リンク3</a></li>
-								<li><a href="#">観光・文化・産業リンク4</a></li>
-								<li><a href="#">観光・文化・産業リンク5</a></li>
-								<li><a href="#">観光・文化・産業リンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">観光・文化・産業を隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="sp_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">健康・福祉・教育を隠す</button>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
-							<ul>
-								<li><a href="#">健康・福祉・教育リンク1</a></li>
-								<li><a href="#">健康・福祉・教育リンク2</a></li>
-								<li><a href="#">健康・福祉・教育リンク3</a></li>
-								<li><a href="#">健康・福祉・教育リンク4</a></li>
-								<li><a href="#">健康・福祉・教育リンク5</a></li>
-								<li><a href="#">健康・福祉・教育リンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">健康・福祉・教育を隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="sp_nav04" type="button"><b>まちづくり</b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">まちづくりを隠す</button>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
-							<ul>
-								<li><a href="#">まちづくりリンク1</a></li>
-								<li><a href="#">まちづくりリンク2</a></li>
-								<li><a href="#">まちづくりリンク3</a></li>
-								<li><a href="#">まちづくりリンク4</a></li>
-								<li><a href="#">まちづくりリンク5</a></li>
-								<li><a href="#">まちづくりリンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">まちづくりを隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
+<ul class="sidr_navi">
+	<li><a href="#"><b>ホーム</b></a></li>
+	<li><a href="#"><b>暮らしの情報</b></a></li>
+	<li><a href="#"><b>事業者の方へ</b></a></li>
+	<li><a href="#"><b>町政情報</b></a></li>
+	<li><a href="#"><b>子育て支援</b></a></li>
+</ul>
+</div>
+<div class="side_shienArea">
+<div class="side_shien shien1">
+<ul>
+	<li><a href="#">やさしい日本語</a></li>
+	<li><a href="#" lang="en">Language</a></li>
+</ul>
+<div class="read">
+	<div class="tsutaeru-speech">
+		<div class="tsutaeru-speech-buttons">
+		<button type="button" class="tsutaeru-button tsutaeru-button-speech-start">読み上げ</button>
+		<button type="button" class="tsutaeru-button tsutaeru-button-config tsutaeru-button-speech-config">読み上げ設定</button>
+		</div>
 	</div>
-	<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
-	<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
-	<!--
-	<ul class="sidr_navi">
-		<li><a href="#"><b>ホーム</b></a></li>
-		<li><a href="#"><b>暮らしの情報</b></a></li>
-		<li><a href="#"><b>観光・文化・産業</b></a></li>
-		<li><a href="#"><b>健康・福祉・教育</b></a></li>
-		<li><a href="#"><b>まちづくり</b></a></li>
-	</ul>
-	-->
-	<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
-<ul class="sidr_navi_sub">
-<li><a href="#">サイトマップ</a></li>
-<li><a href="#">お問い合わせ</a></li>
-</ul>
-</div>
-<div class="side_shien">
-<ul class="sidr_navi02">
-<li><a href="#" lang="en">English</a></li>
-<li><a href="#" lang="zh">中文简体</a></li>
-<li><a href="#" lang="zh-tw">中文繁體</a></li>
-<li><a href="#" lang="ko">한국</a></li>
-</ul>
-<ul class="sidr_navi03">
-<li><a href="#">読み上げ</a></li>
-<li><a href="#">ふりがな</a></li>
-</ul>
-<div class="bg_color">
-<p class="bg_tit">色の反転</p>
-<ul class="bg_list">
-<li><a href="javascript:changeCSS('color01.css');">標準</a></li>
-<li><a href="javascript:changeCSS('color02.css');"><strong>反転</strong></a></li>
-</ul>
 </div>
 </div>
+
+<div class="side_shien shien2">
+<ul>
+	<li><a href="#">サイトマップ</a></li>
+	<li><a href="#">お問い合わせ</a></li>
+</ul>
 <!-- ▼▼検索ボックス▼▼ -->
 <div class="src_box">
 <form action="https://www.google.com/cse" id="cse-search-box-sp" name="cse-search-box-sp"><input type="hidden" name="cx" value=""><input type="hidden" name="ie" value="UTF-8"><input type="text" name="q" class="q" title="検索キーワード"><button class="input_line" id="search_button_sp" name="search_button" type="submit">検索</button></form>
@@ -254,142 +133,23 @@
 </div>
 </div>
 </div>
+</div>
+</div>
 <!-- ▲格納メニュー▲ -->
-
 
 <div class="clone_header">
 <div class="inner">
-<p class="clone_id"><img src="design_img/head_logo.png" alt="サイトタイトル"></p>
-<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから削除▼▼▼▼ -->
-<div class="g_nav_open">
-	<!-- ▼▼グローバルメニュー▼▼ -->
-	<nav class="g_navi">
-		<ul class="g_navi_in">
-			<li><a href="#"><b>ホーム</b></a></li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="pc_nav01" type="button"><b>暮らしの情報</b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">暮らしの情報を隠す</button>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>暮らしの情報トップ</b></a></div>
-							<ul>
-								<li><a href="#">暮らしの情報リンク1</a></li>
-								<li><a href="#">暮らしの情報リンク2</a></li>
-								<li><a href="#">暮らしの情報リンク3</a></li>
-								<li><a href="#">暮らしの情報リンク4</a></li>
-								<li><a href="#">暮らしの情報リンク5</a></li>
-								<li><a href="#">暮らしの情報リンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">暮らしの情報を隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="pc_nav02" type="button"><b>観光・文化・<span>産業</span></b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">観光・文化・産業を隠す</buton>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>観光・文化・産業トップ</b></a></div>
-							<ul>
-								<li><a href="#">観光・文化・産業リンク1</a></li>
-								<li><a href="#">観光・文化・産業リンク2</a></li>
-								<li><a href="#">観光・文化・産業リンク3</a></li>
-								<li><a href="#">観光・文化・産業リンク4</a></li>
-								<li><a href="#">観光・文化・産業リンク5</a></li>
-								<li><a href="#">観光・文化・産業リンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">観光・文化・産業を隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="pc_nav03" type="button"><b>健康・福祉・<span>教育</span></b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">健康・福祉・教育を隠す</button>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>健康・福祉・教育トップ</b></a></div>
-							<ul>
-								<li><a href="#">健康・福祉・教育リンク1</a></li>
-								<li><a href="#">健康・福祉・教育リンク2</a></li>
-								<li><a href="#">健康・福祉・教育リンク3</a></li>
-								<li><a href="#">健康・福祉・教育リンク4</a></li>
-								<li><a href="#">健康・福祉・教育リンク5</a></li>
-								<li><a href="#">健康・福祉・教育リンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">健康・福祉・教育を隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-			<li class="ac_box_nav">
-				<div class="ac_box_nav_sub">
-					<button id="pc_nav04" type="button"><b>まちづくり</b></button>
-				</div>
-				<div class="ac_box_nav_in">
-					<div class="nav_inner">
-						<div class="nav_sub_close">
-							<button type="button">まちづくりを隠す</button>
-						</div>
-						<div class="nav_inner_ul">
-							<div class="nav_sub_top"><a href="#"><b>まちづくりトップ</b></a></div>
-							<ul>
-								<li><a href="#">まちづくりリンク1</a></li>
-								<li><a href="#">まちづくりリンク2</a></li>
-								<li><a href="#">まちづくりリンク3</a></li>
-								<li><a href="#">まちづくりリンク4</a></li>
-								<li><a href="#">まちづくりリンク5</a></li>
-								<li><a href="#">まちづくりリンク6</a></li>
-							</ul>
-						</div>
-						<div class="nav_sub_close">
-							<button type="button">まちづくりを隠す</button>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</nav>
-	<!-- ▲▲グローバルメニュー▲▲ -->
-</div>
-<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで削除▲▲▲▲ -->
-<!-- ▼▼▼▼ドロワーメニュー不要の場合ここから可視化▼▼▼▼ -->
+<p class="clone_id"><img src="design_img/head_logo.png" alt="大淀町 OOYODO TOWN"></p>
 <!-- ▼▼グローバルメニュー▼▼ -->
-<!--
 <nav class="g_navi">
 <ul class="g_navi_in">
-<li><a href="#"><b>ホーム</b></a></li>
 <li><a href="#"><b>暮らしの情報</b></a></li>
-<li><a href="#"><b>観光・文化・産業</b></a></li>
-<li><a href="#"><b>健康・福祉・教育</b></a></li>
-<li><a href="#"><b>まちづくり</b></a></li>
+<li><a href="#"><b>事業者の方へ</b></a></li>
+<li><a href="#"><b>町政情報</b></a></li>
+<li><a href="#"><b>子育て支援</b></a></li>
 </ul>
 </nav>
--->
 <!-- ▲▲グローバルメニュー▲▲ -->
-<!-- ▲▲▲▲ドロワーメニュー不要の場合ここまで可視化▲▲▲▲ -->
 </div>
 </div>
 
@@ -444,40 +204,60 @@
 <!-- ▼▼▼▼▼フッタ▼▼▼▼▼ -->
 <footer class="main_footer">
 
-<div class="online_strage_a">
-<!-- ▼▼マイページ機能▼▼ -->
-<aside class="mypage online_strage">
-<div class="mypage_h2_wrapper">
-<h2 class="mypage_title online_strage_title">マイページ</h2>
-<button type="button" id="mypage_new_add">このページをチェックする</button><button type="button" onclick="location.href=''" onkeypress="location.href=''">編集</button>
-</div>
-<div class="online_strage_contents mypage_contents">
-<ul class="online_strage_list mypage_list">
-<li><p class="online_strage_title"><a href="#">観光・文化・産業</a></p></li><li><p class="online_strage_title"><a href="#">暮らしの情報</a></p></li><li><p class="online_strage_title"><a href="#">まちづくり</a></p></li><!--<li>チェックしているページはありません</li>-->
-</ul>
-<div class="online_strage_form mypage_new"></div>
-</div>
-</aside>
-<!-- ▲▲マイページ機能▲▲ -->
-</div>
-
 <div class="foot_modori">
 <p class="modoriin">
-<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>
+<a href="#pagetop" class="f_v_button">
+	<span class="arrow"></span>
+	<span>ページの<br>先頭に戻る</span>
+</a>
 </p>
 </div>
 <div class="foot_wrap">
 <div class="foot">
+<div class="flexArea">
+<div class="foot_id flex-l">
+<div class="foot_logo">
+	<p class="logo"><img src="design_img/foot_logo.png" alt="大淀町役場"></p>
+	<p class="link"><a href="#">地図・フロア案内</a></p>
+</div>
+<div class="address">
+	<p>〒638-8501　奈良県吉野郡大淀町桧垣本2090番地</p>
+	<p>電話：<a href="tel:0747-52-5501" title="電話発信のダイヤログを開く">0747-52-5501</a>（代表）　ファックス：0747-52-4310</p>
+	<p>開庁時間：月曜日から金曜日午前8時30分から午後5時15分まで（祝日・年末年始は閉庁）</p>
+	<p>法人番号：3000020294420</p>
+</div>
 <ul class="foot_link">
-<li><a href="#">このサイトの考え方</a></li><li><a href="#">個人情報の取扱い</a></li><li><a href="#">著作権・リンク等</a></li>
+<li><a href="#">サイトマップ</a></li>
+<li><a href="#">リンクについて</a></li>
+<li><a href="#">著作権・セキュリティ</a></li>
+<li><a href="#">個人情報保護規定</a></li>
+<li><a href="#">リンク集</a></li>
 </ul>
-<div class="foot_id">
-<p class="address"><b>◯◯市役所</b></p>
-<p class="address"><span class="small">〒000-0000　◯◯市◯◯区◯◯◯◯◯◯00番　電話：<a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">0000-00-0000</a>（代表）　ファックス：0000-00-0000</span></p>
-<p class="address">開庁時間　<span class="small">午前◯時◯◯分から午後◯時◯◯分まで（土日祝及び年末年始を除く）</span></p>
+</div>
+<!-- ▼▼人口・世帯数▼▼ -->
+<div class="flex-r">
+<section class="j_s">
+<h2 class="notit">人口・世帯数</h2>
+<div class="j_s_lower">
+<ul>
+<li><span>人口</span><span>15,351人</span></li>
+<li><span>世帯</span><span>5,855世帯</span></li>
+<li><span>男性</span><span>7,576人</span></li>
+<li><span>女性</span><span>7,775人</span></li>
+</ul>
+<p>2014年8月1日現在</p>
+</div>
+<p class="link"><a href="#">行政区別はこちら</a></p>
+</section>
+<!-- ▲▲人口・世帯数▲▲ -->
+<div class="map">
+<img src="cmsfiles/main_foot_map.png" alt="奈良県内における大淀町の位置">
 </div>
 </div>
-<div class="foot_copy"><p class="foot_copyin" lang="en">Copyright (C) ◯◯◯ All rights reserved.</p></div>
+</div>
+<p class="foot_copy" lang="en">Copyright（C）Oyodo town All Rights Reserved.</p>
+</div>
+
 </div>
 </footer>
 <!-- ▲▲▲▲▲フッタ▲▲▲▲▲ -->
