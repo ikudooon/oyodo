@@ -163,7 +163,7 @@ body.inbody.faq{
 	padding: 4px 16px 16px;
 }
 .main_naka .rss_body > li{
-	margin: 24px 0 0;
+	margin: 1.25em 0 0;
 	padding: 0;
 }
 .main_naka .rss_body > li::before{
@@ -444,18 +444,18 @@ body.inbody.faq{
 .main_naka h6 {
 	margin: 1em 0 0;
 	padding-block: 0.25em;
-	padding-left: 1em;
+	padding-left: 1.25em;
 	position: relative;
 }
 .main_naka h6::before{
 	content: "";
-	position: absolute;
-	width: 0.5em;
-	height: 0.5em;
-	background-color: var(--green2);
-	border-radius: 2px;
-	top: 0.75em;
-	left: 0;
+    position: absolute;
+    width: 0.875em;
+    height: 0.875em;
+    background-color: var(--green2);
+    border-radius: 2px;
+    top: 0.5625em;
+    left: 0;
 }
 .design .main_naka .cate_post01 > a{
 	font-size: 1.375em;
@@ -480,20 +480,27 @@ body.inbody.faq{
 	background-color: var(--beige);
 	box-shadow: none;
 }
-.sitemap_body > li > a,
-.sitemap_body > li .sitemap_body_title,
-.main_naka .rss_body > li > a{
-	font-size: 1.375em;
+.sitemap_body > li,
+.main_naka .rss_body > li{
 	border-bottom: 1px solid var(--line1);
-	outline-offset: -2px;
-	border-radius: 0;
-	display: block;
-	padding-bottom: 0.5em;
+	padding-bottom: 1.25em;
 }
 .sitemap_body > li > a,
 .main_naka .rss_body > li > a{
+	font-size: 1.375em;
+	outline-offset: -2px;
+	border-radius: 0;
+	display: inline-block;
 	padding-left: 1.25em;
 	background: url(img/main_link_icon.svg) no-repeat left top 0.5em / 0.75em auto;
+}
+.sitemap_body > li .sitemap_body_title{
+	display: block;
+	font-size: 1.375em;
+}
+.sitemap_body > li > :nth-child(n+2),
+.main_naka .rss_body > li > :nth-child(n+2){
+	margin-left: 1.75em;
 }
 .design .main_naka .cate_post02 > a:focus-visible,
 .design .main_naka .category_end li a:focus-visible{
@@ -575,6 +582,7 @@ body.inbody.faq{
 }
 .design .main_naka td{
 	border: 1px solid var(--line1);
+	background-color: #fff;
 }
 
 /* ページャーのスタイル */
@@ -1516,12 +1524,11 @@ body.inbody.faq{
 .design .main_naka .bana ul {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 1.125rem;
 }
 .design .main_naka .bana li {
 	padding-left: 0;
-	width: 154px;
-	margin-right: 4px;
-	margin-left: 4px;
+	width: 270px;
 }
 .design .main_naka .bana li::before {
 	display: none;
@@ -1531,7 +1538,6 @@ body.inbody.faq{
 }
 .design .main_naka .bana li img{
 	width: 100%;
-	border: 1px solid #777;
 }
 .design .main_naka .bana li .window {
 	margin-top: 5px;
@@ -1830,7 +1836,7 @@ body.inbody.faq{
 	margin: 12px 0 0;
 }
 .design .main_naka .calendar_month tr{
-	margin-bottom: 8px;
+	margin-bottom: 0.5em;
 	display: flex;
 }
 .design .main_naka .calendar_month th {
@@ -2166,13 +2172,13 @@ body.inbody.faq{
 	margin-top: 24px;
 }
 .design .main_naka .garbage_body #calendar_month tr{
-	margin-bottom: -1px;
+	margin-bottom: 0.5em;
 	display: flex;
 	min-height: 110px;
 }
 .design .main_naka .garbage_body #calendar_month th {
 	padding: 8px;
-	border: 1px solid var(--brown);
+	border: 3px solid var(--beige);
 	border-right: none;
 	font-size: 85%;
 	text-align: center;
@@ -2180,7 +2186,7 @@ body.inbody.faq{
 	width: 60px;
 }
 .design .main_naka .garbage_body #calendar_month td {
-	border: 1px solid var(--brown);
+	    border: 3px solid var(--beige);
 	border-radius: 0 20px 20px 0;
 	width: calc(100% - 150px);
 	border-left: 0;
@@ -2409,7 +2415,7 @@ body.inbody.faq{
 /**** サイトマップのスタイル ****/
 .sitemap_body > li{
 	margin: 24px 0 0;
-	padding: 0;
+	padding-inline: 0;
 }
 .sitemap_body > li::before{
 	display: none;
@@ -2860,6 +2866,7 @@ body.inbody.faq{
 	margin-top: 24px;
 	padding: 1.5em;
 	border-radius: 20px;
+	background-color: #fff;
 }
 .inform .design .main_naka form select {
 	font-size: 100%;

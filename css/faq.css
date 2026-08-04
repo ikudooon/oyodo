@@ -167,6 +167,17 @@ p.faq_h1 {
 .qa_main {
 	margin-top: 24px;
 }
+.faq .main_naka li p{
+	margin-top: 1.5em;
+}
+.faq .design .main_naka .cate_post02 > a, .faq .design .main_naka .category_end li a{
+	padding-block: 1em;
+	background-position: left 0.75em top 1.25em;
+}
+.faq .design .main_naka .cate_post02 li, .faq .design .main_naka .category_end li{
+	margin-top: 1.5em;
+}
+
 	@media only screen and (max-width: 1024px) {
 		.faq .main .zone0102{
 			margin-top: 0;
