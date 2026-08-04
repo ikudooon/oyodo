@@ -1,41 +1,85 @@
 @charset "UTF-8";
+:root{
+	--green1: #2DE693;
+	--green2: #DCF645;
+	--green3: #CBF0DA;
+	--green4: #E0F2A5;
+	--yellow: #FFF56B;
+	--brown: #654214;
+	--beige: #EDE5D3;
+	--bg: #FCFDEB;
+	--line1: #8e8e8e;
+	--inline18: 1316px;
+	--inline70: 1420px;
+}
 /*▼▼▼FAQのスタイル▼▼▼*/
+.faq .main{
+	padding-top: 0;
+	margin-top: 60px;
+}
+.faq .main::before{
+	display: none;
+}
+.faq .main_naka_h1{
+	margin-bottom: 0;
+}
+.faq .zone01{
+	padding-top: 30px;
+}
 .faq .main .zone0102{
 	margin-top: -24px;
 }
-.faq_h1 {
-	background: #007bbb;
-	color: #fff;
-	padding: 14px 16px;
-	font-size: 180%;
-	margin-top: 0;
-	border-radius: 8px;
+.faq .zone03{
+	padding-top: 30px;
+	margin-top: 60px;
+}
+p.faq_h1 {
+	margin: 0;
+	display: inline-block;
+	background-color: var(--yellow);
+	border-radius: 40px;
+	padding-block: 0.5em;
+	padding-inline: 1em;
+	text-align: center;
 }
 .infaq .main_naka{
 	margin-bottom: 0;
-	margin: 0 auto 24px;
+	margin: 0 auto;
 }
 .faq .design .main_naka h1 {
-	font-size: 180%;
-	padding: 12px 14px;
-	border-bottom: 3px solid #007bbb;
-	margin: 8px 0;
+	padding-block: 0.25em;
+    font-size: 2.625rem;
+    /* border-bottom: 1px solid var(--green1); */
+    padding-left: 0.75em;
+    position: relative;
+    color: var(--brown);
+}
+.faq .design .main_naka h1::before{
+	content: "";
+    position: absolute;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--green1);
+    border-radius: 5px;
+    top: 0.8em;
+    left: 0;
 }
 .faq .design .main_naka h2.answer{
-	background: #fff;
-	border: 2px solid #007bbb;
-	border-bottom: 5px solid #007bbb;
-	padding: 8px 12px;
-	border-radius: 8px;
+	background-color: var(--green2);
+	border: 1px solid var(--line1);
+	box-shadow: 4px 4px 0 var(--line1);
+	padding: 0.75em 1em;
 }
 .faq .design .main_naka h2.answer:after{
 	display: none;
 }
 .faq .design .main_naka .qa_search {
-	margin-top: 16px;
-	background: #eee;
-	padding: 4px 16px 16px;
-	border-radius: 8px;
+	margin-top: 1em;
+	background-color: #fff;
+	border: 3px solid var(--green1);
+	padding-block: 0.5em 2em;
+	padding-inline: 2em;
+	border-radius: 20px;
 }
 .faq .design .main_naka .qa_search #qa_search_box {
 	margin: 0 0 8px 0;
@@ -98,10 +142,10 @@
 	margin-top: 16px;
 }
 .faq .design .main_naka #formorder {
-	padding-bottom: 4px;
+	padding-bottom: 1em;
 	background-color: transparent;
 	width: auto;
-	border-bottom: 4px solid #eee;
+	border-bottom: 1px solid var(--line1);
 }
 .faq .design .main_naka .qa_narabi {
 	margin-top: 0;
@@ -126,6 +170,10 @@
 	@media only screen and (max-width: 1024px) {
 		.faq .main .zone0102{
 			margin-top: 0;
+		}
+		.faq .design .main_naka .qa_search{
+			padding-bottom: 1.5em;
+			padding-inline: 1.5em;
 		}
 		.faq .design .main_naka .qa_narabi_box{
 			display: block;

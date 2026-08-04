@@ -66,6 +66,7 @@ input {
 	--brown: #654214;
 	--beige: #EDE5D3;
 	--bg: #FCFDEB;
+	--line1: #8e8e8e;
 	--inline18: 1316px;
 	--inline70: 1420px;
 }
@@ -1944,11 +1945,25 @@ header button[type="button"].ac_display{
 
 .main h2 {
 	color: #333;
-	background: var(--green1);
-	padding-block: 0.6em;
-	padding-inline: 1em;
-	font-size: 1.25em;
-	border-radius: 20px 20px 0 0;
+	margin: 0;
+	margin-bottom: 0.5em;
+    padding-inline: 1.25em 0;
+    padding-block: 0;
+    border: none;
+    position: relative;
+    background-color: transparent;
+    border-radius: 0;
+	font-size: 1.375em;
+}
+.main h2::before{
+	content: "";
+    position: absolute;
+    width: 0.75em;
+    height: 0.75em;
+    background-color: var(--green1);
+    border-radius: 5px;
+    top: 0.35em;
+    left: 0;
 }
 .main h2 a {
 	color: #333;
@@ -1960,15 +1975,14 @@ header button[type="button"].ac_display{
 }
 .main li::before {
 	display: block;
-	content: '';
-	position: absolute;
-	top: .5em;
-	left: 0;
-	width: 6px;
-	height: 6px;
-	border-right: 1px solid #777;
-	border-bottom: 1px solid #777;
-	transform: rotate(-45deg);
+    content: '';
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--green1);
+    border-radius: 50%;
 }
 
 	@media only screen and (max-width: 1024px) {
@@ -1991,11 +2005,14 @@ header button[type="button"].ac_display{
 	background: transparent;
 	/* font-size: 1.5em; */
 	padding-inline: 0;
-	padding-bottom: 0.5em;
+	padding-block: 0.5em;
 	text-align: left;
 	margin-bottom: 0;
 	margin: 0;
 	border-bottom: 1px solid #a90000;
+}
+.oshirase h2::before{
+	display: none;
 }
 .oshirase_in {
 	/* background: #fff; */
@@ -2099,6 +2116,12 @@ header button[type="button"].ac_display{
 	background: #a90000;
 	color: #fff;
 	border-radius: 0;
+	margin: 0;
+	padding-block: 0.25em;
+	padding-inline: 0.5em;
+}
+.main .emergency h2::before{
+	display: none;
 }
 .main .emergency_lower {
 	border: 1px solid #a90000;
@@ -2107,6 +2130,9 @@ header button[type="button"].ac_display{
     padding-block: 0.625em 1.25em;
 	/* border-radius: 0 0 20px 20px; */
 	background-color: #fff;
+}
+.main .emergency li::before{
+	background-color: #a90000;
 }
 .main .emergency .more li a{
 	border: 2px solid #a90000;
@@ -2127,6 +2153,12 @@ header button[type="button"].ac_display{
 	background: #b13800;
 	color: #fff;
 	border-radius: 0;
+	margin: 0;
+	padding-block: 0.25em;
+	padding-inline: 0.5em;
+}
+.main .important h2::before{
+	display: none;
 }
 .main .important_lower {
 	border: 1px solid #b13800;
@@ -2136,6 +2168,10 @@ header button[type="button"].ac_display{
 	/* border-radius: 0 0 20px 20px; */
 	background-color: #fff;
 }
+.main .important li::before{
+	background-color: #b13800;
+}
+
 .main .important .more li a{
 	border: 2px solid #b13800;
 	background-color: #fff;
@@ -2148,49 +2184,58 @@ header button[type="button"].ac_display{
 
 /**** 分類のスタイル ****/
 .category {
-	margin-top: 24px;
+	margin-top: 1.5em;
+	padding-block: 1em 0.5em;
+	border-top: 1px solid var(--line1);
 }
 .category2 {
-	margin-top: 24px;
+	margin-top: 1.5em;
+	padding-block: 1em 0.5em;
+	border-top: 1px solid var(--line1);
 }
 .category3 {
-	margin-top: 24px;
+	margin-top: 1.5em;
+	padding-block: 1em 0.5em;
+	border-top: 1px solid var(--line1);
+
 }
 .category4 {
-	margin-top: 24px;
+	margin-top: 1.5em;
+	padding-block: 1em 0.5em;
+	border-top: 1px solid var(--line1);
 }
 .category5 {
-	margin-top: 24px;
+	margin-top: 1.5em;
+	padding-block: 1em 0.5em;
+	border-top: 1px solid var(--line1);
 }
 .main .category_3_ul {
 	font-size: 85%;
 }
 .main .category_lower {
-	border: 2px solid var(--green1);
-	border-top: none;
-	background-color: #fff;
     padding-inline: 1.25em;
     padding-block: 0.625em 1.5em;
-	border-radius: 0 0 20px 20px;
+	border-radius: 20px;
+	background-color: var(--beige);
 }
 /**** 新着情報のスタイル ****/
 .main .new {
-	margin-top: 24px;
+	margin-top: 1.5em;
+	padding-block: 1em 0.5em;
+	border-top: 1px solid var(--line1);
 }
 .main .new_lower {
-	border: 2px solid var(--green1);
-	border-top: none;
-	background-color: #fff;
     padding-inline: 1.25em;
     padding-block: 0.625em 1.5em;
-	border-radius: 0 0 20px 20px;
+	border-radius: 20px;
+	background-color: var(--beige);
 }
 .main .new div.date{
 	margin-left: 0;
 }
 .main .new ul li a{
 	overflow: hidden;
-	width: 100%;
+	/* width: 100%; */
 }
 .main .new ul li.catch_lst{
 	padding: 0;
@@ -2412,4 +2457,9 @@ a.rss_icon2 img{
 		justify-content: center;
 		padding-block: 12px;
 	}
+}
+
+.zone04_in > :last-child{
+	border-bottom: 1px solid var(--line1);
+	padding-bottom: 2em;
 }

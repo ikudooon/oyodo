@@ -1,4 +1,18 @@
 @charset "UTF-8";
+:root{
+	--green1: #2DE693;
+	--green2: #DCF645;
+	--green3: #CBF0DA;
+	--green4: #E0F2A5;
+	--yellow: #FFF56B;
+	--brown: #654214;
+	--beige: #EDE5D3;
+	--bg: #FCFDEB;
+	--line1: #8e8e8e;
+	--inline18: 1316px;
+	--inline70: 1420px;
+}
+
 .map_wrap{
 	display: flex;
 }
@@ -6,23 +20,24 @@
 	padding: 24px 0;
 }
 .map_category nav{
-	padding: 10px;
-	border-radius: 8px;
-	background: #efefef;
+	padding-block: 1.25em 1.5em;
+	padding-inline: 1.5em;
+	border-radius: 20px;
+	border: 1px solid var(--brown);
 }
 .map_category h2{
 	margin-top: 8px;
 }
 .map_cate_wrap .ac_box_in{
-	background: #fff;
+	background: var(--beige);
 	width: calc(400% + 36px);
 	padding: 10px;
-	border: 1px solid #007BBB;
+	border: 1px solid var(--beige);
 	position: relative;
 	z-index: 1;
 	margin: 12px 0 16px;
 	display: none;
-	border-radius: 8px;
+	border-radius: 15px;
 }
 .map_cate_wrap li:nth-child(4n+1) .ac_box_in{
 	margin-right:calc(-400% + 60px);
@@ -48,10 +63,11 @@
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	padding: 8px;
-	background: #fff;
-	border: 1px solid #007BBB;
-	border-radius: 8px;
+	padding-block: 0.75em;
+	padding-inline: 1em;
+	background-color: var(--green1);
+	border: 1px solid var(--brown);
+	border-radius: 10px;
 	text-decoration: none;
 	font-size: 100%;
 	top: auto;
@@ -63,8 +79,7 @@
 }
 #main_outline .ac_box_map:not(.ac_map_active) .ac_box button[type="button"].ac_display:hover,
 #main_outline .ac_box_map:not(.ac_map_active) .ac_box button[type="button"].ac_display:focus-visible {
-	border-color: #860000;
-	color: #860000;
+	background-color: var(--yellow);
 }
 #main_outline .ac_box_map:not(.ac_map_active) .ac_box button[type="button"].ac_display:focus-visible {
 	outline: 2px solid #000;
@@ -75,15 +90,18 @@
 	outline-offset: -4px;
 }
 .map .design .main_naka .map_category .ac_box_in li a{
-	font-size: 85%;
-	border-color: #777;
-	padding: 4px;
-	background-color: #e8f4f9;
+	font-size: 0.875em;
+	border-color: var(--brown);
+	padding: 0.5em;
+	background-color: #fff;
+	transition: .2s;
+}
+.map .design .main_naka .map_category .ac_box_in li a:hover{
+	background-color: var(--yellow);
 }
 #main_outline .ac_box_map.ac_map_active .ac_box button[type="button"].ac_display,
 .map .design .main_naka .map_category .ac_box_in li.active a{
-	background-color: #007bbb;
-	color: #fff;
+	background-color: var(--yellow);
 }
 .map .design .main_naka .map_category li.ac_map_active .ac_box{
 	position: relative;
@@ -97,7 +115,7 @@
   bottom: -12px;
   transform: translateX(-50%);
   border: 8px solid transparent;
-  border-bottom: 12px solid #007bbb;
+  border-bottom: 12px solid var(--beige);
   z-index: 1;
 }
 #main_outline .ac_box_map .ac_box button[type="button"].ac_display::before,
@@ -114,7 +132,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	gap: 12px;
-	margin: 12px 0 0;
+	margin: 1.25em 0 0;
 }
 .map .design .main_naka .map_category li{
 	width: calc(25% - 9px);
@@ -137,28 +155,17 @@
 	width: 360px;
 }
 .map .design .main_naka .page_left nav{
-	padding: 10px;
-	background: #efefef;
-	border-radius: 8px;
+	padding: 1.25em;
+	background: var(--green4);
+	border-radius: 20px;
 }
 .map .design .main_naka .page_left legend{
-	font-size: 136%;
+	font-size: 1.375em;
 	width: 100%;
 	padding: 2px;
 	margin-top: 8px;
-	position: relative;
-	border-bottom: 4px solid #ccc;
+	border-bottom: 2px solid var(--green1);
 	display: block;
-}
-.map .design .main_naka .page_left legend::before{
-	position: absolute;
-	bottom: -4px;
-	left: 0;
-	z-index: 2;
-	content: '';
-	width: 30%;
-	height: 4px;
-	background-color: #007bbb;
 }
 .map .design .main_naka .page_left ul{
 	max-height: 466px;
@@ -167,25 +174,26 @@
 }
 .map .design .main_naka .page_left li{
 	padding: 0;
+	margin-top: 0.75em;
 }
 .map .design .main_naka .page_left li::before{
 	display: none;
 }
 .map .design .main_naka .page_left input {
   position: absolute;
-  top: 0.5em;
+  top: 0.8em;
   margin: 1px 0 0 8px;
 }
 .map .design .main_naka input:checked + label {
-  background-color: #007bbb;
-  color: #fff;
+  background-color: var(--yellow);
 }
 .map .design .main_naka .page_left label {
 	display: block;
 	cursor: pointer;
-	border: 1px solid #777;
-	border-radius: 8px;
-	padding: 4px 16px 4px 28px;
+	border: 1px solid var(--brown);
+	border-radius: 40px;
+	padding-block: 0.5em;
+	padding-inline: 1.75em 1em;
 	height: 100%;
 	background: #fff;
 }
@@ -217,7 +225,7 @@
 }
 .map .design .senturl {
 	width: 100%;
-	margin: 0 auto 24px;
+	margin: 0 auto;
 	text-align: center;
 }
 .map .design .nomapinfo {
