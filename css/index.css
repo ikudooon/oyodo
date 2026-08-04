@@ -1132,11 +1132,11 @@
 	border-bottom: 1px solid var(--brown);
 }
 .zone01 .visArea{
-	padding-inline: 70px;
+	padding-inline: 18px;
 	grid-template-columns: 27.6% 1fr;
 	column-gap: calc((35 / 1500) * 100vw);
 	margin-inline: auto;
-	max-width: 1420px;
+	max-width: var(--inline18);
 }
 .zone01 .visArea > *{
 	align-self: stretch;

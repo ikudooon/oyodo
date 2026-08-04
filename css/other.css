@@ -266,7 +266,7 @@ body.inbody.faq{
 	padding-inline: 0.25em;
 	text-align: center;
 	margin: 0;
-	width: 72px;
+	width: 6em;
 }
 .pankuzu li,
 .footstep li{
@@ -329,8 +329,7 @@ body.inbody.faq{
 .main_naka_h1 h1 {
 	padding-block: 0.25em;
 	font-size: 2.625rem;
-	/* border-bottom: 1px solid var(--green1); */
-	padding-left: 0.75em;
+	padding-left: 1em;
 	position: relative;
 	color: var(--brown);
 }
@@ -529,7 +528,7 @@ body.inbody.faq{
 }
 .main_naka li {
 	position: relative;
-	padding-left: 16px;
+	padding-left: 1em;
 }
 .main_naka li::before {
 	display: block;
@@ -1366,13 +1365,13 @@ body.inbody.faq{
 .design .main_naka .cate_post02 > a,
 .design .main_naka .category_end li a {
 	padding-block: 0.75em 1.5em;
-    padding-inline: 2em 0.75em;
+    padding-inline: 2.5em 0.75em;
 	width: 100%;
 	position: relative;
 	background-color: #fff;
     background-image: url(img/main_link_icon.svg);
     background-repeat: no-repeat;
-    background-position: left 0.5em top 1.25em;
+    background-position: left 0.75em top 1.25em;
     background-size: 1em auto;
 	border: 1px solid var(--brown);
 	display: block;
@@ -2131,7 +2130,6 @@ body.inbody.faq{
 	fill: var(--green1);
 	width: 1.5em;
 }
-
 .design .main_naka .garbage_body .garbage_select {
 	margin-top: 12px;
 }
@@ -3442,7 +3440,7 @@ form#frm_main.search_form{
     align-items: center;
 	justify-content: center;
     padding-block: 1.125rem;
-    padding-inline: 3rem 1.5rem;
+    padding-inline: 3rem 2rem;
     text-align: center;
     text-decoration: none;
     width: fit-content;
@@ -3450,7 +3448,6 @@ form#frm_main.search_form{
     transition: .2s;
     box-shadow: 4px 4px 0 0 var(--yellow);
 	position: relative;
-	min-width: 262px;
 }
 #main_outline .garbage_back a::before{
 	content: "";
@@ -3494,7 +3491,6 @@ form#frm_main.search_form{
 	}
 	#main_outline .garbage_back a{
 		width: 100%;
-		min-width: none;
 	}
 }
 /**** 窓口の混雑状況 ****/

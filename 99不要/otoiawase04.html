@@ -11,16 +11,17 @@
 <meta property="og:url" content="http://www.xxx.jp/xxx.html">
 <meta property="og:description" content="●●●●">
 <meta property="og:site_name" content="サイトタイトル">
-<title>エラー | サイトタイトル</title>
+<title>【○○部】へのお問い合わせ | サイトタイトル</title>
 <link rel="stylesheet" type="text/css" href="css/common.css" media="screen,print">
 <link rel="stylesheet" type="text/css" href="css/other.css" media="screen,print">
 <link id="changecss" rel="stylesheet" type="text/css" href="css/color01.css" media="screen,print">
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 <link rel="icon" href="design_img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="design_img/apple-touch-icon.png">
+<script src="//typesquare.com/3/tsst/script/ja/typesquare.js?605d31d533504ec59b705699ac1e02d5"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 </head>
-<body id="body" class="inbody tetsuzuki" onload="getCookie();">
+<body id="body" class="inbody inform" onload="getCookie();">
 <p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
 <div class="all">
 <div class="design">
@@ -178,20 +179,66 @@
 <div id="main_outline">
 
 <div class="main_naka_h1">
-<h1>エラー</h1>
+<h1>【○○部】へのお問い合わせ</h1>
 </div>
 
 <div class="main_naka">
-
-<div class="error">
-<h2>入力内容をご確認のうえ、修正願います</h2>
-<p>検索条件が入力されていません。</p>
+<!--ここから編集可能領域-->
+<ul>
+<li>セールス・勧誘や、趣旨不明な問い合わせに対しては、回答しておりません。</li>
+<li>取得した個人情報は、お問い合わせに対する回答、またはご意見に対する適切な対応を行うために利用し、それ以外の目的では利用しません（詳しくは「<a href="#">個人情報の取り扱い</a>」をご覧ください）。</li>
+<li>電子メールで回答をご希望の方は、メールアドレスもご記入ください。ただし、内容によっては、電子メール以外の方法で回答させていただく場合があります。</li>
+<li>お問い合わせの内容によっては、回答にお時間をいただく場合があります。あらかじめご了承ください。</li>
+</ul>
+<!--ここまで編集可能領域-->
+<p id="FORM" class="anchor">ここからお問い合わせのフォームです</p>
+<form action="#">
+<!-- ▼▼▼▼▼入力エラー▼▼▼▼▼ -->
+<div class="form_error">
+<p><b>入力内容をご確認のうえ、修正願います</b></p>
 </div>
-
-<div class="tetsuzuki_back">
-<p><a href="#">戻る</a></p>
-</div>
-
+<!-- ▲▲▲▲▲入力エラー▲▲▲▲▲ -->
+<ul>
+<li><fieldset><legend><span class="li">回答方法</span><strong class="att_tag">必須</strong><span class="form_text">選択内容によって必須となる入力項目があります</span><span class="error_text" role="alert">回答方法を選択して下さい。</span></legend>
+<p class="radio_p"><input type="radio" name="dentatsu" value="0" id="dentatsu0"><label for="dentatsu0">メール</label></p><p class="radio_p"><input type="radio" name="dentatsu" value="1" id="dentatsu1"><label for="dentatsu1">電話</label></p><p class="radio_p"><input type="radio" name="dentatsu" value="2" id="dentatsu2"><label for="dentatsu2">ファックス</label></p><p class="radio_p"><input type="radio" name="dentatsu" value="3" id="dentatsu3"><label for="dentatsu3">回答不要</label></p>
+</fieldset></li>
+<li><label for="name">名前<strong class="att_tag">必須</strong><span class="error_text" role="alert">名前を入力して下さい。</span></label>
+<p><input name="name" type="text" class="input px500" id="name" value="" size="70" autocomplete="name"></p>
+</li>
+<li><label for="txtAddress">住所<strong class="att_text">郵送での回答を希望される場合に必須になります</strong><span class="error_text" role="alert">住所を入力して下さい。</span></label>
+<p><input name="txtAddress" type="text" class="input px500" id="txtAddress" value="" size="70" autocomplete="address-line1"></p>
+</li>
+<li><label for="txtTel">電話番号<strong class="att_text">電話での回答を希望される場合に必須になります</strong><span class="error_text" role="alert">電話番号を入力して下さい。</span></label>
+<p><input name="txtTel" type="tel" class="input px500" id="txtTel" value="" size="70" autocomplete="tel"></p>
+</li>
+<li><label for="txtFax">ファックス番号<strong class="att_text">ファックスでの回答を希望される場合に必須になります</strong><span class="error_text" role="alert">ファックス番号を入力して下さい。</span></label>
+<p><input name="txtFax" type="text" class="input px500" id="txtFax" value="" size="70"></p>
+</li>
+<li><label for="txtMail">メールアドレス<strong class="att_text">メールでの回答を希望される場合に必須になります</strong><span class="error_text" role="alert">メールアドレスを入力して下さい。</span></label>
+<p><input name="txtMail" type="email" class="input px500" id="txtMail" value="" size="70" autocomplete="email"></p>
+</li>
+<li><label for="txtPasswd">パスワード<strong class="att_text">0文字以上、255文字以下、メールでの回答を希望される場合のみ入力が必須になる項目です</strong><span class="error_text" role="alert">パスワードを入力して下さい。</span></label>
+<p><input name="txtPasswd" type="password" class="input px500" id="txtPasswd" value="" size="70" autocomplete="new-password"></p>
+</li>
+<li><label for="txtPasswdConfirm">パスワード確認<strong class="att_text">メールでの回答を希望される場合のみ入力が必須になる項目です</strong><span class="error_text" role="alert">パスワードを入力して下さい。</span></label>
+<p><input name="txtPasswdConfirm" type="password" class="input px500" id="txtPasswdConfirm" value="" size="70" autocomplete="new-password"></p>
+</li>
+<li><label for="txtTitle">件名<strong class="att_tag">必須</strong><span class="error_text" role="alert">件名を入力して下さい。</span></label>
+<p><input name="txtTitle" type="text" class="input px500" id="txtTitle" value="" size="70"></p>
+</li>
+<li><label for="txtNaiyou">内容<strong class="att_tag">必須</strong><span class="error_text" role="alert">内容を入力して下さい。</span></label>
+<p><textarea name="txtNaiyou" cols="70" rows="10" class="input px500" id="txtNaiyou"></textarea></p>
+</li>
+<li><fieldset><legend><span class="li">お問い合わせ種別</span><strong class="att_tag">必須</strong><span class="error_text" role="alert">お問い合わせ種別を選択して下さい。</span></legend>
+<p class="radio_p"><input type="radio" name="radFormKbn1" value="0" id="radFormKbn10"><label for="radFormKbn10">質問</label></p><p class="radio_p"><input type="radio" name="radFormKbn1" value="1" id="radFormKbn11"><label for="radFormKbn11">クレーム</label></p><p class="radio_p"><input type="radio" name="radFormKbn1" value="2" id="radFormKbn12"><label for="radFormKbn12">ごみ</label></p><p class="radio_p"><input type="radio" name="radFormKbn1" value="3" id="radFormKbn13"><label for="radFormKbn13">選挙</label></p>
+</fieldset></li>
+<li><fieldset><legend><span class="li">投稿内容を匿名化・再編集の上、よくある質問Q&amp;Aなどで再利用させていただく場合がありますが、よろしいですか？</span><strong class="att_tag">必須</strong><span class="error_text" role="alert">選択して下さい。</span></legend>
+<p class="radio_p"><input type="radio" name="radKoukaiAgree" value="0" id="radKoukaiAgree1"><label for="radKoukaiAgree1">同意する</label></p><p class="radio_p"><input type="radio" name="radKoukaiAgree" value="1" id="radKoukaiAgree02"><label for="radKoukaiAgree02">同意しない</label></p>
+</fieldset></li>
+</ul>
+<p>書き込みが終わりましたら、下の確認ボタンを押してください。</p>
+<div class="input_btn"><button type="submit" class="input">確認</button></div>
+</form>
 </div>
 </div>
 </main>

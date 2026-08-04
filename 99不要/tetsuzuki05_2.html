@@ -11,16 +11,17 @@
 <meta property="og:url" content="http://www.xxx.jp/xxx.html">
 <meta property="og:description" content="●●●●">
 <meta property="og:site_name" content="サイトタイトル">
-<title>お問い合わせ (認証画面) | サイトタイトル</title>
+<title>手続き一覧検索結果 | サイトタイトル</title>
 <link rel="stylesheet" type="text/css" href="css/common.css" media="screen,print">
 <link rel="stylesheet" type="text/css" href="css/other.css" media="screen,print">
 <link id="changecss" rel="stylesheet" type="text/css" href="css/color01.css" media="screen,print">
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 <link rel="icon" href="design_img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="design_img/apple-touch-icon.png">
+<script src="//typesquare.com/3/tsst/script/ja/typesquare.js?605d31d533504ec59b705699ac1e02d5"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 </head>
-<body id="body" class="inbody inform" onload="getCookie();">
+<body id="body" class="inbody tetsuzuki" onload="getCookie();">
 <p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
 <div class="all">
 <div class="design">
@@ -178,28 +179,145 @@
 <div id="main_outline">
 
 <div class="main_naka_h1">
-<h1>お問い合わせ (認証画面)</h1>
+<h1>手続き一覧検索結果</h1>
 </div>
 
 <div class="main_naka">
-<!--ここから編集可能領域 -->
+<nav class="tetsuzuki_back">
 <ul>
-<li>回答内容はお問い合わせ時に設定した認証ID（メールアドレス）とパスワードを入力した方のみが閲覧できます。</li>
+	<li><a href="#">手続き検索TOPに戻る</a></li>
+	<li><a href="#">検索画面へ戻る</a></li>
 </ul>
-<!-- ここまで編集可能領域-->
-<p id="FORM" class="anchor">ここからお問い合わせのフォームです</p>
-<form action="#">
-<ul>
-<li><label for="txtKoukaiId">認証ID（メールアドレス）</label>
-<p><input name="txtKoukaiId" type="email" class="input px500" id="txtKoukaiId" value="" size="70" autocomplete="email"></p>
-</li>
-<li><label for="txtPasswd">パスワード</label>
-<p><input name="txtPasswd" type="password" class="input px500" id="txtPasswd" value="" size="70" autocomplete="current-password"></p>
-</li>
-</ul>
-<div class="input_btn"><button type="submit" class="input">送信</button></div>
-</form>
+</nav>
+
+<h2>選択した出来事：健康</h2>
+<p>該当する手続き<strong>全8件</strong>を一覧で表示しています。</p>
+
+<div class="tetsuzuki_page_search">
+  <p>ページ内検索でページ内の単語が検索できます。</p>
+  <div class="float_set">
+  <form onsubmit="fncHighlight('13'); return false;">
+    <input type="text" id="word" title="ページ内検索キーワード" onkeypress="fncHighlight(event.keyCode);">
+    <button type="submit">ページ内テキスト検索</button><button type="reset" name="reset" id="reset">リセット</button><button type="button" onclick="location.reload(true);" onkeypress="location.reload(true);">ページリセット</button><button type="button" onclick="fncPrev();" onkeypress="fncPrev();">前へ</button><button type="button" id="next" onclick="fncNext();" onkeypress="fncNext();">次へ</button>
+    <p>
+      <span id="all_no"></span>
+      <span id="now_no"></span>
+    </p>
+  </form>
+  </div>
 </div>
+
+<table class="tetsuzuki_ichiran">
+<caption>手続き一覧</caption>
+<thead>
+    <tr>
+        <th>手続き名</th>
+        <th>備考</th>
+    </tr>
+</thead>
+
+<tbody>
+    <tr>
+        <td>
+			<a href="#">国民健康保険加入手続き</a>
+			<ul class="pager">
+				<li>
+					<a href="#">国保・年金</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+			<a href="#">国民健康保険脱退手続き</a>
+			<ul class="pager">
+				<li>
+					<a href="#">国保・年金</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+			<a href="#">国民健康保険被保険者証の住所変更</a>
+			<ul class="pager">
+				<li>
+					<a href="#">国保・年金</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+			<a href="#">国民健康保険被保険者証の返還</a>
+			<ul class="pager">
+				<li>
+					<a href="#">国保・年金</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+			<a href="#">国民健康保険葬祭費の請求</a>
+			<ul class="pager">
+				<li>
+					<a href="#">国保・年金</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+			<a href="#">国民健康保険出産育児一時金の給付</a>
+			<ul class="pager">
+				<li>
+					<a href="#">国保・年金</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+			<a href="#">国民健康保険被保険者証の氏名変更</a>
+			<ul class="pager">
+				<li>
+					<a href="#">国保・年金</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+			<a href="#">妊婦・産婦・乳児健康診査受診票の交換</a>
+			<ul class="pager">
+				<li>
+					<a href="#">子ども・子ども福祉</a>
+				</li>
+			</ul>
+		</td>
+        <td></td>
+    </tr>
+</tbody>
+</table>
+
+
+
+<div class="tetsuzuki_back">
+<p><a href="#">手続き検索TOPに戻る</a></p>
+<p><a href="#">検索画面へ戻る</a></p>
+<p><a href="#">条件選択へ戻る</a></p>
+</div>
+</div>
+
+
 </div>
 </main>
 <!-- ▲▲▲▲▲メイン▲▲▲▲▲ -->
@@ -268,5 +386,6 @@
 <script src="js/toolbox.js"></script>
 <script src="js/common.js"></script>
 <script src="js/color.js"></script>
+<script src="js/word_search.js"></script>
 </body>
 </html>

@@ -11,16 +11,18 @@
 <meta property="og:url" content="http://www.xxx.jp/xxx.html">
 <meta property="og:description" content="●●●●">
 <meta property="og:site_name" content="サイトタイトル">
-<title>【○○部】へのお問い合わせ | サイトタイトル</title>
+<title>該当手続き一覧 | サイトタイトル</title>
 <link rel="stylesheet" type="text/css" href="css/common.css" media="screen,print">
 <link rel="stylesheet" type="text/css" href="css/other.css" media="screen,print">
 <link id="changecss" rel="stylesheet" type="text/css" href="css/color01.css" media="screen,print">
+<link rel="stylesheet" type="text/css" href="css/molecule_view.css" media="screen,print">
 <link rel="stylesheet" type="text/css" href="css/print.css" media="print">
 <link rel="icon" href="design_img/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="design_img/apple-touch-icon.png">
+<script src="//typesquare.com/3/tsst/script/ja/typesquare.js?605d31d533504ec59b705699ac1e02d5"></script>
 <script src="js/jquery-3.6.0.min.js"></script>
 </head>
-<body id="body" class="inbody inform" onload="getCookie();">
+<body id="body" class="inbody tetsuzuki" onload="getCookie();">
 <p id="pagetop" class="anchor focus_visible">ページの先頭です</p>
 <div class="all">
 <div class="design">
@@ -178,66 +180,234 @@
 <div id="main_outline">
 
 <div class="main_naka_h1">
-<h1>【○○部】へのお問い合わせ</h1>
+<h1>該当手続き一覧</h1>
 </div>
 
 <div class="main_naka">
-<!--ここから編集可能領域-->
-<ul>
-<li>セールス・勧誘や、趣旨不明な問い合わせに対しては、回答しておりません。</li>
-<li>取得した個人情報は、お問い合わせに対する回答、またはご意見に対する適切な対応を行うために利用し、それ以外の目的では利用しません（詳しくは「<a href="#">個人情報の取り扱い</a>」をご覧ください）。</li>
-<li>電子メールで回答をご希望の方は、メールアドレスもご記入ください。ただし、内容によっては、電子メール以外の方法で回答させていただく場合があります。</li>
-<li>お問い合わせの内容によっては、回答にお時間をいただく場合があります。あらかじめご了承ください。</li>
-</ul>
-<!--ここまで編集可能領域-->
-<p id="FORM" class="anchor">ここからお問い合わせのフォームです</p>
-<form action="#">
-<!-- ▼▼▼▼▼入力エラー▼▼▼▼▼ -->
-<div class="form_error">
-<p><b>入力内容をご確認のうえ、修正願います</b></p>
+<div class="print">
+<button onclick="window.print();return false;" onkeypress="window.print();return false;">
+このページを印刷する
+</button>
 </div>
-<!-- ▲▲▲▲▲入力エラー▲▲▲▲▲ -->
+<nav class="tetsuzuki_back">
 <ul>
-<li><fieldset><legend><span class="li">回答方法</span><strong class="att_tag">必須</strong><span class="form_text">選択内容によって必須となる入力項目があります</span><span class="error_text" role="alert">回答方法を選択して下さい。</span></legend>
-<p class="radio_p"><input type="radio" name="dentatsu" value="0" id="dentatsu0"><label for="dentatsu0">メール</label></p><p class="radio_p"><input type="radio" name="dentatsu" value="1" id="dentatsu1"><label for="dentatsu1">電話</label></p><p class="radio_p"><input type="radio" name="dentatsu" value="2" id="dentatsu2"><label for="dentatsu2">ファックス</label></p><p class="radio_p"><input type="radio" name="dentatsu" value="3" id="dentatsu3"><label for="dentatsu3">回答不要</label></p>
-</fieldset></li>
-<li><label for="name">名前<strong class="att_tag">必須</strong><span class="error_text" role="alert">名前を入力して下さい。</span></label>
-<p><input name="name" type="text" class="input px500" id="name" value="" size="70" autocomplete="name"></p>
-</li>
-<li><label for="txtAddress">住所<strong class="att_text">郵送での回答を希望される場合に必須になります</strong><span class="error_text" role="alert">住所を入力して下さい。</span></label>
-<p><input name="txtAddress" type="text" class="input px500" id="txtAddress" value="" size="70" autocomplete="address-line1"></p>
-</li>
-<li><label for="txtTel">電話番号<strong class="att_text">電話での回答を希望される場合に必須になります</strong><span class="error_text" role="alert">電話番号を入力して下さい。</span></label>
-<p><input name="txtTel" type="tel" class="input px500" id="txtTel" value="" size="70" autocomplete="tel"></p>
-</li>
-<li><label for="txtFax">ファックス番号<strong class="att_text">ファックスでの回答を希望される場合に必須になります</strong><span class="error_text" role="alert">ファックス番号を入力して下さい。</span></label>
-<p><input name="txtFax" type="text" class="input px500" id="txtFax" value="" size="70"></p>
-</li>
-<li><label for="txtMail">メールアドレス<strong class="att_text">メールでの回答を希望される場合に必須になります</strong><span class="error_text" role="alert">メールアドレスを入力して下さい。</span></label>
-<p><input name="txtMail" type="email" class="input px500" id="txtMail" value="" size="70" autocomplete="email"></p>
-</li>
-<li><label for="txtPasswd">パスワード<strong class="att_text">0文字以上、255文字以下、メールでの回答を希望される場合のみ入力が必須になる項目です</strong><span class="error_text" role="alert">パスワードを入力して下さい。</span></label>
-<p><input name="txtPasswd" type="password" class="input px500" id="txtPasswd" value="" size="70" autocomplete="new-password"></p>
-</li>
-<li><label for="txtPasswdConfirm">パスワード確認<strong class="att_text">メールでの回答を希望される場合のみ入力が必須になる項目です</strong><span class="error_text" role="alert">パスワードを入力して下さい。</span></label>
-<p><input name="txtPasswdConfirm" type="password" class="input px500" id="txtPasswdConfirm" value="" size="70" autocomplete="new-password"></p>
-</li>
-<li><label for="txtTitle">件名<strong class="att_tag">必須</strong><span class="error_text" role="alert">件名を入力して下さい。</span></label>
-<p><input name="txtTitle" type="text" class="input px500" id="txtTitle" value="" size="70"></p>
-</li>
-<li><label for="txtNaiyou">内容<strong class="att_tag">必須</strong><span class="error_text" role="alert">内容を入力して下さい。</span></label>
-<p><textarea name="txtNaiyou" cols="70" rows="10" class="input px500" id="txtNaiyou"></textarea></p>
-</li>
-<li><fieldset><legend><span class="li">お問い合わせ種別</span><strong class="att_tag">必須</strong><span class="error_text" role="alert">お問い合わせ種別を選択して下さい。</span></legend>
-<p class="radio_p"><input type="radio" name="radFormKbn1" value="0" id="radFormKbn10"><label for="radFormKbn10">質問</label></p><p class="radio_p"><input type="radio" name="radFormKbn1" value="1" id="radFormKbn11"><label for="radFormKbn11">クレーム</label></p><p class="radio_p"><input type="radio" name="radFormKbn1" value="2" id="radFormKbn12"><label for="radFormKbn12">ごみ</label></p><p class="radio_p"><input type="radio" name="radFormKbn1" value="3" id="radFormKbn13"><label for="radFormKbn13">選挙</label></p>
-</fieldset></li>
-<li><fieldset><legend><span class="li">投稿内容を匿名化・再編集の上、よくある質問Q&amp;Aなどで再利用させていただく場合がありますが、よろしいですか？</span><strong class="att_tag">必須</strong><span class="error_text" role="alert">選択して下さい。</span></legend>
-<p class="radio_p"><input type="radio" name="radKoukaiAgree" value="0" id="radKoukaiAgree1"><label for="radKoukaiAgree1">同意する</label></p><p class="radio_p"><input type="radio" name="radKoukaiAgree" value="1" id="radKoukaiAgree02"><label for="radKoukaiAgree02">同意しない</label></p>
-</fieldset></li>
+	<li><a href="#">手続き検索TOPに戻る</a></li>
+	<li><a href="#">検索画面へ戻る</a></li>
+	<li><a href="#">条件選択へ戻る</a></li>
 </ul>
-<p>書き込みが終わりましたら、下の確認ボタンを押してください。</p>
-<div class="input_btn"><button type="submit" class="input">確認</button></div>
-</form>
+</nav>
+</div>
+<div class="waku">
+<div class="waku_top">
+<!-- ▼▼ページ内目次▼▼ -->
+<section class="mol_page_contents">
+<div class="ac_box_wrap ac_box01">
+<div class="ac_box" id="page_contents_period"><h2 class="ac_title">ページ内目次</h2><button type="button" class="ac_display_01 ac_display">表示</button></div>
+<div class="ac_box_in">
+<div class="page_contents_lower">
+		<ul>
+            <li><a href="#link_s1" class="f_v_button">市民課での手続き</a>
+                <ul>
+                    <li><a href="#link_t1" class="f_v_button">必要な手続き1：初期チェックが設定されている条件を持つ手続き</a></li>
+                </ul>
+            </li>
+            <li><a href="#link_s2" class="f_v_button">国保年金課での手続き</a>
+                <ul>
+                    <li><a href="#link_t2" class="f_v_button">必要な手続き2：国民年金保険料の学生納付特例制度申請</a></li>
+                    <li><a href="#link_t3" class="f_v_button">必要な手続き3：無条件フラグが設定されている条件を持つ手続き</a></li>
+                </ul>
+            </li>
+            <li><a href="#link_s3" class="f_v_button">その他窓口での手続き</a>
+                <ul>
+                    <li><a href="#link_t4" class="f_v_button">必要な手続き4：2件中1件が無条件フラグの手続き</a></li>
+                </ul>
+            </li>
+            <li><a href="#link_mo" class="f_v_button">持ち物一覧</a></li>
+            <li><a href="#link_your-answer" class="f_v_button">あなたの回答</a></li>
+        </ul>
+</div>
+</div>
+</div>
+</section>
+<!-- ▲▲ページ内目次▲▲ -->
+
+<div class="mol_contents">
+
+<h2 id="link_s1" class="focus_visible">市民課での手続き</h2>
+<h3 id="link_t1" class="focus_visible">必要な手続き1：初期チェックが設定されている条件を持つ手続き</h3>
+<h4>あなたの状況：初期チェックが設定されている条件<span class="maybe">必要かもしれない手続き</span></h4>
+<div class="mol_tableblock">
+<table class="per100">
+    <tbody>
+        <tr>
+            <th>担当窓口</th>
+            <td>市民課<br></td>
+        </tr>
+        <tr>
+            <th>問い合わせ先</th>
+            <td><p><a href="tel:000-000-0000" title="電話発信のダイヤログを開く">000-000-0000</a></p><p><a href="#">市民課のお問い合わせフォーム</a></p></td>
+        </tr>
+        <tr>
+            <th>持ち物</th>
+            <td>必要な持ち物はありません。</td>
+        </tr>
+        <tr>
+            <th>補足</th>
+            <td>初期チェックは、条件選択画面にて最初からチェックをつけておける設定です。</td>
+        </tr>
+        <tr>
+            <th>オンライン手続き</th>
+            <td><p><a href="#">オンライン手続きへ</a></p></td>
+        </tr>
+        <tr>
+            <th>リンク</th>
+            <td><p><a href="#">手続き詳細ページへ</a></p></td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="lnk_top">
+    <p>[<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>]</p>
+</div>
+
+<h2 id="link_s2" class="focus_visible">国保年金課での手続き</h2>
+<h3 id="link_t2" class="focus_visible">必要な手続き2：国民年金保険料の学生納付特例制度申請</h3>
+<h4>あなたの状況：就学中の方が成人された場合</h4>
+<div class="mol_tableblock">
+<table class="per100">
+    <tbody>
+        <tr>
+            <th>担当窓口</th>
+            <td>国保年金課<br></td>
+        </tr>
+        <tr>
+            <th>問い合わせ先</th>
+            <td><p><a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">555-555-5555（国保年金課）</a></p><p><a href="#">国保年金課のお問い合わせフォーム</a></p></td>
+        </tr>
+        <tr>
+            <th>持ち物</th>
+            <td>
+                <ul>
+                    <li>基礎年金番号通知書のコピー</li>
+                    <li>年金手帳のコピー</li>
+                    <li>在学証明書</li>
+                </ul>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="lnk_top">
+    <p>[<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>]</p>
+</div>
+
+<h3 id="link_t3" class="focus_visible">必要な手続き3：無条件フラグが設定されている条件を持つ手続き</h3>
+<div class="mol_tableblock">
+<table class="per100">
+    <tbody>
+        <tr>
+            <th>担当窓口</th>
+            <td>国保年金課<br></td>
+        </tr>
+        <tr>
+            <th>問い合わせ先</th>
+            <td><p><a href="tel:0000-00-0000" title="電話発信のダイヤログを開く">555-555-5555</a></p><p><a href="#">国保年金課のお問い合わせフォーム</a></p></td>
+        </tr>
+        <tr>
+            <th>持ち物</th>
+            <td>必要な持ち物はありません。</td>
+        </tr>
+        <tr>
+            <th>備考</th>
+            <td>テストデータです。<br>無条件フラグが設定されている条件は、条件文（あなたの状況）の入力が任意になります。</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="lnk_top">
+    <p>[<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>]</p>
+</div>
+
+<h2 id="link_s3" class="focus_visible">その他窓口での手続き</h2>
+<h3 id="link_t4" class="focus_visible">必要な手続き4：2件中1件が無条件フラグの手続き</h3>
+<h4>あなたの状況：無条件フラグあり</h4>
+<div class="mol_tableblock">
+<table class="per100">
+    <tbody>
+        <tr>
+            <th>担当窓口</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>問い合わせ先</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>持ち物</th>
+            <td>必要な持ち物はありません。</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="lnk_top">
+    <p>[<a href="#pagetop" class="f_v_button">ページの先頭へ戻る</a>]</p>
+</div>
+
+<div class="mochimono">
+<h2 id="link_mo" class="focus_visible">持ち物一覧</h2>
+<ul>
+    <li><b>基礎年金番号通知書のコピー</b><ul>
+            <li><span class="list_icon">手続き2：就学中の方が成人された場合</span></li>
+        </ul>
+    </li>
+    <li><b>年金手帳のコピー</b><ul>
+            <li><span class="list_icon">手続き2：就学中の方が成人された場合</span></li>
+        </ul>
+    </li>
+    <li><b>在学証明書</b><ul>
+            <li><span class="list_icon">手続き2：就学中の方が成人された場合</span></li>
+        </ul>
+    </li>
+</ul>
+</div>
+
+<div class="tetsuzuki_your focus_visible" id="link_your-answer">
+
+<div class="ac_box_wrap ac_box02">
+<div class="ac_box" id="event01_period"><h2 class="ac_title">あなたの回答</h2><button type="button" class="ac_display_02 ac_display">表示</button></div>
+<div class="ac_box_in">
+
+		<h3>戸籍・住民登録</h3>
+		<ol>
+			<li><span class="question">マイナンバーカードまたは住民基本台帳カードをお持ちで氏名や住所等が変わる方がいますか</span><span class="answer">あてはまる</span></li>
+			<li><span class="question">離婚届を提出しますか</span><span class="answer">あてはまる</span></li>
+		</ol>
+		<h3>国保・年金</h3>
+		<ol>
+			<li><span class="question">国民健康保険に加入している方が氏名を変更しますか</span><span class="answer">わからない</span></li>
+			<li><span class="question">国民年金の資格に変更がありますか（第3号の資格を喪失する）</span><span class="answer">あてはまらない</span></li>
+		</ol>
+
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+<div class="design">
+<div class="main_naka">
+<div class="tetsuzuki_back">
+<p><a href="#">手続き検索TOPに戻る</a></p>
+<p><a href="#">検索画面へ戻る</a></p>
+<p><a href="#">条件選択へ戻る</a></p>
+</div>
+</div>
+</div>
+
+
+</div>
 </div>
 </div>
 </main>

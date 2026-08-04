@@ -345,9 +345,9 @@ liguid.cssは削除する
 }
 .head{
 	padding-block: 0.9375em;
-	max-width: 1420px;
+	max-width: var(--inline18);
 	margin-inline: auto;
-	padding-inline: 70px;
+	padding-inline: 18px;
 }
 .head .flexArea{
 	justify-content: space-between;
@@ -627,9 +627,9 @@ header .language button[type="button"].ac_display{
 	letter-spacing: 0.12em;
 	position: relative;
 	z-index: 1;
-	max-width: 1420px;
+	max-width: var(--inline18);
 	margin-inline: auto;
-	padding-inline: 61px;
+	padding-inline: 18px;
 }
 .g_navi_in {
 	width: 100%;
@@ -698,8 +698,8 @@ header .language button[type="button"].ac_display{
 }
 .clone_header.is-show .inner{
 	padding-block: 10px;
-	padding-inline: 70px;
-	max-width: 1420px;
+	padding-inline: 18px;
+	max-width: var(--inline18);
 	display: flex;
 	align-items: center;
 	margin: 0 auto;
@@ -2214,13 +2214,14 @@ header button[type="button"].ac_display{
 	border: none;
 	outline: 1px solid var(--line2);
 	z-index: 100;
-	padding-block: 0.33em 0.35em;
-	padding-inline: 1.5em 0.33em;
+	padding-block: 0.65em 0.65em;
+	padding-inline: 1.5em 0.5em;
 	border-radius: 5px;
 	color: #333;
 	font-size: 0.75em;
 	letter-spacing: 0.05em;
 	transition: .2s;
+	line-height: 1;
 }
 .ac_display:hover,
 #main_outline button[type="button"].ac_display:hover,
@@ -2241,7 +2242,7 @@ header button[type="button"].ac_display:focus-visible{
 	background: var(--line1);
 	position: absolute;
 	left: 0.45em;
-	top: 1em;
+	top: 1.0625em;
 	height: 2px;
 	width: 0.75em;
 	z-index: 1;
@@ -2319,7 +2320,7 @@ header button[type="button"].ac_display:focus-visible{
 @media only screen and (max-width: 1024px) {
 	button[type="button"].ac_display_01,
 	#main_outline button[type="button"].ac_display_01{
-		display: inline-block;
+		display: block;
 		top: 50%;
 		transform: translateY(-50%);
 	}

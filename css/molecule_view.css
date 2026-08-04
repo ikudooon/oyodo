@@ -201,7 +201,7 @@
 }
 .waku .kiji_sub .kiji_aside li {
 	position: relative;
-	padding-left: 16px;
+	padding-left: 1em;
 }
 .waku .kiji_sub .kiji_aside li::before {
 	display: block;
