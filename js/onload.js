@@ -63,7 +63,7 @@ if (slider2El) {
 const slider3El = document.querySelector('.slider3');
 if (slider3El) {
   const splide3 = new Splide(slider3El, {
-    type: 'loop',
+    type: 'fade',
     autoplay: false,
     interval: 5000,
     pagination: true, // ページ番号を表示する
@@ -87,10 +87,19 @@ if (slider4El) {
     interval: 5000,
     pagination: true, // ページ番号を表示する
     arrows: false,
-    perPage: 3,
+    perPage: 2,
     perMove: 1,
     focus: 0,
-    gap:'2.25rem',
+    gap:'1.875rem',
+    padding: 350,
+    breakpoints: {
+    1024: {
+      padding: 150,
+      },
+    500: {
+      perPage: 1,
+      },
+    },
   });
   splide4.on('pagination:mounted', function (data) {
     data.list.classList.add('splide__pagination--custom');
