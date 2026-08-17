@@ -12,6 +12,17 @@
 	--line1: #8e8e8e;
 	--inline18: 1316px;
 	--inline70: 1420px;
+
+	--child-bg: #FFFBF0;
+	--child-pink1:#FFAA8B;
+	--child-pink2: #FFDAB9;
+	--child-pink3: #FFE8E1;
+	--child-linen:#FAF0E6;
+	--child-yw: #FFEE7F;
+	--child-bl: #A0DAE0;
+	--child-gr: #BFECBD;
+	--child-pl: #E4C6EC;
+	--child-line1: #8D8D8D;
 }
 body.inbody {
 }
@@ -4058,3 +4069,108 @@ form#frm_main.search_form{
 	}
 }
 
+/* 大淀町子育て支援サイト */
+#main_outline.cat_child{
+	background-color: var(--child-bg);
+	padding-top: 50px;
+}
+.cat_child .child_first-view_Area{
+	max-width: var(--inline18);
+	padding-inline: 18px;
+	margin-inline: auto;
+}
+.cat_child .child_first-view_Area .gridArea{
+	grid-template-columns: 22% 1fr;
+    column-gap: calc((30 / 1500) * 100vw);
+}
+.cat_child .child_first-view_Area .gridArea .grid-l{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1.875em;
+}
+.cat_child .main_naka_h1{
+	max-width: auto;
+	margin: 0;
+	padding: 0;
+}
+.cat_child .main_naka_h1 h1{
+	padding: 0;
+	font-size: 1em;
+	padding: 0;
+}
+.cat_child .main_naka_h1 h1::before{
+	display: none;
+}
+.cat_child .child_first-view_Area .infoBox{
+	background-color: #fff;
+	border-radius: 20px;
+	padding-block: 1.5em;
+	padding-inline: 1.5em;
+	width: 100%;
+	height: 100%;
+}
+.cat_child .child_first-view_Area .infoBox .dateArea{
+	width: 100%;
+	height: 5.375em;
+	background-color: #fff;
+	padding: 3px;
+	border: 1px solid var(--child-pink1);
+	border-radius: 15px;
+}
+.cat_child .child_first-view_Area .infoBox .dateArea_in{
+	background-color: var(--child-pink3);
+	border-radius: 12px;
+	padding-block: 1.25em;
+	padding-inline: 0.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+.cat_child .child_first-view_Area .infoBox .dateArea p{
+	margin: 0;
+	font-size: 1.5em;
+	font-weight: 600;
+	color: #555;
+	letter-spacing: 0;
+}
+.cat_child .child_first-view_Area .infoBox .dateArea p .num{
+	font-size: 1.75em;
+}
+
+.cat_child .child_first-view_Area .infoBox .info-menu h2{
+	font-size: 1.125em;
+	padding-bottom: 0.67em;
+	margin-bottom: 0.83em;
+	background-image: radial-gradient(circle, var(--child-pink1) 1px, transparent 1px);
+	background-position: left bottom;
+	background-repeat: repeat-x;
+	background-size: 4px 2px;
+	letter-spacing: 0.05em;
+}
+
+.cat_child .child_first-view_Area .infoBox .info-menu .ilist_lower ul{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.625em 0.5em;
+}
+.cat_child .child_first-view_Area .infoBox .info-menu .ilist_lower ul li{
+	margin: 0;
+}
+.cat_child .child_first-view_Area .infoBox .info-menu .ilist_lower ul a{
+	text-decoration: none;
+	border-radius: 99px;
+	border: 1px solid var(--child-line1);
+	background-color: var(--child-linen);
+	text-align: center;
+	display: block;
+	width: 100%;
+	padding-block: 0.625em;
+}
+.cat_child .child_first-view_Area .infoBox .info-menu .ilist_left{
+	display: none;
+}
+.cat_child .child_first-view_Area .infoBox .info-menu .ilist_lower p{
+	margin: 0;
+}

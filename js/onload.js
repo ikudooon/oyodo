@@ -58,6 +58,50 @@ if (slider2El) {
   });
   splide2.mount();
  }
+
+// スライドショー3_子育て支援サイトメインビジュアル
+const slider3El = document.querySelector('.slider3');
+if (slider3El) {
+  const splide3 = new Splide(slider3El, {
+    type: 'loop',
+    autoplay: false,
+    interval: 5000,
+    pagination: true, // ページ番号を表示する
+    arrows: false,
+  });
+  splide3.on('pagination:mounted', function (data) {
+    data.list.classList.add('splide__pagination--custom');
+    data.items.forEach(function (item, index) {
+      item.button.textContent = String(index + 1);
+    });
+  });
+  splide3.mount();
+}
+
+// スライドショー4_子育て支援サイトフォトギャラリー
+const slider4El = document.querySelector('.slider4');
+if (slider4El) {
+  const splide4 = new Splide(slider4El, {
+    type: 'loop',
+    autoplay: true,
+    interval: 5000,
+    pagination: true, // ページ番号を表示する
+    arrows: false,
+    perPage: 3,
+    perMove: 1,
+    focus: 0,
+    gap:'2.25rem',
+  });
+  splide4.on('pagination:mounted', function (data) {
+    data.list.classList.add('splide__pagination--custom');
+    data.items.forEach(function (item, index) {
+      item.button.textContent = String(index + 1);
+    });
+  });
+  splide4.mount();
+}
+
+
 });
 
 //タブ切り替え
