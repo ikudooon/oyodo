@@ -151,6 +151,7 @@ a:hover > strong {
 a:active > strong {
 	color: #333;
 }
+
 .block-link {
   display: inline-block;
 }
@@ -269,7 +270,7 @@ h1,h2,h3,h4,h5,h6,strong,th,em,b{
   margin: 0;
 }
 :focus-visible{
-	outline: 2px solid #000;
+	outline: 2px solid #075BB7;
 	outline-offset: 2px;
 }
 .focus_visible:focus-visible{
@@ -298,7 +299,7 @@ textarea:focus-visible {
 .user-tabbing input[type="text"]:focus-visible,
 .user-tabbing input[type="tel"]:focus-visible,
 .user-tabbing textarea:focus-visible {
-  outline: 2px solid #000;
+  outline: 2px solid #075BB7;
 }
 .date {
 	font-size: 85%;
@@ -2001,6 +2002,9 @@ body.drawer-open{
 	margin: 0 auto;
 	padding-inline: 18px;
 }
+.foot a:focus-visible{
+	outline-color: #fff;
+}
 .foot .flexArea{
 	gap: 40px 1.875em;
 	align-items: flex-start;
@@ -2100,6 +2104,9 @@ body.drawer-open{
 	font-size: 0.875em;
 	padding-left: 1.71428571em;
 	background: url(img/main_link_icon.svg) no-repeat left top 0.25em / 1.14285714em auto;
+}
+.foot .j_s .link a:focus-visible{
+	outline-color: #075BB7;
 }
 
 @media only screen and (max-width: 1024px) {

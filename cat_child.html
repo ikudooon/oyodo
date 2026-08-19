@@ -32,11 +32,12 @@
 <div class="head">
 <div class="flexArea">
 <div class="head_l">
-	<a href="#">
 	<p class="h1">
+		<a href="#">
 		<img src="design_img/head_logo.png" alt="大淀町　OOYODO TOWN">
 		<span class="link">ホームへ</span>
-	</p></a>
+		</a>
+	</p>
 </div>
 <div class="head_r">
 <ul class="shien shien1">
@@ -182,13 +183,18 @@
 <div class="child_first-view_Area">
 <div class="gridArea">
 <div class="main_naka_h1 grid_item1">
-<h1><img src="design_img/cat_child_h1_img.png" alt="大淀町子育て支援サイト"></h1>
+<h1>
+	<picture>
+		<source srcset="design_img/cat_child_h1_img_sp.png" media="(max-width: 1024px)">
+		<img src="design_img/cat_child_h1_img.png" alt="大淀町子育て支援サイト">
+	</picture>
+</h1>
 </div>
 
 <div class="infoBox grid_item2">
 <div class="dateArea">
 <div class="dateArea_in">
-	<p><span class="num">7</span>月<span class="num">29</span>日 水曜日</p>
+	<p><span class="num" id="month"></span>月<span class="num" id="day"></span>日 <span id="weekday"></span></p>
 </div>
 </div>
 
@@ -253,33 +259,53 @@
 <li class="splide__slide">
 	<a href="#" target="_blank">
 		<img src="cmsfiles/cat_child_vis01.jpg" alt="">
-		<span class="window">別ウィンドウで開く</span>
 		<div class="caption_area">
-		<span class="subtitle"><img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町"></span>
-		<span class="caption">ああああああああ</span>
-		</div>
-	</a>
-</li>
-<li class="splide__slide">
-	<a href="#">
-		<img src="cmsfiles/cat_child_vis01.jpg" alt="">
-		<div class="caption_area">
-		<span class="subtitle"><img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町"></span>
+		<span class="subtitle">
+			<picture>
+				<source srcset="cmsfiles/cat_child_vis_caption_sp.png" media="(max-width: 768px)">
+				<img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町">
+			</picture>
+		</span>
 		<span class="caption">キャプションが入りますキャプションが入ります。</span>
 		</div>
 	</a>
 </li>
 <li class="splide__slide">
-	<img src="cmsfiles/cat_child_vis01.jpg" alt="">
+	<a href="#">
+		<img src="cmsfiles/cat_child_vis02.jpg" alt="">
+		<span class="window">別ウィンドウで開く</span>
+		<div class="caption_area">
+		<span class="subtitle">
+			<picture>
+				<source srcset="cmsfiles/cat_child_vis_caption_sp.png" media="(max-width: 768px)">
+				<img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町">
+			</picture>
+		</span>
+		<span class="caption">大淀町子育て支援拠点施設・未来樹</span>
+		</div>
+	</a>
+</li>
+<li class="splide__slide">
+	<img src="cmsfiles/cat_child_vis03.jpg" alt="">
 	<div class="caption_area">
-		<span class="subtitle"><img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町"></span>
-		<span class="caption">いいいいいいいいいいい</span>
+		<span class="subtitle">
+			<picture>
+				<source srcset="cmsfiles/cat_child_vis_caption_sp.png" media="(max-width: 768px)">
+				<img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町">
+			</picture>
+		</span>
+		<span class="caption">テストテストテストテストテストテスト</span>
 		</div>
 </li>
 <li class="splide__slide">
-	<img src="cmsfiles/cat_child_vis01.jpg" alt="">
+	<img src="cmsfiles/cat_child_vis04.jpg" alt="">
 	<div class="caption_area">
-		<span class="subtitle"><img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町"></span>
+		<span class="subtitle">
+			<picture>
+				<source srcset="cmsfiles/cat_child_vis_caption_sp.png" media="(max-width: 768px)">
+				<img src="cmsfiles/cat_child_vis_caption.png" alt="ちょうどいい暮らし、大淀町">
+			</picture>
+		</span>
 	<span class="caption">キャプションが入りますキャプションが入ります。</span>
 		</div>
 </li>

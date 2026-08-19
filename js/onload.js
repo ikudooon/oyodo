@@ -57,14 +57,15 @@ if (slider2El) {
     });
   });
   splide2.mount();
- }
+}
 
 // スライドショー3_子育て支援サイトメインビジュアル
 const slider3El = document.querySelector('.slider3');
 if (slider3El) {
   const splide3 = new Splide(slider3El, {
     type: 'fade',
-    autoplay: false,
+    rewind: true,
+    autoplay: true,
     interval: 5000,
     pagination: true, // ページ番号を表示する
     arrows: false,
@@ -84,6 +85,7 @@ if (slider4El) {
   const splide4 = new Splide(slider4El, {
     type: 'loop',
     autoplay: true,
+    drag: true,
     interval: 5000,
     pagination: true, // ページ番号を表示する
     arrows: false,
@@ -96,8 +98,12 @@ if (slider4El) {
     1024: {
       padding: 150,
       },
+    768: {
+      gap:'1.25rem',
+      },
     500: {
       perPage: 1,
+      padding: 80,
       },
     },
   });
@@ -130,4 +136,16 @@ $(function () {
       $('.tab_panel').eq(index).show();
     });
   });
+});
+
+//子育て支援サイト_今日の日付
+/* --------------------------------------------------- */
+document.addEventListener('DOMContentLoaded', function () {
+  const today = new Date();
+
+  document.getElementById('month').textContent = today.getMonth() + 1;
+  document.getElementById('day').textContent = today.getDate();
+
+  const weekdays = ['日曜日', '月曜日', '火曜日', '水曜日', '木曜日', '金曜日', '土曜日'];
+  document.getElementById('weekday').textContent = weekdays[today.getDay()];
 });

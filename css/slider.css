@@ -133,8 +133,8 @@
 }
 .splide_nav button:focus-visible,
 #main_outline .splide_nav button:focus-visible{
-	border: 1px solid #007bbb;
-    outline: 2px solid #333;
+	border: 1px solid #555;
+    outline: 2px solid #075BB7
 }
 .splide_nav button.is-active::before,
 #main_outline .splide_nav button.is-active::before{
@@ -223,7 +223,8 @@
 }
 .splide__pagination button:focus-visible,
 #main_outline .splide__pagination button:focus-visible{
-    outline: 2px solid #333;
+    border: 1px solid #555;
+	outline: 2px solid #075BB7;
 }
 
 @media screen and (max-width: 768px) {
