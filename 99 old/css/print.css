@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.design .noscript,
+.slick_nav{
+	display: none !important;
+}
+.all{
+	margin: 0 !important;
+	width: 1080px !important;
+}
+*{
+	text-shadow: none !important;
+}
+.main_naka{
+	padding-bottom: 24px;
+	margin-bottom: 0;
+}
+
+/* 追従メニュー */
+.clone-nav{
+	display: none;
+}
+
+/* スライドショー　ビジュアルエリア */
+.slider1 .splide__track {
+    overflow: hidden !important;
+    transform: none !important;
+}
+.slider1 .splide__list {
+    transform: none !important;
+}
+.slider1 .splide__slide {
+    display: none !important;
+}
+.slider1 .splide__slide.is-active {
+	display: block !important;
+	transform: scale(0.995) translate(0.2%, 0) !important;
+}
+
+/* スライドショー2（画像リスト） */
+.slider2 .splide__track {
+    overflow: hidden !important;
+    transform: none !important;
+}
+.slider2 .splide__list {
+    transform: none !important;
+}
+.slider2 .splide__slide {
+    display: none !important;
+}
+.slider2 .splide__slide.is-visible {
+	display: block !important;
+	width: calc(25% - 7.5px)!important;
+}
+
+/* 分類 */
+.design .main_naka .page_left .page_left_float{
+	display: block !important;
+	overflow: hidden !important;
+}
+.design .main_naka .page_left .page_left_float .cate_post01{
+	float: left !important;
+}
+
+
+/*Firefox対応 印刷時の文字2重表示対策*/
+h1,h2,h3,h4,h5,h6,strong,th,em{
+	font-family: arial, "ヒラギノ角ゴ Pro W6", "Hiragino Kaku Gothic Pro";
+}
+b{
+	font-weight: normal;
+}
