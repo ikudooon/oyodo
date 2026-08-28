@@ -121,30 +121,31 @@ a {
 }
 a:link {
 	text-decoration: underline;
-	color: #2b3095;
+	color: #333;
 }
 a:visited {
 	text-decoration: underline;
-	color: #791e78;
+	color: #333;
 }
 a:hover {
-	color: #9f0000;
+	color: #333;
+	text-decoration: none;
 }
 a:active {
-	color: #9f0000;
+	color: #333;
 }
 a:link > strong{
-	color: #2b3095;
+	color: #333;
 }
 a:visited > strong {
 	text-decoration: underline;
-	color: #791e78;
+	color: #333;
 }
 a:hover > strong {
-	color: #9f0000;
+	color: #333;
 }
 a:active > strong {
-	color: #9f0000;
+	color: #333;
 }
 .block-link {
   display: inline-block;
@@ -1069,7 +1070,7 @@ header .nav_sub_close button[type="button"]:hover,
 #drawer.drawer-nav .drawer_in{
 	max-width: 880px;
 	margin-inline: auto;
-	padding-inline: 2em;
+	padding-inline: 32px;
 }
 .drawer-nav .anchor{
 	padding: 0;
@@ -1177,7 +1178,7 @@ body.drawer-open{
 	border-radius: 20px;
 }
 .side_shien{
-	padding: 1.5em;
+	padding: 24px;
 }
 .side_shien ul{
 	display: flex;
@@ -1214,7 +1215,7 @@ body.drawer-open{
 	border-radius: 0;
 	padding-block: 0;
 	padding-inline: 1.75em 0;
-	background: url(img/main_link_icon.svg) no-repeat left center / 1rem auto;
+	background: url(img/main_link_icon.svg) no-repeat left center / 1em auto;
 	text-decoration: underline;
 }
 
@@ -1561,6 +1562,7 @@ body.drawer-open{
 	letter-spacing: 0.05rem;
 	transition: .2s;
 	padding-bottom: 1.75rem;
+	padding-inline: 1.5em;
 }
 .foot_modori a::before{
 	content: "";
@@ -1590,7 +1592,9 @@ body.drawer-open{
 .foot_modori a:hover .arrow::before{
 	animation: pageup .4s both;
 }
-
+.foot_modori a span{
+	width: 5.5em;
+}
 @keyframes pageup {
 	0%{
 		opacity: 0;

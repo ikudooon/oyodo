@@ -40,16 +40,23 @@
 #main_outline .splide__arrows button.splide__arrow{
     display: inline-block;
     text-decoration: none;
-    background: #fff;
-    border: 1px solid #007bbb;
+    background: var(--yellow);
+    border: 1px solid var(--brown);
     font-size: 90%;
-    padding: 24px 10px 4px;
-    border-radius: 8px;
-    color: #2b3095;
+    padding-block: 1.5em 0.5em;
+    padding-inline: 0.625em;
+    border-radius: 50%;
+    color: #333;
     position: absolute;
-    top: calc(50% - calc(1em + 8px));
+    /* top: calc(50% - calc(1em + 8px)); */
+    top: 25.6%;
     z-index: 1;
+    margin-inline: 8px;
+    transition: .2s;
+    width: 3.79em;
+    height: 3.79em;
 }
+
 .splide__arrow--prev{
   left: 0;
 }
@@ -58,27 +65,49 @@
 }
 .splide__arrow::before{
     content: '';
-  position: absolute;
-  left: 50%;
-  margin-left: -6px;
-  transform: rotate(135deg);
-  top: calc(50% - 14px);
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid #007bbb;
-  border-bottom: 2px solid #007bbb;
+    position: absolute;
+    left: calc(50% - 0.625em);
+    top: calc(50% - 1em);
+    width: 1em;
+    height: 1em;
+    background: url(img/main_slider_arrow.svg) no-repeat top center / contain;
+
 }
 .splide__arrow--next::before{
-    transform: rotate(-45deg);
-  left: auto;
-  margin-left: 0;
-  right: 50%;
-  margin-right: -4px;
+    transform: scaleX(-1);
+    left: auto;
+    right: calc(50% - 0.5em);
 }
-.splide__arrows button:hover,
-#main_outline .splide__arrows button:hover{
-    color: #860000;
+.splide__arrows .splide__arrow--prev:hover:before,
+#main_outline .splide__arrows .splide__arrow--prev:hover::before{
+    animation: prev .4s both;
 }
+.splide__arrows .splide__arrow--next:hover:before,
+#main_outline .splide__arrows .splide__arrow--next:hover::before{
+    animation: next .4s both;
+}
+
+@keyframes prev{
+    0%{
+        opacity: 0;
+        transform: translateX(25px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes next{
+    0%{
+        opacity: 0;
+        transform: translateX(-25px);
+    }
+    100%{
+        opacity: 1;
+        transform: scaleX(-1) translateX(0);
+    }
+}
+
 /** ページネーションとボタン **/
 .pagination-box {
 	display: block;
@@ -231,14 +260,23 @@
     .pagination-box{
         font-size: 0.875em;
     }
+    .splide__pagination button,
+    #main_outline .splide__pagination button{
+        width: 1.72em;
+        min-height: 1.72em;
+    }
 }
 
-@media only screen and (max-width: 480px) {
-    .splide__arrows .splide__pagination{
+@media only screen and (max-width: 450px) {
+    /* .splide__arrows .splide__pagination{
         width: calc(100% + 3.5em);
         position: relative;
         left: -3.5em;
-    }
+    } */
+    .splide__arrows button.splide__arrow,
+    #main_outline .splide__arrows button.splide__arrow{
+        top: 17.6%;
+}
 }
 /* キャプション */
 .splide .caption {

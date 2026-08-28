@@ -48,9 +48,9 @@ p.faq_h1 {
 }
 .faq .design .main_naka h1 {
 	padding-block: 0.25em;
-    font-size: 2.625rem;
+    font-size: 2.625em;
     /* border-bottom: 1px solid var(--green1); */
-    padding-left: 0.75em;
+    padding-left: 0.875em;
     position: relative;
     color: var(--brown);
 }
@@ -194,6 +194,11 @@ p.faq_h1 {
 		.faq .design .main_naka .qa_narabi button{
 			margin: 12px auto 4px;
 			display: block !important;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.faq .design .main_naka h1{
+			font-size: 2em;
 		}
 	}
 	@media only screen and (max-width: 480px) {

@@ -151,7 +151,7 @@
 	@media only screen and (max-width: 1024px) {
 		.waku .kiji_sub .kiji_aside.syosai_sonota p a[href^="tel:"]{
 			cursor: pointer;
-			color: #2b3095;
+			color: #333;
 			text-decoration: underline;
 		}
 	}
@@ -626,7 +626,7 @@
 	border: 1px solid var(--brown);
 	margin: 24px 0 0;
 	border-radius: 20px;
-	padding: 1.5em;
+	padding: 20px;
 	overflow: hidden;
 }
 .mol_page_contents .ac_box a h2{
@@ -644,9 +644,9 @@
 .mol_page_contents .page_contents_lower{
 	/* padding: 8px 16px 16px; */
 }
-.mol_page_contents .ac_box_in{
+/* .mol_page_contents .ac_box_in{
 	padding-bottom: 16px;
-}
+} */
 .mol_page_contents ul li{
 	padding-left: 1.5em;
     background: url(img/main_link_icon.svg) no-repeat left top 0.25em / 1em auto;

@@ -28,7 +28,7 @@ if (slider2El) {
     autoplay: true,
     interval: 5000,
     pagination: true,
-    arrows: false,
+    // arrows: false,
     perPage: 3,
     perMove: 1,
     focus: 0,
@@ -39,7 +39,7 @@ if (slider2El) {
     flickPower    : 1,
     swipeDistanceThreshold: 400,
     breakpoints: {
-    768: {
+    1024: {
       perPage: 2,
       gap:'1.5rem',
       padding: 75,
@@ -88,7 +88,6 @@ if (slider4El) {
     drag: true,
     interval: 5000,
     pagination: true, // ページ番号を表示する
-    arrows: false,
     perPage: 2,
     perMove: 1,
     focus: 0,

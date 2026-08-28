@@ -20,8 +20,8 @@
 	padding: 24px 0;
 }
 .map_category nav{
-	padding-block: 1.25em 1.5em;
-	padding-inline: 1.5em;
+	padding-block: 20px 24px;
+	padding-inline: 24px;
 	border-radius: 20px;
 	border: 1px solid var(--brown);
 }
@@ -31,7 +31,7 @@
 .map_cate_wrap .ac_box_in{
 	background: var(--beige);
 	width: calc(400% + 36px);
-	padding: 10px;
+	padding: 16px;
 	border: 1px solid var(--beige);
 	position: relative;
 	z-index: 1;
@@ -142,6 +142,9 @@
 .map .design .main_naka .map_category li::before{
 	display: none;
 }
+.map .design .main_naka .map_category .ac_box_in ul{
+	margin-top: 0;
+}
 .map .design .main_naka .map_category .close{
 	margin: 12px 0 0;
 	text-align: right;
@@ -155,7 +158,7 @@
 	width: 360px;
 }
 .map .design .main_naka .page_left nav{
-	padding: 1.25em;
+	padding: 24px;
 	background: var(--green4);
 	border-radius: 20px;
 }

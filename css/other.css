@@ -364,8 +364,8 @@ body.inbody.faq{
 }
 .main_naka_h1 h1 {
 	padding-block: 0.25em;
-	font-size: 2.625rem;
-	padding-left: 1em;
+	font-size: 2.625em;
+	padding-left: 0.875em;
 	position: relative;
 	color: var(--brown);
 }
@@ -424,7 +424,7 @@ body.inbody.faq{
 }
 @media screen and (max-width: 768px) {
 	.main_naka_h1 h1{
-		font-size: 2.25rem;
+		font-size: 2em;
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -626,9 +626,9 @@ body.inbody.faq{
 .main_naka .page_head {
 	font-size: 0.875em;
 	margin-top: 24px;
-	padding-block: 0.5em 1.25em;
-	padding-inline: 2em;
-	border-radius: 20px;
+	padding-block: 0.25em 1em;
+	padding-inline: 1em;
+	border-radius: 12px;
 	border: 1px solid var(--brown);
 }
 .main_naka .page_head .pager{
@@ -924,7 +924,7 @@ body.inbody.faq{
 	}
 	.design .main_naka .t_tel a[href^="tel:"]{
 		cursor: pointer;
-		color: #2b3095;
+		color: #333;
 		text-decoration: underline;
 	}
 }
@@ -1151,7 +1151,7 @@ body.inbody.faq{
 	@media only screen and (max-width: 768px) {
 		.design .main_naka a[href^="tel:"]{
 			cursor: pointer;
-			color: #2b3095;
+			color: #333;
 			text-decoration: underline;
 		}
 		.design .main_naka .kakuka_syosai .toiawase{
@@ -1565,7 +1565,7 @@ body.inbody.faq{
 .design .main_naka .bana ul {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1.125rem;
+	gap: 0 1.125rem;
 }
 .design .main_naka .bana li {
 	padding-left: 0;
@@ -1584,15 +1584,18 @@ body.inbody.faq{
 	margin-top: 5px;
 }
 	@media only screen and (max-width: 1024px) {
+		.design .main_naka .bana ul {
+			column-gap: 0.5em;
+		}
 		.design .main_naka .bana li {
 			margin: 12px 0 0;
-			padding: 0 4px;
-			width: calc(100% / 3);
+			padding: 0;
+			width: calc(calc(100% - 1em) / 3);
 		}
 	}
 	@media only screen and (max-width: 480px) {
 		.design .main_naka .bana li {
-			width: 50%;
+			width: calc(50% - 0.25em);
 		}
 		.design .main_naka .bana_h2 p{
 			margin-left: 0px;
@@ -2036,7 +2039,7 @@ body.inbody.faq{
     border-radius: 99px;
     padding-block: 0.5em;
     padding-inline: 0.75em;
-    margin-left: 0.5em;
+    /* margin-left: 0.5em; */
     text-align: center;
     vertical-align: top;
     line-height: 1;
@@ -3011,8 +3014,8 @@ body.inbody.faq{
 	margin-top: 1em;
     background-color: #fff;
     border: 3px solid var(--green1);
-    padding-block: 0.5em 2em;
-    padding-inline: 2em;
+    padding-block: 8px 24px;
+    padding-inline: 24px;
     border-radius: 20px;
 	display: flex;
 	flex-wrap: wrap;
@@ -3247,9 +3250,9 @@ body.inbody.faq{
 	.shel_list article {
 		width: calc((100% - 8px) / 2);
 	} */
-	 .shel_list article{
+	.shel_list article{
 		padding: 1em;
-	 }
+	}
 	.shel_list article .title {
 		width: 30%;
 	}
@@ -3257,8 +3260,8 @@ body.inbody.faq{
 		width: calc(100% - 30%);
 	}
 	.shelter .open{
-		padding-block: 0 1em;
-		padding-inline: 1em;
+		padding-block: 0 1.25em;
+		padding-inline: 16px;
 	}
 	.shel_list article .more a{
 		width: 100%;
@@ -4398,6 +4401,15 @@ form#frm_main.search_form{
 .cat_child .splide_nav button.is-active::after, #main_outline.cat_child .splide_nav button.is-active::after{
 	background-color: #333;
 }
+#main_outline.cat_child .splide__arrows button.splide__arrow{
+	background: var(--child-pink3);
+	border-color: var(--child-line1);
+	top: 33%;
+}
+.cat_child .splide__arrow::before{
+	background-image: url(img/cat_child_slider_arrow.svg);
+}
+
 .cat_child .splide .window{
 	right: calc(2.5rem + 15px);
 }
@@ -4531,6 +4543,10 @@ form#frm_main.search_form{
 	}
 	.cat_child .child_first-view_Area .infoBox .dateArea p{
 		font-size: 1.125em;
+	}
+	#main_outline.cat_child .splide__arrows button.splide__arrow{
+		top: 28%;
+		margin-inline: 20px;
 	}
 
 }
